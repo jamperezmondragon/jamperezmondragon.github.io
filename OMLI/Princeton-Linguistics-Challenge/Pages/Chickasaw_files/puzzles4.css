@@ -1,0 +1,211 @@
+/* We use a Background Image for Netscape 4 because*/ 
+/*it cannot span the entire window with a div bg color */
+body {
+	margin: 36px 36px 0 240px;
+	padding: 0
+}
+
+#logo {
+	position: absolute;
+	right: 0px;
+	width: 409px;
+	top: 0px;
+}
+
+h1, h2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	margin-bottom: 0px;
+	margin-top: 14px;
+}
+
+/* Netscape 4 will not honor font styles on the body selector very well */
+p, div {font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;}
+
+#header {
+	margin: 0;
+}
+#header p {
+	margin: 0;
+	font-size: 12px;
+	text-align: right;
+}
+
+#mainwrapper {
+	margin: 0;
+}
+
+#titleimage {
+	position: absolute;
+	top: 136px;
+	z-index: 1;
+
+}
+
+/*Sidebar is absolutely posititioned for NN4 because it's more stable than floating*/
+#sidebar {
+	position: absolute;
+	left: 24px;
+	width: 180px;
+	top: 136px;
+	color: #333333;
+	z-index: 2;
+
+}
+
+#maincontent h1 {
+	margin-top: 15px;
+	line-height: 20px;
+}
+#sidebar h2 { margin: 0 0 12px 0;}
+#sidebar p {
+	font-size: 12px;
+	color: #333333;
+}
+#footer {
+	margin: 48px 0 0 0;
+}
+#footer p {
+	margin: 0;
+	font-size: 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+#sidebar a:link, #sidebar a:visited  {color: #000;}
+/*Hover is used because MSIE4 supports it*/
+#sidebar a:hover, #sidebar a:active  {color: #999;}
+
+.normal p {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	line-height: 20px;
+	padding-top: 10px;
+	padding-right: 228px;
+	color: #000000;
+}
+
+.normalwide p {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	line-height: 20px;
+	padding-top: 10px;
+	color: #000000;
+}
+
+.displaytable {
+	font-size: 12px;
+	color: #000000;
+	text-align: center;
+	vertical-align: top;
+}
+
+.normaltable { width: 540px }
+
+.displaytable a:link, .displaytable a:visited  {
+	color: #000; 
+	text-decoration: none;
+	padding-left: 5px;
+	align: center;
+}
+
+.displaytable a:hover, .displaytable a:active  {
+	color: #999; 
+	text-decoration: none;
+	padding-left: 5px;
+	align: center;
+}
+
+
+.normal a:link, .normal a:visited, .normalwide a:link, .normalwide a:visited {
+	color: #CCCCCC; 
+	text-decoration: none;
+}
+
+.normal a:hover, .normalwide a:hover {
+	color: #000000;
+	text-decoration: none;
+}
+
+.fieldlable {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	padding-top: 0px;
+	text-align: right;
+	font-style: italic;
+	color: #000000;
+}
+
+.caption {
+	text-align: center;
+	font: 10px/12px "Trebuchet MS", Arial, Helvetica, sans-serif;
+
+}
+
+.linklist {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	text-decoration: none;
+	color: #000000;
+}
+
+.linklist a:link, .linklist a:visited  {
+	color: #ccccff; 
+	text-decoration: none;
+}
+
+.linklist a:hover, .bulletlist a:hover {
+	color: #000000;
+	text-decoration: none;
+}
+
+.bulletlist p {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	line-height: 20px;
+	line-height: 20px;
+	padding-top: 10px;
+	padding-right: 228px;
+	padding-left: 20px;
+	list-style-position: outside;
+	list-style-type: square;
+	text-indent: -18px;
+	color: #000000;
+}
+
+.bulletlist a:link, .bulletlist a:visited {
+	color: #CCCCCC; 
+	text-decoration: none;
+}
+
+.calculatorhead {
+	font-family: "Trebuchet MS", arial, helvetica, "sans serif";
+	font-weight: bold;
+	color: #000000;
+	background-color: #66CCCC;
+}
+.author {
+	font: italic 10px Verdana, Arial, Helvetica, sans-serif;
+	padding-top: 10px;
+}
+
+/*
+     FILE ARCHIVED ON 04:02:52 Jan 20, 2022 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 02:15:12 Feb 16, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 203.712
+  exclusion.robots: 0.104
+  exclusion.robots.policy: 0.095
+  cdx.remote: 0.066
+  esindex: 0.009
+  LoadShardBlock: 139.307 (3)
+  PetaboxLoader3.datanode: 68.591 (5)
+  CDXLines.iter: 18.758 (3)
+  PetaboxLoader3.resolve: 90.596 (2)
+  load_resource: 114.417
+  loaddict: 38.315
+*/
