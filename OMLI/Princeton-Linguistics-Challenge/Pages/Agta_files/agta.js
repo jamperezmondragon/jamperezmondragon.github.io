@@ -38,17 +38,17 @@ if (document.agta.littlegranny.value=="balabakbakat")
 	score = score + 1
 	} 
 
-if (score==0) {document.agta.evaluation.value = "Oops!"}
-if (score==1) {document.agta.evaluation.value = "Good start!"}
-if (score==2) {document.agta.evaluation.value = "Keep going!"}
-if (score==3) {document.agta.evaluation.value = "Way to go!"}
-if (score==4) {document.agta.evaluation.value = "Almost there!"}
-if (score==5) {document.agta.evaluation.value = "Congratulations!"; 
-				document.agta.scoreoutput.value = score + " out of 5!";
-				document.certificate.solved.value = "solved";
+if (score==0) {document.agta.evaluation.value = "¡Oops!"}
+if (score==1) {document.agta.evaluation.value = "¡Excelente comienzo!"}
+if (score==2) {document.agta.evaluation.value = "¡Sigue así!"}
+if (score==3) {document.agta.evaluation.value = "¡Genial!"}
+if (score==4) {document.agta.evaluation.value = "¡Ya lo tienes!"}
+if (score==5) {document.agta.evaluation.value = "¡Felicidades!"; 
+				document.agta.scoreoutput.value = score + " de 5!";
+				document.certificate.solved.value = "Resuelto";
 				document.agta.instructions.value = "Now that you have solved this puzzle, you may request a certificate by pressing the button below."
 }
-	else document.agta.scoreoutput.value = score + " out of 5"
+	else document.agta.scoreoutput.value = score + "  de 5"
 }
 
 
