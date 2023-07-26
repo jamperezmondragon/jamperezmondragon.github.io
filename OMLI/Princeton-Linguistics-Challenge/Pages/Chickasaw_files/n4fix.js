@@ -1,1 +1,0 @@
-If you are looking for the Linguistics Challenge, please note that the address has changed. It is now at <a href="https://web.archive.org/web/20220120074001/http://lingclub.mycpanel.princeton.edu/challenge">http://lingclub.mycpanel.princeton.edu/challenge</a>. Please update your bookmarks.
