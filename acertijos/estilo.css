@@ -1,0 +1,137 @@
+:root {
+  --text: #1a1a1a;
+  --muted: #666;
+  --accent: #0b57d0;
+  --border: #e5e5e5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--text);
+  line-height: 1.6;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+header {
+  margin-bottom: 2.5rem;
+  border-bottom: 2px solid var(--text);
+  padding-bottom: 1rem;
+}
+
+header .site-link {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.85rem;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 2.5rem 0 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--accent);
+}
+
+.icon {
+  font-size: 1.1em;
+}
+
+.icon.verde { color: #2e7d32; }
+.icon.azul { color: #1565c0; }
+.icon.negro { color: #111; }
+
+ul.reglas {
+  list-style: lower-alpha;
+  margin: 0 0 1rem 2rem;
+}
+
+ul.reglas li {
+  margin-bottom: 0.75rem;
+}
+
+footer {
+  margin-top: 3rem;
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.autor {
+  font-style: italic;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.foto {
+  float: right;
+  margin: 0 0 1rem 1.5rem;
+  max-width: 220px;
+  height: auto;
+}
+
+table.datos {
+  border-collapse: collapse;
+  margin: 1rem 0 1.5rem;
+}
+
+table.datos td,
+table.datos th {
+  padding: 0.25rem 1.5rem 0.25rem 0;
+  vertical-align: top;
+  text-align: left;
+}
+
+input[type="text"] {
+  font: inherit;
+  padding: 0.2rem 0.4rem;
+  border: 1px solid #999;
+  border-radius: 3px;
+}
+
+input.bien {
+  border-color: #2e7d32;
+  background: #e8f5e9;
+}
+
+input.mal {
+  border-color: #c62828;
+  background: #ffebee;
+}
+
+.controles {
+  margin-top: 1.5rem;
+}
+
+.controles button {
+  font: inherit;
+  padding: 0.25rem 0.75rem;
+}
+
+.puntos {
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+.mensaje {
+  color: var(--muted);
+}

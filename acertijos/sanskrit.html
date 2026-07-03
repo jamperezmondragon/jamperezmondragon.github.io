@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sánscrito — Acertijos Lingüísticos</title>
+  <link rel="stylesheet" href="estilo.css">
+  <script src="reto.js" defer></script>
+  <style>
+    .devanagari { font-size: 1.5rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="site-link"><a href="index.html">← Acertijos Lingüísticos</a></p>
+    <h1>Sánscrito</h1>
+    <p class="autor">por A. Zhurinsky. Traducido y adaptado por Tom Payne.</p>
+  </header>
+
+  <img class="foto" src="img/sanskrit.gif" alt="Ilustración de una mujer tocando el sitar">
+
+  <p>El sánscrito es una lengua antigua del norte de la India y la lengua sagrada de la religión
+    hindú. Es una de las lenguas más antiguas de la familia indoeuropea. De hecho, fue el
+    descubrimiento de que el sánscrito estaba emparentado con las lenguas de Europa lo que llevó
+    a los lingüistas a reconocer la existencia de la «familia» indoeuropea de lenguas.</p>
+
+  <p>Las siguientes son algunas palabras (o raíces de palabras) en sánscrito, escritas con el
+    sistema de escritura devanagari. Este es el sistema que se usa en los escritos sagrados
+    hindúes, conocidos como los Vedas, además de en muchas lenguas modernas del sur de Asia. Cada
+    palabra se ha escrito también fonéticamente con el alfabeto romano (en el que se basa el
+    alfabeto del español):</p>
+
+  <table class="datos">
+    <tr><td class="devanagari">वच्</td><td>vach</td><td>'hablar'</td></tr>
+    <tr><td class="devanagari">दम</td><td>dama</td><td>'casa'</td></tr>
+    <tr><td class="devanagari">वेद</td><td>veda</td><td>'conocimiento'</td></tr>
+    <tr><td class="devanagari">यद्</td><td>yad</td><td>'porque'</td></tr>
+    <tr><td class="devanagari">चुद्</td><td>chud</td><td>'apurar'</td></tr>
+    <tr><td class="devanagari">नम्</td><td>nam</td><td>'honrar'</td></tr>
+    <tr><td class="devanagari">मेने</td><td>mene</td><td>'pensamiento'</td></tr>
+  </table>
+
+  <form data-reto>
+    <p>1. Escribe las siguientes palabras sánscritas fonéticamente con el alfabeto romano:</p>
+    <table class="datos">
+      <tr><td class="devanagari">मन्</td><td>'pensar'</td><td><input type="text" size="10" maxlength="10" data-r="man"></td></tr>
+      <tr><td class="devanagari">मुद्</td><td>'alegría'</td><td><input type="text" size="10" maxlength="10" data-r="mud"></td></tr>
+      <tr><td class="devanagari">यम्</td><td>'sostener'</td><td><input type="text" size="10" maxlength="10" data-r="yam"></td></tr>
+      <tr><td class="devanagari">देव</td><td>'dios'</td><td><input type="text" size="10" maxlength="10" data-r="deva"></td></tr>
+    </table>
+
+    <p>2. Ahora: ¿crees que sería posible escribir palabras comunes del inglés con el sistema
+      devanagari? Quizás sería más fácil que con el alfabeto romano — ¡se acabarían las reglas
+      complicadas de ortografía! Como sea, intenta elegir cómo se escribirían las siguientes
+      palabras inglesas con el sistema devanagari (recuerda que se escriben según su
+      pronunciación, no según su ortografía en inglés):</p>
+
+    <table class="datos">
+      <tr><td>'men' (se pronuncia «men»)</td><td>
+        <select class="devanagari" data-r="मेन्"><option value=""></option><option>मन्</option><option>मेन्</option><option>मने</option><option>नेम्</option></select>
+      </td></tr>
+      <tr><td>'madam' (se pronuncia «mádam»)</td><td>
+        <select class="devanagari" data-r="मदम्"><option value=""></option><option>मदम्</option><option>ममद्</option><option>दमम्</option><option>मदम</option></select>
+      </td></tr>
+      <tr><td>'much' (se pronuncia «mach»)</td><td>
+        <select class="devanagari" data-r="मच्"><option value=""></option><option>मुच्</option><option>चम्</option><option>मच्</option><option>मच</option></select>
+      </td></tr>
+      <tr><td>'Chad' (se pronuncia «chad»)</td><td>
+        <select class="devanagari" data-r="चद्"><option value=""></option><option>चद्</option><option>दच्</option><option>चद</option><option>चुद्</option></select>
+      </td></tr>
+    </table>
+
+    <p class="controles">
+      <button type="reset">Borrar todo</button>
+      <span class="puntos"></span>
+    </p>
+    <p class="mensaje">Escribe tus respuestas en las casillas.</p>
+  </form>
+
+  <footer>
+    <p><a href="index.html">← Todos los acertijos</a> · <a href="shugnan.html">Siguiente acertijo →</a></p>
+    <p>copyright © 2005 Linguistic Society of America</p>
+  </footer>
+</body>
+</html>

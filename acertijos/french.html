@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Francés — Acertijos Lingüísticos</title>
+  <link rel="stylesheet" href="estilo.css">
+  <script src="reto.js" defer></script>
+  <style>
+    .sombreado { background: #e5e5e5; }
+    table.datos.bordes td { border: 1px solid #ccc; padding: 0.3rem 0.6rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="site-link"><a href="index.html">← Acertijos Lingüísticos</a></p>
+    <h1>Francés</h1>
+    <p class="autor">por Boris Iomdin y Maria Rubenstein</p>
+  </header>
+
+  <img class="foto" src="img/toureiffel.jpg" alt="Torre Eiffel">
+
+  <p>La tabla de abajo muestra algunas palabras francesas con prefijo y las palabras
+    correspondientes sin prefijo, junto con sus traducciones. Las celdas sombreadas significan que
+    no existe un verbo sin prefijo que corresponda al verbo con prefijo de la columna
+    izquierda.</p>
+
+  <p>Notarás que algunas de las palabras con prefijo se han dejado fuera. Tu tarea es elegir la
+    palabra con prefijo correcta según el patrón que siguen las demás palabras de la tabla. Sí:
+    es muy posible resolver este acertijo sin usar un diccionario. Debes hacer todas tus
+    selecciones para ver tu puntuación. ¡Buena suerte!</p>
+
+  <form data-reto data-todo>
+    <table class="datos bordes">
+      <tr>
+        <th>Palabra francesa con prefijo<br>(elige la correcta cuando haga falta)</th>
+        <th>Traducción</th>
+        <th>Palabra francesa sin prefijo</th>
+        <th>Traducción</th>
+      </tr>
+      <tr><td>réagir</td><td>'reaccionar'</td><td class="sombreado"></td><td class="sombreado"></td></tr>
+      <tr>
+        <td><select data-r="réassortir"><option value=""></option><option>reassortir</option><option>réassortir</option></select></td>
+        <td>'volver a combinar'</td><td>assortir</td><td>'combinar'</td>
+      </tr>
+      <tr><td>recommencer</td><td>'recomenzar'</td><td>commencer</td><td>'comenzar'</td></tr>
+      <tr><td>recomposer</td><td>'volver a componer'</td><td>composer</td><td>'componer'</td></tr>
+      <tr><td>réconcilier</td><td>'reconciliar'</td><td>concilier</td><td>'reconciliar'</td></tr>
+      <tr><td>réconforter</td><td>'reconfortar'</td><td>conforter</td><td>'reconfortar'</td></tr>
+      <tr><td>recréer</td><td>'volver a crear'</td><td>créer</td><td>'crear'</td></tr>
+      <tr><td>récréer</td><td>'entretener'</td><td class="sombreado"></td><td class="sombreado"></td></tr>
+      <tr>
+        <td><select data-r="récurer"><option value=""></option><option>recurer</option><option>récurer</option></select></td>
+        <td>'limpiar'</td><td>curer</td><td>'limpiar'</td>
+      </tr>
+      <tr><td>redire</td><td>'volver a decir'</td><td>dire</td><td>'decir'</td></tr>
+      <tr><td>réduire</td><td>'reducir'</td><td class="sombreado"></td><td class="sombreado"></td></tr>
+      <tr><td>rééditer</td><td>'volver a publicar'</td><td>éditer</td><td>'publicar'</td></tr>
+      <tr><td>refaire</td><td>'rehacer'</td><td>faire</td><td>'hacer'</td></tr>
+      <tr>
+        <td><select data-r="réformer"><option value=""></option><option>reformer</option><option>réformer</option></select></td>
+        <td>'reformar'</td><td class="sombreado"></td><td class="sombreado"></td>
+      </tr>
+      <tr>
+        <td><select data-r="reformer"><option value=""></option><option>reformer</option><option>réformer</option></select></td>
+        <td>'volver a formar'</td><td>former</td><td>'formar'</td>
+      </tr>
+      <tr>
+        <td><select data-r="réfuter"><option value=""></option><option>refuter</option><option>réfuter</option></select></td>
+        <td>'refutar'</td><td class="sombreado"></td><td class="sombreado"></td>
+      </tr>
+      <tr><td>réincarner</td><td>'reencarnar'</td><td>incarner</td><td>'encarnar'</td></tr>
+      <tr><td>rejouer</td><td>'volver a jugar'</td><td>jouer</td><td>'jugar'</td></tr>
+      <tr>
+        <td><select data-r="relancer"><option value=""></option><option>relancer</option><option>rélancer</option></select></td>
+        <td>'volver a lanzar'</td><td>lancer</td><td>'lanzar'</td>
+      </tr>
+      <tr>
+        <td><select data-r="rémunérer"><option value=""></option><option>remunérer</option><option>rémunérer</option></select></td>
+        <td>'remunerar'</td><td class="sombreado"></td><td class="sombreado"></td>
+      </tr>
+      <tr><td>rénover</td><td>'renovar'</td><td class="sombreado"></td><td class="sombreado"></td></tr>
+      <tr><td>réopérer</td><td>'volver a operar'</td><td>opérer</td><td>'operar'</td></tr>
+      <tr><td>repartir</td><td>'volver a partir'</td><td>partir</td><td>'partir'</td></tr>
+      <tr>
+        <td><select data-r="répartir"><option value=""></option><option>repartir</option><option>répartir</option></select></td>
+        <td>'distribuir'</td><td class="sombreado"></td><td class="sombreado"></td>
+      </tr>
+      <tr><td>répéter</td><td>'repetir'</td><td class="sombreado"></td><td class="sombreado"></td></tr>
+      <tr><td>résonner</td><td>'resonar'</td><td>sonner</td><td>'resonar'</td></tr>
+      <tr><td>révéler</td><td>'revelar'</td><td class="sombreado"></td><td class="sombreado"></td></tr>
+    </table>
+
+    <p class="controles">
+      <button type="reset">Borrar todo</button>
+      <span class="puntos"></span>
+    </p>
+    <p class="mensaje">Elige tus respuestas en las listas desplegables.</p>
+  </form>
+
+  <footer>
+    <p><a href="index.html">← Todos los acertijos</a> · <a href="hausa.html">Siguiente acertijo →</a></p>
+    <p>copyright © 2005 Linguistic Society of America</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tayiko — Acertijos Lingüísticos</title>
+  <link rel="stylesheet" href="estilo.css">
+  <script src="reto.js" defer></script>
+</head>
+<body>
+  <header>
+    <p class="site-link"><a href="index.html">← Acertijos Lingüísticos</a></p>
+    <h1>Tayiko</h1>
+    <p class="autor">por Adriana Solovyova</p>
+  </header>
+
+  <p>Hay 3,344,720 hablantes de tayiko en Tayikistán (una de las repúblicas centroasiáticas de la
+    antigua Unión Soviética) y otro millón de hablantes en los países vecinos. El tayiko es una
+    lengua indoeuropea emparentada de cerca con el farsi (o persa), la principal lengua de Irán.
+    La mayor parte de la literatura en tayiko usa una versión del alfabeto cirílico. Es el mismo
+    sistema que usan el ruso, el ucraniano, el búlgaro y otras lenguas de Europa del Este y Asia
+    Central. No necesitas saber leer cirílico para resolver este acertijo: ¡solo usa tu sentido
+    común! Una cosa que notarás muy rápido es que las palabras en tayiko no van en el mismo orden
+    que en español.</p>
+
+  <p>Aquí tienes tres frases de la lengua tayika con sus traducciones.</p>
+
+  <table class="datos">
+    <tr><td>дуусти ҳуби ҳамсоай сумо</td><td>'un buen amigo de tu vecino'</td></tr>
+    <tr><td>ҳамсоай дуусти ҳуби сумо</td><td>'un vecino de tu buen amigo'</td></tr>
+    <tr><td>ҳамсоай ҳуби дуусти сумо</td><td>'un buen vecino de tu amigo'</td></tr>
+  </table>
+
+  <p>Tu tarea es dar la traducción de cada una de las cuatro palabras tayikas. Las opciones son
+    simplemente «bueno», «amigo», «vecino» y «tu». ¡El orden de las palabras hace el resto del
+    trabajo comunicativo!</p>
+
+  <form data-reto>
+    <table class="datos">
+      <tr><td>дуусти</td><td><input type="text" size="10" maxlength="10" data-r="amigo"></td></tr>
+      <tr><td>ҳуби</td><td><input type="text" size="10" maxlength="10" data-r="bueno|buen"></td></tr>
+      <tr><td>ҳамсоай</td><td><input type="text" size="10" maxlength="10" data-r="vecino"></td></tr>
+      <tr><td>сумо</td><td><input type="text" size="10" maxlength="10" data-r="tu"></td></tr>
+    </table>
+
+    <p class="controles">
+      <button type="reset">Borrar todo</button>
+      <span class="puntos"></span>
+    </p>
+    <p class="mensaje">Escribe tus respuestas en las casillas.</p>
+  </form>
+
+  <footer>
+    <p><a href="index.html">← Todos los acertijos</a> · <a href="turkish.html">Siguiente acertijo →</a></p>
+    <p>copyright © 2005 Linguistic Society of America</p>
+  </footer>
+</body>
+</html>

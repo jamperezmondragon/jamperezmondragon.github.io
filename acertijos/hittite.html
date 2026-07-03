@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luvita — Acertijos Lingüísticos</title>
+  <link rel="stylesheet" href="estilo.css">
+  <script src="reto.js" defer></script>
+</head>
+<body>
+  <header>
+    <p class="site-link"><a href="index.html">← Acertijos Lingüísticos</a></p>
+    <h1>Luvita</h1>
+    <p class="autor">Acertijo original de A. Zhurinsky. Adaptación al inglés de Valentin Vydrin.</p>
+  </header>
+
+  <p>A principios del siglo XX, los arqueólogos habían reunido una gran cantidad de inscripciones
+    que se creían escritas en la antigua lengua hitita. Por desgracia, esos escritos fueron
+    totalmente incomprensibles hasta que un estudioso descubrió la clave: muchas de las palabras
+    de las inscripciones eran nombres de regiones, ciudades o reyes. Esta clave permitió a los
+    estudiosos revelar los secretos de este antiguo sistema de escritura. ¡Pero también se
+    descubrió que la lengua no era el hitita! Se trata de una lengua de Anatolia llamada luvita
+    (o luvio). Algunos de los nombres importantes eran los siguientes:</p>
+
+  <p>Regiones: Khamatu, Palaa.<br>
+    Ciudades: Kurkuma, Tuvarnava.<br>
+    Reyes: Varpalava, Tarkumuva.</p>
+
+  <p>1. Las siguientes son las inscripciones que corresponden a estos nombres. Tu tarea es
+    emparejar cada inscripción con el nombre que representa. El proceso que uses para resolver
+    este acertijo es muy parecido a lo que hacen los lingüistas arqueológicos cuando descubren
+    escritos e inscripciones en lenguas desconocidas.</p>
+
+  <p><img src="img/luvian.gif" alt="Seis inscripciones luvitas numeradas del 1 al 6" style="max-width: 100%;"></p>
+
+  <form data-reto>
+    <table class="datos">
+      <tr><td>Inscripción 1:</td><td><select data-r="Varpalava"><option value=""></option><option>Khamatu</option><option>Palaa</option><option>Kurkuma</option><option>Tuvarnava</option><option>Varpalava</option><option>Tarkumuva</option></select></td></tr>
+      <tr><td>Inscripción 2:</td><td><select data-r="Kurkuma"><option value=""></option><option>Khamatu</option><option>Palaa</option><option>Kurkuma</option><option>Tuvarnava</option><option>Varpalava</option><option>Tarkumuva</option></select></td></tr>
+      <tr><td>Inscripción 3:</td><td><select data-r="Tuvarnava"><option value=""></option><option>Khamatu</option><option>Palaa</option><option>Kurkuma</option><option>Tuvarnava</option><option>Varpalava</option><option>Tarkumuva</option></select></td></tr>
+      <tr><td>Inscripción 4:</td><td><select data-r="Palaa"><option value=""></option><option>Khamatu</option><option>Palaa</option><option>Kurkuma</option><option>Tuvarnava</option><option>Varpalava</option><option>Tarkumuva</option></select></td></tr>
+      <tr><td>Inscripción 5:</td><td><select data-r="Tarkumuva"><option value=""></option><option>Khamatu</option><option>Palaa</option><option>Kurkuma</option><option>Tuvarnava</option><option>Varpalava</option><option>Tarkumuva</option></select></td></tr>
+      <tr><td>Inscripción 6:</td><td><select data-r="Khamatu"><option value=""></option><option>Khamatu</option><option>Palaa</option><option>Kurkuma</option><option>Tuvarnava</option><option>Varpalava</option><option>Tarkumuva</option></select></td></tr>
+    </table>
+
+    <p>2. Ahora, el siguiente paso es usar lo que acabas de aprender para determinar cuál sería
+      probablemente la inscripción luvita de cada uno de los siguientes nombres. Elige la
+      secuencia de signos correcta (los signos se describen por su forma):</p>
+
+    <p>El rey Parta:<br>
+      <select data-r="a">
+        <option value=""></option>
+        <option value="a">la jarra + el pie + el triángulo cuadriculado</option>
+        <option value="b">la jarra + la caja + el triángulo rayado</option>
+        <option value="c">el pie + la jarra + las montañas</option>
+      </select></p>
+
+    <p>El rey Armura:<br>
+      <select data-r="b">
+        <option value=""></option>
+        <option value="a">la espiral + el garabato + el triángulo cuadriculado</option>
+        <option value="b">el signo con circulito + el garabato + el signo con circulito + el triángulo cuadriculado</option>
+        <option value="c">el signo con circulito + la espiral + las montañas</option>
+      </select></p>
+
+    <p>La región Tarmu:<br>
+      <select data-r="a">
+        <option value=""></option>
+        <option value="a">el pie + el garabato + las montañas</option>
+        <option value="b">la caja + la espiral + las montañas</option>
+        <option value="c">el pie + el garabato + el triángulo rayado</option>
+      </select></p>
+
+    <p>La región Tuva:<br>
+      <select data-r="c">
+        <option value=""></option>
+        <option value="a">la caja + el gancho + las montañas</option>
+        <option value="b">el trazo con puntitos + la caja + las montañas</option>
+        <option value="c">la caja + el trazo con puntitos + las montañas</option>
+      </select></p>
+
+    <p>La región Narva:<br>
+      <select data-r="a">
+        <option value=""></option>
+        <option value="a">el gancho + el trazo con puntitos + las montañas</option>
+        <option value="b">el arco + el trazo con puntitos + las montañas</option>
+        <option value="c">el gancho + el trazo con puntitos + el triángulo cuadriculado</option>
+      </select></p>
+
+    <p class="controles">
+      <button type="reset">Borrar todo</button>
+      <span class="puntos"></span>
+    </p>
+    <p class="mensaje">Elige tus respuestas en las listas desplegables.</p>
+  </form>
+
+  <footer>
+    <p><a href="index.html">← Todos los acertijos</a> · <a href="maasai.html">Siguiente acertijo →</a></p>
+    <p>copyright © 2005 Linguistic Society of America</p>
+  </footer>
+</body>
+</html>

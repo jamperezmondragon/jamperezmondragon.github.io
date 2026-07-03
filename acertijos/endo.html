@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Endo — Acertijos Lingüísticos</title>
+  <link rel="stylesheet" href="estilo.css">
+  <script src="reto.js" defer></script>
+</head>
+<body>
+  <header>
+    <p class="site-link"><a href="index.html">← Acertijos Lingüísticos</a></p>
+    <h1>Endo</h1>
+    <p class="autor">Thomas Payne</p>
+  </header>
+
+  <p>El endo es una lengua nilo-sahariana de la familia nilótica meridional. La hablan
+    aproximadamente 45,000 personas en el valle del Rift, en el centro de Kenia. Hoy en Kenia se
+    hablan 61 lenguas indígenas distintas.</p>
+
+  <p>El endo es una lengua en la que el «tono» es muy importante. Los distintos tonos se escriben
+    como marcas encima de algunas letras. Por ejemplo, las letras í y ó se pronuncian con tono
+    alto. Las letras ì y ò se pronuncian con tono bajo. Las letras î y ê tienen «tono
+    descendente»: es decir, el tono empieza alto y termina bajo. La letra ë se pronuncia con tono
+    bajo y con una voz un poco «susurrada». Si una letra no lleva ninguna marca, se pronuncia con
+    «tono medio», a la mitad entre el alto y el bajo.</p>
+
+  <p>Como en muchos pueblos del mundo, los cuentos son muy importantes en la vida diaria del
+    pueblo endo. En lugar de ver la televisión o ir al cine, las familias endo pasan horas por las
+    tardes contando y creando cuentos populares sobre una época de la historia en que los animales
+    hablaban. Las siguientes son algunas oraciones de un cuento popular endo, con sus
+    traducciones. En este cuento, los personajes principales son Elefante y Liebre:</p>
+
+  <table class="datos">
+    <tr><td>1. Kícho Pëëlyòn.</td><td>'Elefante vino.'</td></tr>
+    <tr><td>2. Kícho Kíplêkwà.</td><td>'Liebre vino.'</td></tr>
+    <tr><td>3. Kílëchí Kíplêkwà Pëëlyón.</td><td>'Liebre le dijo a Elefante…'</td></tr>
+    <tr><td>4. Kílëchí Pëëlyón Kíplêkwà.</td><td>'Liebre le dijo a Elefante…'</td></tr>
+    <tr><td>5. Kílëchí Kìplêkwà Pëëlyòn.</td><td>'Elefante le dijo a Liebre…'</td></tr>
+    <tr><td>6. Kílëchí Pëëlyòn Kìplêkwà.</td><td>'Elefante le dijo a Liebre…'</td></tr>
+    <tr><td>7. Kípka píích.</td><td>'La gente llegó.'</td></tr>
+    <tr><td>8. Kíro píích.</td><td>'La gente lo/la vio.'</td></tr>
+    <tr><td>9. Kíro pîîch.</td><td>'Él/ella vio a la gente.'</td></tr>
+  </table>
+
+  <p>Tu primera tarea es traducir lo siguiente al español:</p>
+
+  <form data-reto>
+    <p>10. Kíro Kìplêkwà.<br>
+      <input type="text" size="30" maxlength="40" data-r="él/ella vio a liebre|él vio a liebre|ella vio a liebre|vio a liebre"></p>
+    <p>11. Kíro Kíplêkwà.<br>
+      <input type="text" size="30" maxlength="40" data-r="liebre lo/la vio|liebre lo vio|liebre la vio|liebre le vio"></p>
+
+    <p>Ahora: hay dos maneras de decir en endo cada una de las siguientes dos oraciones. En esta
+      parte del acertijo debes construir las dos oraciones endo eligiendo cada palabra de las
+      listas desplegables. Recuerda que tanto las formas de las palabras como el orden son
+      importantes:</p>
+
+    <p>'La gente le dijo a Elefante…'</p>
+    <p>1.ª traducción:
+      <select data-r="Kílëchí"><option value=""></option><option>Kícho</option><option>Kílëchí</option><option>Kíplêkwà</option><option>Pîîch</option><option>Pëëlyòn</option><option>Pëëlyón</option><option>Kìplêkwà</option><option>Píích</option><option>Kípka</option><option>Kíro</option></select>
+      <select data-r="Píích"><option value=""></option><option>Kícho</option><option>Kílëchí</option><option>Kíplêkwà</option><option>Pîîch</option><option>Pëëlyòn</option><option>Pëëlyón</option><option>Kìplêkwà</option><option>Píích</option><option>Kípka</option><option>Kíro</option></select>
+      <select data-r="Pëëlyón"><option value=""></option><option>Kícho</option><option>Kílëchí</option><option>Kíplêkwà</option><option>Pîîch</option><option>Pëëlyòn</option><option>Pëëlyón</option><option>Kìplêkwà</option><option>Píích</option><option>Kípka</option><option>Kíro</option></select>
+    </p>
+    <p>2.ª traducción:
+      <select data-r="Kílëchí"><option value=""></option><option>Kícho</option><option>Kílëchí</option><option>Kíplêkwà</option><option>Pîîch</option><option>Pëëlyòn</option><option>Pëëlyón</option><option>Kìplêkwà</option><option>Píích</option><option>Kípka</option><option>Kíro</option></select>
+      <select data-r="Pëëlyón"><option value=""></option><option>Kícho</option><option>Kílëchí</option><option>Kíplêkwà</option><option>Pîîch</option><option>Pëëlyòn</option><option>Pëëlyón</option><option>Kìplêkwà</option><option>Píích</option><option>Kípka</option><option>Kíro</option></select>
+      <select data-r="Píích"><option value=""></option><option>Kícho</option><option>Kílëchí</option><option>Kíplêkwà</option><option>Pîîch</option><option>Pëëlyòn</option><option>Pëëlyón</option><option>Kìplêkwà</option><option>Píích</option><option>Kípka</option><option>Kíro</option></select>
+    </p>
+
+    <p>'Liebre le dijo a la gente…'</p>
+    <p>1.ª traducción:
+      <select data-r="Kílëchí"><option value=""></option><option>Kícho</option><option>Kílëchí</option><option>Kíplêkwà</option><option>Pîîch</option><option>Pëëlyòn</option><option>Pëëlyón</option><option>Kìplêkwà</option><option>Píích</option><option>Kípka</option><option>Kíro</option></select>
+      <select data-r="Kíplêkwà"><option value=""></option><option>Kícho</option><option>Kílëchí</option><option>Kíplêkwà</option><option>Pîîch</option><option>Pëëlyòn</option><option>Pëëlyón</option><option>Kìplêkwà</option><option>Píích</option><option>Kípka</option><option>Kíro</option></select>
+      <select data-r="Pîîch"><option value=""></option><option>Kícho</option><option>Kílëchí</option><option>Kíplêkwà</option><option>Pîîch</option><option>Pëëlyòn</option><option>Pëëlyón</option><option>Kìplêkwà</option><option>Píích</option><option>Kípka</option><option>Kíro</option></select>
+    </p>
+    <p>2.ª traducción:
+      <select data-r="Kílëchí"><option value=""></option><option>Kícho</option><option>Kílëchí</option><option>Kíplêkwà</option><option>Pîîch</option><option>Pëëlyòn</option><option>Pëëlyón</option><option>Kìplêkwà</option><option>Píích</option><option>Kípka</option><option>Kíro</option></select>
+      <select data-r="Pîîch"><option value=""></option><option>Kícho</option><option>Kílëchí</option><option>Kíplêkwà</option><option>Pîîch</option><option>Pëëlyòn</option><option>Pëëlyón</option><option>Kìplêkwà</option><option>Píích</option><option>Kípka</option><option>Kíro</option></select>
+      <select data-r="Kíplêkwà"><option value=""></option><option>Kícho</option><option>Kílëchí</option><option>Kíplêkwà</option><option>Pîîch</option><option>Pëëlyòn</option><option>Pëëlyón</option><option>Kìplêkwà</option><option>Píích</option><option>Kípka</option><option>Kíro</option></select>
+    </p>
+
+    <p>Las siguientes oraciones tienen una sola traducción al endo cada una. Si la traducción
+      solo tiene dos palabras, elige las palabras correctas en las dos primeras posiciones y
+      «--ninguna--» para la tercera:</p>
+
+    <p>'Él/ella le dijo a Liebre…'<br>
+      <select data-r="Kílëchí"><option value=""></option><option>Kícho</option><option>Kílëchí</option><option>Kíplêkwà</option><option>Pîîch</option><option>Pëëlyòn</option><option>Pëëlyón</option><option>Kìplêkwà</option><option>Píích</option><option>Kípka</option><option>Kíro</option></select>
+      <select data-r="Kìplêkwà"><option value=""></option><option>Kícho</option><option>Kílëchí</option><option>Kíplêkwà</option><option>Pîîch</option><option>Pëëlyòn</option><option>Pëëlyón</option><option>Kìplêkwà</option><option>Píích</option><option>Kípka</option><option>Kíro</option></select>
+      <select data-r="--ninguna--"><option value=""></option><option>Kícho</option><option>Kílëchí</option><option>Kíplêkwà</option><option>Pîîch</option><option>Pëëlyòn</option><option>Pëëlyón</option><option>Kìplêkwà</option><option>Píích</option><option>Kípka</option><option>Kíro</option><option>--ninguna--</option></select>
+    </p>
+    <p>'Elefante lo/la vio.'<br>
+      <select data-r="Kíro"><option value=""></option><option>Kícho</option><option>Kílëchí</option><option>Kíplêkwà</option><option>Pîîch</option><option>Pëëlyòn</option><option>Pëëlyón</option><option>Kìplêkwà</option><option>Píích</option><option>Kípka</option><option>Kíro</option></select>
+      <select data-r="Pëëlyòn"><option value=""></option><option>Kícho</option><option>Kílëchí</option><option>Kíplêkwà</option><option>Pîîch</option><option>Pëëlyòn</option><option>Pëëlyón</option><option>Kìplêkwà</option><option>Píích</option><option>Kípka</option><option>Kíro</option></select>
+      <select data-r="--ninguna--"><option value=""></option><option>Kícho</option><option>Kílëchí</option><option>Kíplêkwà</option><option>Pîîch</option><option>Pëëlyòn</option><option>Pëëlyón</option><option>Kìplêkwà</option><option>Píích</option><option>Kípka</option><option>Kíro</option><option>--ninguna--</option></select>
+    </p>
+
+    <p class="controles">
+      <button type="reset">Borrar todo</button>
+      <span class="puntos"></span>
+    </p>
+    <p class="mensaje">Escribe tus respuestas en las casillas.</p>
+  </form>
+
+  <footer>
+    <p><a href="index.html">← Todos los acertijos</a> · <a href="french.html">Siguiente acertijo →</a></p>
+    <p>copyright © 2005 Linguistic Society of America</p>
+  </footer>
+</body>
+</html>

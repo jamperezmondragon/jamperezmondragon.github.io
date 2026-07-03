@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hawaiano — Acertijos Lingüísticos</title>
+  <link rel="stylesheet" href="estilo.css">
+  <script src="reto.js" defer></script>
+</head>
+<body>
+  <header>
+    <p class="site-link"><a href="index.html">← Acertijos Lingüísticos</a></p>
+    <h1>Hawaiano</h1>
+    <p class="autor">Acertijo de V. Belikov. Adaptación al inglés de Valentin Vydrin y Thomas E. Payne.</p>
+  </header>
+
+  <img class="foto" src="img/hawaiian.gif" alt="Paisaje de Hawái">
+
+  <p>Hace cuarenta años, el hawaiano estaba casi extinto, aun cuando había 250,700 hawaianos
+    étnicos en Hawái y 150,000 en el resto de Estados Unidos. Los hawaianos sencillamente habían
+    olvidado cómo hablar su lengua por el dominio del inglés. Hoy hay 1,000 hablantes fluidos en
+    Hawái, y otros 8,000 pueden hablarlo y entenderlo. Este renacer del interés por el hawaiano se
+    debe, al menos en parte, a escuelas bilingües especiales que ofrecen programas de inmersión en
+    hawaiano. El hawaiano es una lengua polinesia.</p>
+
+  <p>Las siguientes oraciones en hawaiano, con sus traducciones, hablan de una niña llamada Mele
+    y un niño llamado Keone:</p>
+
+  <table class="datos">
+    <tr><td>1. 'Él tiene siete hermanos mayores.'</td><td>Ehiku ona kaikuaana.</td></tr>
+    <tr><td>2. 'Mele tiene un hermano.'</td><td>Ekahi o Mele kaikunane.</td></tr>
+    <tr><td>3. 'Keone tiene un hermano menor.'</td><td>Ekahi o Keone kaikaina.</td></tr>
+    <tr><td>4. 'Mele no tiene hermanas mayores.'</td><td>Aohe o Mele kaikuaana.</td></tr>
+    <tr><td>5. 'Keone no tiene hermanas.'</td><td>Aohe o Keone kaikuahine.</td></tr>
+    <tr><td>6. 'Yo tengo una canoa.'</td><td>Ekahi ou waa.</td></tr>
+    <tr><td>7. 'Mele no tiene hermanas menores.'</td><td>Aohe o Mele kaikaina.</td></tr>
+  </table>
+
+  <form data-reto>
+    <p>A: Hay dos traducciones posibles al español para la siguiente oración hawaiana.
+      ¿Cuáles son?</p>
+    <p>Aohe ou kaikuaana.<br>
+      <input type="text" size="40" maxlength="50" placeholder="Una traducción posible." data-r="no tengo hermanos mayores|no tengo hermanas mayores"><br>
+      <input type="text" size="40" maxlength="50" placeholder="Otra traducción posible." data-r="no tengo hermanas mayores|no tengo hermanos mayores"></p>
+
+    <p>B: Traduce la siguiente oración al español e indica quién la dice, ¿Mele o Keone?</p>
+    <p>Aohe ou kaikuahine.<br>
+      <input type="text" size="40" maxlength="50" placeholder="Traducción" data-r="no tengo hermanas">
+      <select data-r="Keone"><option value=""></option><option>Mele</option><option>Keone</option></select></p>
+
+    <p class="controles">
+      <button type="reset">Borrar todo</button>
+      <span class="puntos"></span>
+    </p>
+    <p class="mensaje">Escribe tus respuestas en las casillas.</p>
+  </form>
+
+  <footer>
+    <p><a href="index.html">← Todos los acertijos</a> · <a href="indonesian.html">Siguiente acertijo →</a></p>
+    <p>copyright © 2005 Linguistic Society of America</p>
+  </footer>
+</body>
+</html>
