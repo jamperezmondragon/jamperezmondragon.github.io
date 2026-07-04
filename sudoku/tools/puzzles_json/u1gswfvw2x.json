@@ -1,0 +1,196 @@
+{
+ "id": "sxsm_MichaelLefkowitz_4e4d663bc8bd4f6a014b4432152e4d99",
+ "cages": [
+  {
+   "value": "title: Introduction to Killer Sudoku"
+  },
+  {
+   "value": "author: Michael Lefkowitz"
+  },
+  {
+   "value": "rules: SUDOKU\n- Fill the grid with the digits 1-4 so that no digit repeats in a row, column, or box.\n\nKILLER\n- Digits in cages sum to the number in the corner of the cage.\n- Digits cannot repeat within a cage.\n\nLITTLE KILLER\n- Digits along the diagonal indicated by an arrow sum to the number by the arrow."
+  },
+  {
+   "value": "solution: 3214142323414132"
+  },
+  {
+   "unique": true,
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "value": 5
+  },
+  {
+   "unique": true,
+   "cells": [
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "value": 8
+  },
+  {
+   "unique": true,
+   "cells": [
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "value": 4
+  }
+ ],
+ "cellSize": 50,
+ "cells": [
+  [
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {}
+  ]
+ ],
+ "regions": [
+  [
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    1
+   ]
+  ],
+  [
+   [
+    0,
+    2
+   ],
+   [
+    0,
+    3
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    3
+   ]
+  ],
+  [
+   [
+    2,
+    0
+   ],
+   [
+    2,
+    1
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    3,
+    1
+   ]
+  ],
+  [
+   [
+    2,
+    2
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    2
+   ],
+   [
+    3,
+    3
+   ]
+  ]
+ ],
+ "overlays": [
+  {
+   "stroke": "none",
+   "center": [
+    0.5,
+    4.5
+   ],
+   "width": 1,
+   "height": 1,
+   "text": 8,
+   "fontSize": 32,
+   "color": "#000",
+   "rounded": true
+  }
+ ],
+ "arrows": [
+  {
+   "wayPoints": [
+    [
+     0.734,
+     4.266
+    ],
+    [
+     0.932,
+     4.068
+    ]
+   ],
+   "headLength": 0.18,
+   "color": "#000000",
+   "thickness": 3
+  }
+ ]
+}

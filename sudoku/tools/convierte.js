@@ -105,13 +105,14 @@ function convert(id) {
   for (const cage of scl.cages || []) {
     const raw = String(cage.value ?? '');
     const v = raw.toUpperCase();
-    const mMeta = raw.match(/^(title|author|rules|msgcorrect)\s*:\s*([\s\S]*)$/i);
+    const mMeta = raw.match(/^(title|author|rules|solution|msgcorrect)\s*:\s*([\s\S]*)$/i);
     if (v === 'FOGLIGHT') { (cage.cells || []).forEach(c => lights.push(c)); }
     else if (mMeta) {
       const key = mMeta[1].toLowerCase();
       if (key === 'title' && !meta.title) meta.title = mMeta[2].trim();
       if (key === 'author' && !meta.author) meta.author = mMeta[2].trim();
       if (key === 'rules' && !meta.rules) meta.rules = mMeta[2].trim();
+      if (key === 'solution' && !meta.solution) meta.solution = mMeta[2].trim();
     }
     else if (v.startsWith('FOG') || v === 'HIDDEN') {
       aviso.push('jaula especial no manejada: ' + v);

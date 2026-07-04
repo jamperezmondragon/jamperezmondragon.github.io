@@ -1,3 +1,23 @@
+# Recap — 2026-07-04 (8.ª sesión) — Curso relámpago verde + robustez móvil
+
+- **8 acertijos introductorios nuevos** (encontrados por Juan): la «Beginner's Guide to
+  Variant Sudokus» de Michael Lefkowitz (LMD 000GOJ) — killer, kropki, XV, flechas,
+  anticaballo, termómetros, renban y círculos contadores en tableros 4×4/6×6. Convertidos
+  con el pipeline (el conversor ahora extrae también la jaula `solution:`), traducidos con
+  2 pistas cada uno y colocados como rampa ● al inicio de la sección 1. Uniqueness no
+  verificada por decisión de Juan (soluciones del setter). Total del sitio: 57 acertijos.
+- **Arreglo móvil** (reporte de Juan: «no jala en Firefox móvil»): setPointerCapture sobre
+  SVG puede lanzar excepción en WebKit y matar todo el input — ahora va en try/catch, con
+  pointercancel, touch-action inline, fallback touch para navegadores sin Pointer Events y
+  touch-action: manipulation en botones. Verificado en Firefox+touch, Chromium móvil y
+  escritorio (WebKit no arranca en esta máquina: pendiente confirmación de Juan en su
+  teléfono).
+- Layout móvil estilo SudokuPad (media query ≤640px) y modos en columna junto al numpad.
+- Deploy de Pages atorado diagnosticado y destrabado (build legacy colgado; rebuild forzado
+  vía API).
+
+---
+
 # Recap — 2026-07-04 (7.ª sesión) — FASE C COMPLETA 🎉
 
 ## Qué se hizo

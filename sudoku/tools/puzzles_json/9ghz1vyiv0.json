@@ -1,0 +1,222 @@
+{
+ "id": "sxsm_MichaelLefkowitz_b70c848ceed2a82cf1676ba7c79bbd62",
+ "cages": [
+  {
+   "value": "title: Introduction to Thermometers"
+  },
+  {
+   "value": "author: Michael Lefkowitz"
+  },
+  {
+   "value": "rules: SUDOKU\n- Fill the grid with the digits 1-4 so that no digit repeats in a row, column, or box.\n\nTHERMOMETER\n- Digits increase in value along a thermometer, starting from the bulb end. They don't have to be adjacent, for example 1-3-4 or 2-4 would be just fine."
+  },
+  {
+   "value": "solution: 1234432131422413"
+  }
+ ],
+ "cellSize": 50,
+ "cells": [
+  [
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {}
+  ]
+ ],
+ "regions": [
+  [
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    1
+   ]
+  ],
+  [
+   [
+    0,
+    2
+   ],
+   [
+    0,
+    3
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    3
+   ]
+  ],
+  [
+   [
+    2,
+    0
+   ],
+   [
+    2,
+    1
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    3,
+    1
+   ]
+  ],
+  [
+   [
+    2,
+    2
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    2
+   ],
+   [
+    3,
+    3
+   ]
+  ]
+ ],
+ "lines": [
+  {
+   "wayPoints": [
+    [
+     3.5,
+     0.5
+    ],
+    [
+     1.5,
+     0.5
+    ]
+   ],
+   "color": "#ccc",
+   "thickness": 19
+  },
+  {
+   "wayPoints": [
+    [
+     2.5,
+     1.5
+    ],
+    [
+     3.5,
+     1.5
+    ]
+   ],
+   "color": "#ccc",
+   "thickness": 19
+  },
+  {
+   "wayPoints": [
+    [
+     1.5,
+     3.5
+    ],
+    [
+     3.5,
+     3.5
+    ]
+   ],
+   "color": "#ccc",
+   "thickness": 19
+  },
+  {
+   "wayPoints": [
+    [
+     0.5,
+     1.5
+    ],
+    [
+     1.5,
+     1.5
+    ]
+   ],
+   "color": "#ccc",
+   "thickness": 19
+  }
+ ],
+ "underlays": [
+  {
+   "stroke": "none",
+   "center": [
+    3.5,
+    0.5
+   ],
+   "width": 0.8,
+   "height": 0.8,
+   "rounded": true,
+   "backgroundColor": "#999"
+  },
+  {
+   "stroke": "none",
+   "center": [
+    2.5,
+    1.5
+   ],
+   "width": 0.8,
+   "height": 0.8,
+   "rounded": true,
+   "backgroundColor": "#999"
+  },
+  {
+   "stroke": "none",
+   "center": [
+    1.5,
+    3.5
+   ],
+   "width": 0.8,
+   "height": 0.8,
+   "rounded": true,
+   "backgroundColor": "#999"
+  },
+  {
+   "stroke": "none",
+   "center": [
+    0.5,
+    1.5
+   ],
+   "width": 0.8,
+   "height": 0.8,
+   "rounded": true,
+   "backgroundColor": "#999"
+  }
+ ]
+}

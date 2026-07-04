@@ -1,0 +1,334 @@
+{
+ "id": "sxsm_MichaelLefkowitz_4e137e47a88da17da269e61c98f70625",
+ "cages": [
+  {
+   "value": "title: Introduction to XV"
+  },
+  {
+   "value": "author: Michael Lefkowitz"
+  },
+  {
+   "value": "rules: SUDOKU\n- Fill the grid with the digits 1-6 so that no digit repeats in a row, column, or box.\n\nXV\n- Two cells separated by a V have values that sum to 5. Two cells separated by an X have values that sum to 10."
+  },
+  {
+   "value": "solution: 264153351246625314413625532461146532"
+  }
+ ],
+ "cellSize": 50,
+ "cells": [
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {
+    "value": 3
+   }
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ]
+ ],
+ "regions": [
+  [
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    1
+   ],
+   [
+    1,
+    2
+   ]
+  ],
+  [
+   [
+    0,
+    3
+   ],
+   [
+    0,
+    4
+   ],
+   [
+    0,
+    5
+   ],
+   [
+    1,
+    3
+   ],
+   [
+    1,
+    4
+   ],
+   [
+    1,
+    5
+   ]
+  ],
+  [
+   [
+    2,
+    0
+   ],
+   [
+    2,
+    1
+   ],
+   [
+    2,
+    2
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    3,
+    1
+   ],
+   [
+    3,
+    2
+   ]
+  ],
+  [
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    4
+   ],
+   [
+    2,
+    5
+   ],
+   [
+    3,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    3,
+    5
+   ]
+  ],
+  [
+   [
+    4,
+    0
+   ],
+   [
+    4,
+    1
+   ],
+   [
+    4,
+    2
+   ],
+   [
+    5,
+    0
+   ],
+   [
+    5,
+    1
+   ],
+   [
+    5,
+    2
+   ]
+  ],
+  [
+   [
+    4,
+    3
+   ],
+   [
+    4,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    5,
+    3
+   ],
+   [
+    5,
+    4
+   ],
+   [
+    5,
+    5
+   ]
+  ]
+ ],
+ "overlays": [
+  {
+   "stroke": "#000000",
+   "center": [
+    3,
+    0.5
+   ],
+   "width": 0.35,
+   "height": 0.35,
+   "text": "X",
+   "fontSize": 14,
+   "rounded": true,
+   "backgroundColor": "#FFFFFF"
+  },
+  {
+   "stroke": "#000000",
+   "center": [
+    3.5,
+    1
+   ],
+   "width": 0.35,
+   "height": 0.35,
+   "text": "V",
+   "fontSize": 14,
+   "rounded": true,
+   "backgroundColor": "#FFFFFF"
+  },
+  {
+   "stroke": "#000000",
+   "center": [
+    2,
+    5.5
+   ],
+   "width": 0.35,
+   "height": 0.35,
+   "text": "X",
+   "fontSize": 14,
+   "rounded": true,
+   "backgroundColor": "#FFFFFF"
+  },
+  {
+   "stroke": "#000000",
+   "center": [
+    2,
+    3.5
+   ],
+   "width": 0.35,
+   "height": 0.35,
+   "text": "V",
+   "fontSize": 14,
+   "rounded": true,
+   "backgroundColor": "#FFFFFF"
+  },
+  {
+   "stroke": "#000000",
+   "center": [
+    1,
+    0.5
+   ],
+   "width": 0.35,
+   "height": 0.35,
+   "text": "V",
+   "fontSize": 14,
+   "rounded": true,
+   "backgroundColor": "#FFFFFF"
+  },
+  {
+   "stroke": "#000000",
+   "center": [
+    5.5,
+    1
+   ],
+   "width": 0.35,
+   "height": 0.35,
+   "text": "V",
+   "fontSize": 14,
+   "rounded": true,
+   "backgroundColor": "#FFFFFF"
+  },
+  {
+   "stroke": "#000000",
+   "center": [
+    4,
+    2.5
+   ],
+   "width": 0.35,
+   "height": 0.35,
+   "text": "V",
+   "fontSize": 14,
+   "rounded": true,
+   "backgroundColor": "#FFFFFF"
+  },
+  {
+   "stroke": "#000000",
+   "center": [
+    4,
+    3.5
+   ],
+   "width": 0.35,
+   "height": 0.35,
+   "text": "X",
+   "fontSize": 14,
+   "rounded": true,
+   "backgroundColor": "#FFFFFF"
+  }
+ ]
+}

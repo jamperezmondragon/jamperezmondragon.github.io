@@ -1,0 +1,214 @@
+{
+ "id": "sxsm_MichaelLefkowitz_a96f69cc8e16131e63e9cbf6a155a745",
+ "cages": [
+  {
+   "value": "title: Introduction to Arrows"
+  },
+  {
+   "value": "author: Michael Lefkowitz"
+  },
+  {
+   "value": "rules: SUDOKU\n- Fill the grid with the digits 1-4 so that no digit repeats in a row, column, or box.\n\nARROWS\n- The digits on the line part of an arrow sum to the value indicated on its circle / obround.\n- The obround represents a two digit number, read from left to right."
+  },
+  {
+   "value": "solution: 1243342143122134"
+  }
+ ],
+ "cellSize": 50,
+ "cells": [
+  [
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {}
+  ]
+ ],
+ "regions": [
+  [
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    1
+   ]
+  ],
+  [
+   [
+    0,
+    2
+   ],
+   [
+    0,
+    3
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    3
+   ]
+  ],
+  [
+   [
+    2,
+    0
+   ],
+   [
+    2,
+    1
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    3,
+    1
+   ]
+  ],
+  [
+   [
+    2,
+    2
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    3,
+    2
+   ],
+   [
+    3,
+    3
+   ]
+  ]
+ ],
+ "overlays": [
+  {
+   "stroke": "none",
+   "center": [
+    0.5,
+    1
+   ],
+   "width": 1.82,
+   "height": 0.82,
+   "thickness": 1,
+   "rounded": true,
+   "backgroundColor": "#FFFFFF",
+   "borderColor": "#555"
+  },
+  {
+   "stroke": "none",
+   "center": [
+    3.5,
+    2.5
+   ],
+   "width": 0.82,
+   "height": 0.82,
+   "thickness": 1,
+   "rounded": true,
+   "backgroundColor": "#FFFFFF",
+   "borderColor": "#555"
+  },
+  {
+   "stroke": "none",
+   "center": [
+    2.5,
+    2.5
+   ],
+   "width": 0.82,
+   "height": 0.82,
+   "thickness": 1,
+   "rounded": true,
+   "backgroundColor": "#FFFFFF",
+   "borderColor": "#555"
+  }
+ ],
+ "arrows": [
+  {
+   "wayPoints": [
+    [
+     0.5,
+     1.899
+    ],
+    [
+     0.5,
+     2.5
+    ],
+    [
+     2.5,
+     0.5
+    ]
+   ],
+   "headLength": 0.3,
+   "color": "#aaa",
+   "thickness": 3
+  },
+  {
+   "wayPoints": [
+    [
+     3.218,
+     2.782
+    ],
+    [
+     2.5,
+     3.5
+    ],
+    [
+     1.5,
+     3.5
+    ]
+   ],
+   "headLength": 0.3,
+   "color": "#aaa",
+   "thickness": 3
+  },
+  {
+   "wayPoints": [
+    [
+     2.782,
+     2.218
+    ],
+    [
+     3.5,
+     1.5
+    ]
+   ],
+   "headLength": 0.3,
+   "color": "#aaa",
+   "thickness": 3
+  }
+ ]
+}
