@@ -395,8 +395,8 @@ html.tema-oscuro polyline.deco-oscura,
 html.tema-oscuro line.deco-oscura { stroke: #e8e6e3; }
 html.tema-oscuro rect.deco-clara,
 html.tema-oscuro ellipse.deco-clara {
-  fill: #151312;
-  stroke: #151312;
+  fill: #24211f;   /* pizarra: el lienzo del tablero, no la página */
+  stroke: #24211f;
 }
 html.tema-oscuro rect.deco-camuflaje-int,
 html.tema-oscuro ellipse.deco-camuflaje-int {

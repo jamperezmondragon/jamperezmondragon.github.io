@@ -92,23 +92,71 @@
       return e;
     }
 
+    // ---- helpers de color y posición (los usa el escaneo y la decoración)
+    function esColorOscuro(c) {
+      if (!c || typeof c !== 'string' || c[0] !== '#') return false;
+      var h = c.slice(1);
+      if (h.length === 3) h = h[0]+h[0]+h[1]+h[1]+h[2]+h[2];
+      var r = parseInt(h.slice(0,2),16), g = parseInt(h.slice(2,4),16), b = parseInt(h.slice(4,6),16);
+      return (0.2126*r + 0.7152*g + 0.0722*b) < 128;
+    }
+    function esClaro(c) { return c && !esColorOscuro(c); }
+    function centroFuera(c) {
+      return c && (c[0] < 0 || c[1] < 0 || c[0] > N || c[1] > N);
+    }
+    function puntosFuera(wp) {
+      return (wp || []).some(function (p) { return p[0] < 0 || p[1] < 0 || p[0] > N || p[1] > N; });
+    }
+    // máscara de camuflaje: forma clara exterior, sin texto y sin borde
+    // propio — existe solo para tapar cosas sobre fondo claro
+    function esMascara(o) {
+      if (!o.center || !centroFuera(o.center)) return false;
+      if (!esClaro(o.backgroundColor)) return false;
+      if (o.text !== undefined && o.text !== '') return false;
+      var b = (o.borderColor || '').toLowerCase().slice(0, 7);
+      var f = (o.backgroundColor || '').toLowerCase().slice(0, 7);
+      return !b || b === f;
+    }
+
     // Margen dinámico: las pistas exteriores (little killers, sumas de
     // Sliding Doors, decoración) viven fuera del tablero — el lienzo crece
-    // para no recortarlas.
+    // para no recortarlas. Las máscaras de camuflaje NO cuentan: no son
+    // contenido y solo encogerían el tablero.
+    // Dos acumuladores: contenido informativo (textos, líneas, globos con
+    // número) entra completo; las formas sueltas sin texto (huevos, adornos
+    // que se asoman) se recortan a 0.45 casillas, como en SudokuPad.
     var ext = { minX: 0, minY: 0, maxX: N, maxY: N };
-    function extend(y, x, halfW, halfH) {
-      ext.minX = Math.min(ext.minX, x - halfW); ext.maxX = Math.max(ext.maxX, x + halfW);
-      ext.minY = Math.min(ext.minY, y - halfH); ext.maxY = Math.max(ext.maxY, y + halfH);
+    var extForma = { minX: 0, minY: 0, maxX: N, maxY: N };
+    function extend(e, y, x, halfW, halfH) {
+      e.minX = Math.min(e.minX, x - halfW); e.maxX = Math.max(e.maxX, x + halfW);
+      e.minY = Math.min(e.minY, y - halfH); e.maxY = Math.max(e.maxY, y + halfH);
     }
     (function scanVisuals() {
       var v = P.visuals || {};
-      (v.underlays || []).concat(v.overlays || []).forEach(function (o) {
-        if (!o.center) return;
-        extend(o.center[0], o.center[1], (o.width || 0.5) / 2 + 0.2, (o.height || 0.5) / 2 + 0.2);
+      var todas = (v.underlays || []).concat(v.overlays || []);
+      var textos = todas.filter(function (o) {
+        return o.center && o.text !== undefined && o.text !== '';
+      });
+      function cercaDeTexto(o) {
+        return textos.some(function (t) {
+          return Math.abs(t.center[0] - o.center[0]) < 0.6 &&
+                 Math.abs(t.center[1] - o.center[1]) < 0.6;
+        });
+      }
+      todas.forEach(function (o) {
+        if (!o.center || esMascara(o)) return;
+        var hw = (o.width || 0.5) / 2 + 0.2, hh = (o.height || 0.5) / 2 + 0.2;
+        var informativo = (o.text !== undefined && o.text !== '') || cercaDeTexto(o);
+        extend(informativo ? ext : extForma, o.center[0], o.center[1], hw, hh);
       });
       (v.lines || []).concat(v.arrows || []).forEach(function (l) {
-        (l.wayPoints || []).forEach(function (wp) { extend(wp[0], wp[1], 0.3, 0.3); });
+        (l.wayPoints || []).forEach(function (wp) { extend(ext, wp[0], wp[1], 0.3, 0.3); });
       });
+      // formas sueltas: máximo 0.45 casillas fuera del tablero
+      ext.minX = Math.min(ext.minX, Math.max(extForma.minX, -0.45));
+      ext.minY = Math.min(ext.minY, Math.max(extForma.minY, -0.45));
+      ext.maxX = Math.max(ext.maxX, Math.min(extForma.maxX, N + 0.45));
+      ext.maxY = Math.max(ext.maxY, Math.min(extForma.maxY, N + 0.45));
     })();
     var mL = Math.max(M, -ext.minX * CS + 4), mT = Math.max(M, -ext.minY * CS + 4);
     var mR = Math.max(M, (ext.maxX - N) * CS + 4), mB = Math.max(M, (ext.maxY - N) * CS + 4);
@@ -204,20 +252,6 @@
     // La decoración FUERA del tablero (pistas exteriores) se marca con
     // clases para que el tema oscuro pueda aclarar lo negro y fundir los
     // parches blancos con el fondo, sin tocar la decoración interior.
-    function esColorOscuro(c) {
-      if (!c || typeof c !== 'string' || c[0] !== '#') return false;
-      var h = c.slice(1);
-      if (h.length === 3) h = h[0]+h[0]+h[1]+h[1]+h[2]+h[2];
-      var r = parseInt(h.slice(0,2),16), g = parseInt(h.slice(2,4),16), b = parseInt(h.slice(4,6),16);
-      return (0.2126*r + 0.7152*g + 0.0722*b) < 128;
-    }
-    function centroFuera(c) {
-      return c && (c[0] < 0 || c[1] < 0 || c[0] > N || c[1] > N);
-    }
-    function puntosFuera(wp) {
-      return (wp || []).some(function (p) { return p[0] < 0 || p[1] < 0 || p[0] > N || p[1] > N; });
-    }
-    function esClaro(c) { return c && !esColorOscuro(c); }
     // ¿esta forma clara SIGUE clara en tema oscuro?
     // - interiores: siempre (son parte del acertijo: círculos V/X, quads…)
     // - exteriores: solo si son "globo" con borde propio distinto; los
