@@ -1,0 +1,283 @@
+{
+ "id": "sxsm_gdc_3f813161a30a8546993f6522e12d4d02",
+ "metadata": {
+  "source": "SudokuMaker v2026.01.03-f5c5249",
+  "title": "Onimollif",
+  "author": "gdc",
+  "rules": "1-9 FILLOMINO - Fill a digit from 1-9 in every cell. Orthogonally connected groups of cells with the same digit must contain exactly as many cells as that digit indicates.\n\nNABNER - A digit on a line must differ by 2 or more from any other digit on the same line.",
+  "solution": "133355599175559975155975399971339777",
+  "extendedChecks": [
+   {
+    "type": "colorSolution",
+    "name": "fillomino",
+    "value": "011122366792336692433692566698556999nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn"
+   }
+  ]
+ },
+ "cages": [],
+ "cells": [
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ]
+ ],
+ "regions": [],
+ "lines": [
+  {
+   "wayPoints": [
+    [
+     2.5,
+     0.5
+    ],
+    [
+     4.5,
+     0.5
+    ],
+    [
+     4.5,
+     1.5
+    ]
+   ],
+   "color": "#ffffffed",
+   "thickness": 12.8
+  },
+  {
+   "wayPoints": [
+    [
+     1.5,
+     2.5
+    ],
+    [
+     1.5,
+     3.5
+    ],
+    [
+     0.5,
+     3.5
+    ],
+    [
+     0.5,
+     4.5
+    ],
+    [
+     1.5,
+     4.5
+    ],
+    [
+     1.5,
+     3.5
+    ]
+   ],
+   "color": "#ffffffed",
+   "thickness": 12.8
+  },
+  {
+   "wayPoints": [
+    [
+     3.5,
+     2.5
+    ],
+    [
+     3.5,
+     3.5
+    ]
+   ],
+   "color": "#ffffffed",
+   "thickness": 12.8
+  },
+  {
+   "wayPoints": [
+    [
+     3.5,
+     5.5
+    ],
+    [
+     4.5,
+     5.5
+    ],
+    [
+     4.5,
+     4.5
+    ]
+   ],
+   "color": "#ffffffed",
+   "thickness": 12.8
+  },
+  {
+   "wayPoints": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     1.5,
+     0.5
+    ],
+    [
+     1.5,
+     1.5
+    ],
+    [
+     0.5,
+     1.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "color": "#ffffffed",
+   "thickness": 12.8
+  },
+  {
+   "wayPoints": [
+    [
+     2.5,
+     0.5
+    ],
+    [
+     4.5,
+     0.5
+    ],
+    [
+     4.5,
+     1.5
+    ]
+   ],
+   "color": "#ebe698ff",
+   "thickness": 9.6
+  },
+  {
+   "wayPoints": [
+    [
+     1.5,
+     2.5
+    ],
+    [
+     1.5,
+     3.5
+    ],
+    [
+     0.5,
+     3.5
+    ],
+    [
+     0.5,
+     4.5
+    ],
+    [
+     1.5,
+     4.5
+    ],
+    [
+     1.5,
+     3.5
+    ]
+   ],
+   "color": "#ebe698ff",
+   "thickness": 9.6
+  },
+  {
+   "wayPoints": [
+    [
+     3.5,
+     2.5
+    ],
+    [
+     3.5,
+     3.5
+    ]
+   ],
+   "color": "#ebe698ff",
+   "thickness": 9.6
+  },
+  {
+   "wayPoints": [
+    [
+     3.5,
+     5.5
+    ],
+    [
+     4.5,
+     5.5
+    ],
+    [
+     4.5,
+     4.5
+    ]
+   ],
+   "color": "#ebe698ff",
+   "thickness": 9.6
+  },
+  {
+   "wayPoints": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     1.5,
+     0.5
+    ],
+    [
+     1.5,
+     1.5
+    ],
+    [
+     0.5,
+     1.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "color": "#ebe698ff",
+   "thickness": 9.6
+  }
+ ]
+}

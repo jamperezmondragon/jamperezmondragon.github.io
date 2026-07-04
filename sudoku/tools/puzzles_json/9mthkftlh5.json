@@ -1,0 +1,399 @@
+{
+ "id": "sxsm_Kaktuslav_ceb9b6b3284bd1d2276bfb1980c5a64a",
+ "metadata": {
+  "source": "SudokuMaker v2026.02.22-5b9808d",
+  "title": "10X+Y",
+  "author": "Kaktuslav",
+  "rules": "Normal 6×6 sudoku rules apply. Digits along an arrow sum to the two-digit number shown in the attached pill (read left to right in base 10).",
+  "solution": "156342243516412653635124321465564231"
+ },
+ "cages": [],
+ "cells": [
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ]
+ ],
+ "regions": [
+  [
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    1
+   ],
+   [
+    1,
+    2
+   ]
+  ],
+  [
+   [
+    0,
+    3
+   ],
+   [
+    0,
+    4
+   ],
+   [
+    0,
+    5
+   ],
+   [
+    1,
+    3
+   ],
+   [
+    1,
+    4
+   ],
+   [
+    1,
+    5
+   ]
+  ],
+  [
+   [
+    2,
+    0
+   ],
+   [
+    2,
+    1
+   ],
+   [
+    2,
+    2
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    3,
+    1
+   ],
+   [
+    3,
+    2
+   ]
+  ],
+  [
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    4
+   ],
+   [
+    2,
+    5
+   ],
+   [
+    3,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    3,
+    5
+   ]
+  ],
+  [
+   [
+    4,
+    0
+   ],
+   [
+    4,
+    1
+   ],
+   [
+    4,
+    2
+   ],
+   [
+    5,
+    0
+   ],
+   [
+    5,
+    1
+   ],
+   [
+    5,
+    2
+   ]
+  ],
+  [
+   [
+    4,
+    3
+   ],
+   [
+    4,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    5,
+    3
+   ],
+   [
+    5,
+    4
+   ],
+   [
+    5,
+    5
+   ]
+  ]
+ ],
+ "overlays": [
+  {
+   "center": [
+    0.5,
+    1
+   ],
+   "width": 1.85,
+   "height": 0.85,
+   "thickness": 3.2,
+   "angle": 0,
+   "rounded": true,
+   "backgroundColor": "#FFFFFF",
+   "borderColor": "#63bb00ff"
+  },
+  {
+   "center": [
+    1.5,
+    1
+   ],
+   "width": 1.85,
+   "height": 0.85,
+   "thickness": 3.2,
+   "angle": 0,
+   "rounded": true,
+   "backgroundColor": "#FFFFFF",
+   "borderColor": "#63bb00ff"
+  },
+  {
+   "center": [
+    4.5,
+    1
+   ],
+   "width": 1.85,
+   "height": 0.85,
+   "thickness": 3.2,
+   "angle": 0,
+   "rounded": true,
+   "backgroundColor": "#FFFFFF",
+   "borderColor": "#63bb00ff"
+  },
+  {
+   "center": [
+    3.5,
+    4
+   ],
+   "width": 1.85,
+   "height": 0.85,
+   "thickness": 3.2,
+   "angle": 0,
+   "rounded": true,
+   "backgroundColor": "#FFFFFF",
+   "borderColor": "#63bb00ff"
+  },
+  {
+   "center": [
+    1.5,
+    5
+   ],
+   "width": 1.85,
+   "height": 0.85,
+   "thickness": 3.2,
+   "angle": 0,
+   "rounded": true,
+   "backgroundColor": "#FFFFFF",
+   "borderColor": "#63bb00ff"
+  }
+ ],
+ "arrows": [
+  {
+   "wayPoints": [
+    [
+     0.5,
+     1.899
+    ],
+    [
+     0.5,
+     5.5
+    ]
+   ],
+   "headLength": 0.35,
+   "color": "#63bb00ff",
+   "thickness": 3.2
+  },
+  {
+   "wayPoints": [
+    [
+     1.5,
+     1.899
+    ],
+    [
+     1.5,
+     2.5
+    ],
+    [
+     2.5,
+     2.5
+    ],
+    [
+     2.5,
+     0.5
+    ],
+    [
+     3.5,
+     0.5
+    ],
+    [
+     3.5,
+     2.5
+    ]
+   ],
+   "headLength": 0.35,
+   "color": "#63bb00ff",
+   "thickness": 3.2
+  },
+  {
+   "wayPoints": [
+    [
+     4.5,
+     1.899
+    ],
+    [
+     4.5,
+     4.5
+    ],
+    [
+     5.5,
+     5.5
+    ],
+    [
+     5.5,
+     0.5
+    ]
+   ],
+   "headLength": 0.35,
+   "color": "#63bb00ff",
+   "thickness": 3.2
+  },
+  {
+   "wayPoints": [
+    [
+     3.782,
+     4.782
+    ],
+    [
+     4.5,
+     5.5
+    ],
+    [
+     2.5,
+     5.5
+    ]
+   ],
+   "headLength": 0.35,
+   "color": "#63bb00ff",
+   "thickness": 3.2
+  },
+  {
+   "wayPoints": [
+    [
+     1.5,
+     4.101
+    ],
+    [
+     1.5,
+     3.5
+    ],
+    [
+     2.5,
+     3.5
+    ],
+    [
+     2.5,
+     4.5
+    ]
+   ],
+   "headLength": 0.35,
+   "color": "#63bb00ff",
+   "thickness": 3.2
+  }
+ ]
+}

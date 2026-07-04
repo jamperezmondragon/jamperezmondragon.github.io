@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sudokus</title>
+  <link rel="stylesheet" href="sudoku.css">
+  <script src="sudoku.js"></script>
+</head>
+<body>
+  <header>
+    <p class="site-link"><a href="index.html">← Sudokus</a></p>
+    <h1 id="titulo"></h1>
+    <p class="autor" id="autor"></p>
+  </header>
+
+  <main class="jugador">
+    <div id="tablero"></div>
+
+    <div class="panel">
+      <div class="modos">
+        <button data-modo="digit" title="Dígitos (Z)">123</button>
+        <button data-modo="corner" title="Esquinas (X)">Esquina</button>
+        <button data-modo="center" title="Centro (C)">Centro</button>
+        <button data-modo="color" title="Colores (V)">Color</button>
+        <button data-modo="pen" title="Pluma (P)">Pluma ✏</button>
+      </div>
+      <div class="digitos">
+        <button data-digito="1">1</button>
+        <button data-digito="2">2</button>
+        <button data-digito="3">3</button>
+        <button data-digito="4">4</button>
+        <button data-digito="5">5</button>
+        <button data-digito="6">6</button>
+        <button data-digito="7">7</button>
+        <button data-digito="8">8</button>
+        <button data-digito="9">9</button>
+        <button data-digito="0" class="solo-cero">0</button>
+        <button id="borrar" class="ancho-cero" title="Borrar (Supr)" aria-label="Borrar">⌫</button>
+      </div>
+      <div class="acciones">
+        <button id="deshacer" title="Deshacer (Ctrl+Z)" aria-label="Deshacer">↶</button>
+        <button id="rehacer" title="Rehacer (Ctrl+Y)" aria-label="Rehacer">↷</button>
+        <button id="revisar" title="Revisar" aria-label="Revisar">✓</button>
+        <button id="reiniciar" title="Reiniciar" aria-label="Reiniciar">⟳</button>
+        <button id="enfocar" title="Modo enfocado: ocultar las reglas" aria-label="Modo enfocado">👁</button>
+      </div>
+      <p class="mensaje">Selecciona casillas y escribe tus dígitos.</p>
+      <details class="atajos">
+        <summary>Atajos de teclado</summary>
+        <p>Atajos: <kbd>Z</kbd> dígitos · <kbd>X</kbd> esquinas ·
+        <kbd>C</kbd> centro · <kbd>V</kbd> colores · <kbd>P</kbd> pluma ·
+        <kbd>Espacio</kbd> cambia de modo · flechas para moverte ·
+        <kbd>Shift</kbd>+clic para seleccionar varias casillas.
+        La pluma dibuja círculos (clic), líneas entre casillas (arrastre de
+        centro a centro) y fronteras (arrastre por los bordes).</p>
+      </details>
+    </div>
+  </main>
+
+  <section class="reglas-seccion" id="seccion-reglas">
+    <h2>Reglas</h2>
+    <p id="reglas" class="reglas"></p>
+  </section>
+
+  <section class="reglas-seccion">
+    <h2>¿Atorado? Pistas</h2>
+    <div id="pistas"></div>
+  </section>
+
+  <footer>
+    <p><a href="index.html">← Todos los sudokus</a></p>
+    <p>Cada sudoku es de su autor; aquí se hospeda con fines educativos.
+      <a id="enlace-original" href="#">Versión original</a>.</p>
+  </footer>
+
+  <script>
+    (function () {
+      var id = new URLSearchParams(location.search).get('p');
+      if (!id || !/^[\w-]+$/.test(id)) {
+        document.getElementById('titulo').textContent = 'Sudoku no encontrado';
+        return;
+      }
+      var s = document.createElement('script');
+      s.src = 'puzzles/' + id + '.js';
+      s.onload = function () { window.iniciarSudoku(); };
+      s.onerror = function () {
+        document.getElementById('titulo').textContent = 'Sudoku no encontrado';
+        document.querySelector('.mensaje').textContent =
+          'No existe el acertijo «' + id + '». Regresa a la lista.';
+      };
+      document.head.appendChild(s);
+    })();
+  </script>
+</body>
+</html>

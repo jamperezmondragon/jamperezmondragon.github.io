@@ -1,0 +1,1273 @@
+{
+ "id": "sxsm_gdc_b39ebfadf72ba04fd2d2308548e1b7db",
+ "metadata": {
+  "source": "Sudoku Maker v2025.10.19-5042c01",
+  "title": "Silent Sweeper",
+  "author": "gdc",
+  "rules": "Normal 6x6 Sudoku rules apply. Place the digits 1-6 exactly once in every row, column, and 2x3 box.\n\nMein Sweeper: A digit in a circle counts the number of the (up to 8) surrounding digits that differ by 3 or more from it. For example: If r2c3 is 2, then exactly two of the eight cells surrounding it contain a 5 or 6.",
+  "solution": "321456645213532164164532213645456321"
+ },
+ "cages": [],
+ "cells": [
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ]
+ ],
+ "regions": [
+  [
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    1
+   ],
+   [
+    1,
+    2
+   ]
+  ],
+  [
+   [
+    0,
+    3
+   ],
+   [
+    0,
+    4
+   ],
+   [
+    0,
+    5
+   ],
+   [
+    1,
+    3
+   ],
+   [
+    1,
+    4
+   ],
+   [
+    1,
+    5
+   ]
+  ],
+  [
+   [
+    2,
+    0
+   ],
+   [
+    2,
+    1
+   ],
+   [
+    2,
+    2
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    3,
+    1
+   ],
+   [
+    3,
+    2
+   ]
+  ],
+  [
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    4
+   ],
+   [
+    2,
+    5
+   ],
+   [
+    3,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    3,
+    5
+   ]
+  ],
+  [
+   [
+    4,
+    0
+   ],
+   [
+    4,
+    1
+   ],
+   [
+    4,
+    2
+   ],
+   [
+    5,
+    0
+   ],
+   [
+    5,
+    1
+   ],
+   [
+    5,
+    2
+   ]
+  ],
+  [
+   [
+    4,
+    3
+   ],
+   [
+    4,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    5,
+    3
+   ],
+   [
+    5,
+    4
+   ],
+   [
+    5,
+    5
+   ]
+  ]
+ ],
+ "lines": [
+  {
+   "wayPoints": [
+    [
+     0.5,
+     1.79
+    ],
+    [
+     0.5,
+     1.92
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     0.705,
+     1.705
+    ],
+    [
+     0.797,
+     1.797
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     0.85,
+     1.5
+    ],
+    [
+     0.92,
+     1.5
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     0.747,
+     1.253
+    ],
+    [
+     0.797,
+     1.203
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     0.5,
+     1.15
+    ],
+    [
+     0.5,
+     1.08
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     0.253,
+     1.253
+    ],
+    [
+     0.203,
+     1.203
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     0.15,
+     1.5
+    ],
+    [
+     0.08,
+     1.5
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     0.295,
+     1.705
+    ],
+    [
+     0.203,
+     1.797
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     1.5,
+     2.79
+    ],
+    [
+     1.5,
+     2.92
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     1.705,
+     2.705
+    ],
+    [
+     1.797,
+     2.797
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     1.85,
+     2.5
+    ],
+    [
+     1.92,
+     2.5
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     1.747,
+     2.253
+    ],
+    [
+     1.797,
+     2.203
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     1.5,
+     2.15
+    ],
+    [
+     1.5,
+     2.08
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     1.253,
+     2.253
+    ],
+    [
+     1.203,
+     2.203
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     1.15,
+     2.5
+    ],
+    [
+     1.08,
+     2.5
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     1.295,
+     2.705
+    ],
+    [
+     1.203,
+     2.797
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     3.5,
+     1.79
+    ],
+    [
+     3.5,
+     1.92
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     3.705,
+     1.705
+    ],
+    [
+     3.797,
+     1.797
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     3.85,
+     1.5
+    ],
+    [
+     3.92,
+     1.5
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     3.747,
+     1.253
+    ],
+    [
+     3.797,
+     1.203
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     3.5,
+     1.15
+    ],
+    [
+     3.5,
+     1.08
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     3.253,
+     1.253
+    ],
+    [
+     3.203,
+     1.203
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     3.15,
+     1.5
+    ],
+    [
+     3.08,
+     1.5
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     3.295,
+     1.705
+    ],
+    [
+     3.203,
+     1.797
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     4.5,
+     2.79
+    ],
+    [
+     4.5,
+     2.92
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     4.705,
+     2.705
+    ],
+    [
+     4.797,
+     2.797
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     4.85,
+     2.5
+    ],
+    [
+     4.92,
+     2.5
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     4.747,
+     2.253
+    ],
+    [
+     4.797,
+     2.203
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     4.5,
+     2.15
+    ],
+    [
+     4.5,
+     2.08
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     4.253,
+     2.253
+    ],
+    [
+     4.203,
+     2.203
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     4.15,
+     2.5
+    ],
+    [
+     4.08,
+     2.5
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     4.295,
+     2.705
+    ],
+    [
+     4.203,
+     2.797
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     2.5,
+     4.79
+    ],
+    [
+     2.5,
+     4.92
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     2.705,
+     4.705
+    ],
+    [
+     2.797,
+     4.797
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     2.85,
+     4.5
+    ],
+    [
+     2.92,
+     4.5
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     2.747,
+     4.253
+    ],
+    [
+     2.797,
+     4.203
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     2.5,
+     4.15
+    ],
+    [
+     2.5,
+     4.08
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     2.253,
+     4.253
+    ],
+    [
+     2.203,
+     4.203
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     2.15,
+     4.5
+    ],
+    [
+     2.08,
+     4.5
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     2.295,
+     4.705
+    ],
+    [
+     2.203,
+     4.797
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     3.5,
+     5.79
+    ],
+    [
+     3.5,
+     5.92
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     3.705,
+     5.705
+    ],
+    [
+     3.797,
+     5.797
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     3.85,
+     5.5
+    ],
+    [
+     3.92,
+     5.5
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     3.747,
+     5.253
+    ],
+    [
+     3.797,
+     5.203
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     3.5,
+     5.15
+    ],
+    [
+     3.5,
+     5.08
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     3.253,
+     5.253
+    ],
+    [
+     3.203,
+     5.203
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     3.15,
+     5.5
+    ],
+    [
+     3.08,
+     5.5
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     3.295,
+     5.705
+    ],
+    [
+     3.203,
+     5.797
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     4.5,
+     0.79
+    ],
+    [
+     4.5,
+     0.92
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     4.705,
+     0.705
+    ],
+    [
+     4.797,
+     0.797
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     4.85,
+     0.5
+    ],
+    [
+     4.92,
+     0.5
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     4.747,
+     0.253
+    ],
+    [
+     4.797,
+     0.203
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     4.5,
+     0.15
+    ],
+    [
+     4.5,
+     0.08
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     4.253,
+     0.253
+    ],
+    [
+     4.203,
+     0.203
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     4.15,
+     0.5
+    ],
+    [
+     4.08,
+     0.5
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  },
+  {
+   "wayPoints": [
+    [
+     4.295,
+     0.705
+    ],
+    [
+     4.203,
+     0.797
+    ]
+   ],
+   "color": "#9eee8fff",
+   "thickness": 4.48
+  }
+ ],
+ "overlays": [
+  {
+   "center": [
+    0.5,
+    1.5
+   ],
+   "width": 0.68,
+   "height": 0.68,
+   "thickness": 3.84,
+   "angle": 0,
+   "rounded": true,
+   "borderColor": "#9eee8fff"
+  },
+  {
+   "center": [
+    3.5,
+    1.5
+   ],
+   "width": 0.68,
+   "height": 0.68,
+   "thickness": 3.84,
+   "angle": 0,
+   "rounded": true,
+   "borderColor": "#9eee8fff"
+  },
+  {
+   "center": [
+    4.5,
+    0.5
+   ],
+   "width": 0.68,
+   "height": 0.68,
+   "thickness": 3.84,
+   "angle": 0,
+   "rounded": true,
+   "borderColor": "#9eee8fff"
+  },
+  {
+   "center": [
+    4.5,
+    2.5
+   ],
+   "width": 0.68,
+   "height": 0.68,
+   "thickness": 3.84,
+   "angle": 0,
+   "rounded": true,
+   "borderColor": "#9eee8fff"
+  },
+  {
+   "center": [
+    1.5,
+    2.5
+   ],
+   "width": 0.68,
+   "height": 0.68,
+   "thickness": 3.84,
+   "angle": 0,
+   "rounded": true,
+   "borderColor": "#9eee8fff"
+  },
+  {
+   "center": [
+    2.5,
+    4.5
+   ],
+   "width": 0.68,
+   "height": 0.68,
+   "thickness": 3.84,
+   "angle": 0,
+   "rounded": true,
+   "borderColor": "#9eee8fff"
+  },
+  {
+   "center": [
+    3.5,
+    5.5
+   ],
+   "width": 0.68,
+   "height": 0.68,
+   "thickness": 3.84,
+   "angle": 0,
+   "rounded": true,
+   "borderColor": "#9eee8fff"
+  },
+  {
+   "center": [
+    0.5,
+    1.5
+   ],
+   "width": 0.58,
+   "height": 0.58,
+   "thickness": 3.84,
+   "angle": 0,
+   "rounded": true,
+   "backgroundColor": "#ffffffb8"
+  },
+  {
+   "center": [
+    3.5,
+    1.5
+   ],
+   "width": 0.58,
+   "height": 0.58,
+   "thickness": 3.84,
+   "angle": 0,
+   "rounded": true,
+   "backgroundColor": "#ffffffb8"
+  },
+  {
+   "center": [
+    4.5,
+    0.5
+   ],
+   "width": 0.58,
+   "height": 0.58,
+   "thickness": 3.84,
+   "angle": 0,
+   "rounded": true,
+   "backgroundColor": "#ffffffb8"
+  },
+  {
+   "center": [
+    4.5,
+    2.5
+   ],
+   "width": 0.58,
+   "height": 0.58,
+   "thickness": 3.84,
+   "angle": 0,
+   "rounded": true,
+   "backgroundColor": "#ffffffb8"
+  },
+  {
+   "center": [
+    1.5,
+    2.5
+   ],
+   "width": 0.58,
+   "height": 0.58,
+   "thickness": 3.84,
+   "angle": 0,
+   "rounded": true,
+   "backgroundColor": "#ffffffb8"
+  },
+  {
+   "center": [
+    2.5,
+    4.5
+   ],
+   "width": 0.58,
+   "height": 0.58,
+   "thickness": 3.84,
+   "angle": 0,
+   "rounded": true,
+   "backgroundColor": "#ffffffb8"
+  },
+  {
+   "center": [
+    3.5,
+    5.5
+   ],
+   "width": 0.58,
+   "height": 0.58,
+   "thickness": 3.84,
+   "angle": 0,
+   "rounded": true,
+   "backgroundColor": "#ffffffb8"
+  },
+  {
+   "center": [
+    0.4,
+    1.4
+   ],
+   "width": 0,
+   "height": 0.426,
+   "stroke": "#ffffff",
+   "text": "#",
+   "fontSize": 12,
+   "color": "#b5e8afff",
+   "angle": 0,
+   "rounded": true
+  },
+  {
+   "center": [
+    1.4,
+    2.4
+   ],
+   "width": 0,
+   "height": 0.426,
+   "stroke": "#ffffff",
+   "text": "#",
+   "fontSize": 12,
+   "color": "#b5e8afff",
+   "angle": 0,
+   "rounded": true
+  },
+  {
+   "center": [
+    2.4,
+    4.4
+   ],
+   "width": 0,
+   "height": 0.426,
+   "stroke": "#ffffff",
+   "text": "#",
+   "fontSize": 12,
+   "color": "#b5e8afff",
+   "angle": 0,
+   "rounded": true
+  },
+  {
+   "center": [
+    3.4,
+    5.4
+   ],
+   "width": 0,
+   "height": 0.426,
+   "stroke": "#ffffff",
+   "text": "#",
+   "fontSize": 12,
+   "color": "#b5e8afff",
+   "angle": 0,
+   "rounded": true
+  },
+  {
+   "center": [
+    4.4,
+    2.4
+   ],
+   "width": 0,
+   "height": 0.426,
+   "stroke": "#ffffff",
+   "text": "#",
+   "fontSize": 12,
+   "color": "#b5e8afff",
+   "angle": 0,
+   "rounded": true
+  },
+  {
+   "center": [
+    4.4,
+    0.4
+   ],
+   "width": 0,
+   "height": 0.426,
+   "stroke": "#ffffff",
+   "text": "#",
+   "fontSize": 12,
+   "color": "#b5e8afff",
+   "angle": 0,
+   "rounded": true
+  },
+  {
+   "center": [
+    3.4,
+    1.4
+   ],
+   "width": 0,
+   "height": 0.426,
+   "stroke": "#ffffff",
+   "text": "#",
+   "fontSize": 12,
+   "color": "#b5e8afff",
+   "angle": 0,
+   "rounded": true
+  }
+ ]
+}

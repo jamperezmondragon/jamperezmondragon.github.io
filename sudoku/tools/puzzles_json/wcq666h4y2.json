@@ -1,0 +1,1300 @@
+{
+ "id": "sxsm_Kaktuslav_07725916618b2f308bd650fc13af4f3e",
+ "metadata": {
+  "source": "Sudoku Maker v2025.07.05-57cd531",
+  "title": "Hamiltonian Killer Thermo",
+  "author": "Kaktuslav",
+  "rules": "Place the digits 1–9 exactly once in each row and each column of the grid. \nDraw a directed path that moves orthogonally between cell centers and visits every cell of the grid exactly once. Each of the 27 cages can be entered by the path at most once (i.e. the path must visit all cells of a cage in a single continuous run before leaving it).\nThe path acts as a thermometer with respect to cage totals: as the path moves away from its starting cell, the sums of the cages it visits must strictly increase.\nDigits may not repeat within a cage.",
+  "solution": "231469587123645879512378964346257198687934215795812436864193752958726341479581623"
+ },
+ "cages": [
+  {
+   "cells": [
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "outlineC": "#6a1b9aff"
+  },
+  {
+   "cells": [
+    [
+     0,
+     0
+    ]
+   ],
+   "outlineC": "#6a1b9aff"
+  },
+  {
+   "cells": [
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "outlineC": "#6a1b9aff"
+  },
+  {
+   "cells": [
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "outlineC": "#6a1b9aff"
+  },
+  {
+   "cells": [
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "outlineC": "#6a1b9aff"
+  },
+  {
+   "cells": [
+    [
+     3,
+     0
+    ],
+    [
+     3,
+     1
+    ]
+   ],
+   "outlineC": "#6a1b9aff"
+  },
+  {
+   "cells": [
+    [
+     3,
+     2
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "outlineC": "#6a1b9aff"
+  },
+  {
+   "cells": [
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "outlineC": "#6a1b9aff"
+  },
+  {
+   "cells": [
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     4
+    ]
+   ],
+   "outlineC": "#6a1b9aff"
+  },
+  {
+   "cells": [
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     4
+    ]
+   ],
+   "outlineC": "#6a1b9aff"
+  },
+  {
+   "cells": [
+    [
+     3,
+     4
+    ],
+    [
+     3,
+     5
+    ]
+   ],
+   "outlineC": "#6a1b9aff"
+  },
+  {
+   "cells": [
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     5
+    ]
+   ],
+   "outlineC": "#6a1b9aff"
+  },
+  {
+   "cells": [
+    [
+     0,
+     5
+    ],
+    [
+     0,
+     6
+    ]
+   ],
+   "outlineC": "#6a1b9aff"
+  },
+  {
+   "cells": [
+    [
+     0,
+     7
+    ],
+    [
+     0,
+     8
+    ]
+   ],
+   "outlineC": "#6a1b9aff"
+  },
+  {
+   "cells": [
+    [
+     1,
+     7
+    ],
+    [
+     1,
+     8
+    ]
+   ],
+   "outlineC": "#6a1b9aff"
+  },
+  {
+   "cells": [
+    [
+     1,
+     6
+    ],
+    [
+     2,
+     6
+    ]
+   ],
+   "outlineC": "#6a1b9aff"
+  },
+  {
+   "cells": [
+    [
+     2,
+     7
+    ],
+    [
+     2,
+     8
+    ],
+    [
+     3,
+     8
+    ]
+   ],
+   "outlineC": "#6a1b9aff"
+  },
+  {
+   "cells": [
+    [
+     3,
+     6
+    ],
+    [
+     3,
+     7
+    ],
+    [
+     4,
+     4
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     4,
+     6
+    ]
+   ],
+   "outlineC": "#6a1b9aff"
+  },
+  {
+   "cells": [
+    [
+     4,
+     3
+    ],
+    [
+     5,
+     3
+    ],
+    [
+     5,
+     4
+    ],
+    [
+     5,
+     5
+    ]
+   ],
+   "outlineC": "#6a1b9aff"
+  },
+  {
+   "cells": [
+    [
+     7,
+     6
+    ],
+    [
+     8,
+     3
+    ],
+    [
+     8,
+     4
+    ],
+    [
+     8,
+     5
+    ],
+    [
+     8,
+     6
+    ]
+   ],
+   "outlineC": "#6a1b9aff"
+  },
+  {
+   "cells": [
+    [
+     7,
+     2
+    ],
+    [
+     7,
+     3
+    ],
+    [
+     8,
+     2
+    ]
+   ],
+   "outlineC": "#6a1b9aff"
+  },
+  {
+   "cells": [
+    [
+     6,
+     2
+    ],
+    [
+     6,
+     3
+    ],
+    [
+     6,
+     4
+    ],
+    [
+     6,
+     5
+    ],
+    [
+     7,
+     4
+    ],
+    [
+     7,
+     5
+    ]
+   ],
+   "outlineC": "#6a1b9aff"
+  },
+  {
+   "cells": [
+    [
+     4,
+     0
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     5,
+     2
+    ]
+   ],
+   "outlineC": "#6a1b9aff"
+  },
+  {
+   "cells": [
+    [
+     5,
+     0
+    ],
+    [
+     5,
+     1
+    ],
+    [
+     6,
+     1
+    ],
+    [
+     7,
+     1
+    ]
+   ],
+   "outlineC": "#6a1b9aff"
+  },
+  {
+   "cells": [
+    [
+     6,
+     0
+    ],
+    [
+     7,
+     0
+    ],
+    [
+     8,
+     0
+    ],
+    [
+     8,
+     1
+    ]
+   ],
+   "outlineC": "#6a1b9aff"
+  },
+  {
+   "cells": [
+    [
+     4,
+     7
+    ],
+    [
+     4,
+     8
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     5,
+     7
+    ],
+    [
+     5,
+     8
+    ],
+    [
+     6,
+     8
+    ]
+   ],
+   "outlineC": "#6a1b9aff"
+  },
+  {
+   "cells": [
+    [
+     6,
+     6
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     7,
+     7
+    ],
+    [
+     7,
+     8
+    ],
+    [
+     8,
+     7
+    ],
+    [
+     8,
+     8
+    ]
+   ],
+   "outlineC": "#6a1b9aff"
+  }
+ ],
+ "cells": [
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ]
+ ],
+ "regions": [],
+ "lines": [
+  {
+   "wayPoints": [
+    [
+     0,
+     1
+    ],
+    [
+     9,
+     1
+    ]
+   ],
+   "color": "#FFFFFF",
+   "thickness": 2.56,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     9,
+     2
+    ],
+    [
+     8,
+     2
+    ],
+    [
+     8,
+     0
+    ]
+   ],
+   "color": "#FFFFFF",
+   "thickness": 2.56,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     9,
+     3
+    ],
+    [
+     8,
+     3
+    ],
+    [
+     8,
+     2
+    ],
+    [
+     7,
+     2
+    ],
+    [
+     7,
+     0
+    ]
+   ],
+   "color": "#FFFFFF",
+   "thickness": 2.56,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     9,
+     4
+    ],
+    [
+     8,
+     4
+    ],
+    [
+     8,
+     3
+    ],
+    [
+     7,
+     3
+    ],
+    [
+     7,
+     2
+    ],
+    [
+     6,
+     2
+    ],
+    [
+     6,
+     0
+    ]
+   ],
+   "color": "#FFFFFF",
+   "thickness": 2.56,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     9,
+     5
+    ],
+    [
+     8,
+     5
+    ],
+    [
+     8,
+     4
+    ],
+    [
+     7,
+     4
+    ],
+    [
+     7,
+     3
+    ],
+    [
+     6,
+     3
+    ],
+    [
+     6,
+     2
+    ],
+    [
+     5,
+     2
+    ],
+    [
+     5,
+     0
+    ]
+   ],
+   "color": "#FFFFFF",
+   "thickness": 2.56,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     9,
+     6
+    ],
+    [
+     8,
+     6
+    ],
+    [
+     8,
+     5
+    ],
+    [
+     7,
+     5
+    ],
+    [
+     7,
+     4
+    ],
+    [
+     6,
+     4
+    ],
+    [
+     6,
+     3
+    ],
+    [
+     5,
+     3
+    ],
+    [
+     5,
+     2
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     4,
+     0
+    ]
+   ],
+   "color": "#FFFFFF",
+   "thickness": 2.56,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     9,
+     7
+    ],
+    [
+     8,
+     7
+    ],
+    [
+     8,
+     6
+    ],
+    [
+     7,
+     6
+    ],
+    [
+     7,
+     5
+    ],
+    [
+     6,
+     5
+    ],
+    [
+     6,
+     4
+    ],
+    [
+     5,
+     4
+    ],
+    [
+     5,
+     3
+    ],
+    [
+     4,
+     3
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     3,
+     0
+    ]
+   ],
+   "color": "#FFFFFF",
+   "thickness": 2.56,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     9,
+     8
+    ],
+    [
+     8,
+     8
+    ],
+    [
+     8,
+     7
+    ],
+    [
+     7,
+     7
+    ],
+    [
+     7,
+     6
+    ],
+    [
+     6,
+     6
+    ],
+    [
+     6,
+     5
+    ],
+    [
+     5,
+     5
+    ],
+    [
+     5,
+     4
+    ],
+    [
+     4,
+     4
+    ],
+    [
+     4,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "color": "#FFFFFF",
+   "thickness": 2.56,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     8,
+     9
+    ],
+    [
+     8,
+     8
+    ],
+    [
+     7,
+     8
+    ],
+    [
+     7,
+     7
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     6,
+     6
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     5,
+     5
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     4,
+     4
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "color": "#FFFFFF",
+   "thickness": 2.56,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     7,
+     9
+    ],
+    [
+     7,
+     8
+    ],
+    [
+     6,
+     8
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     5,
+     7
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     4,
+     6
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "color": "#FFFFFF",
+   "thickness": 2.56,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     6,
+     9
+    ],
+    [
+     6,
+     8
+    ],
+    [
+     5,
+     8
+    ],
+    [
+     5,
+     7
+    ],
+    [
+     4,
+     7
+    ],
+    [
+     4,
+     6
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     0,
+     3
+    ]
+   ],
+   "color": "#FFFFFF",
+   "thickness": 2.56,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     1,
+     5
+    ]
+   ],
+   "color": "#FFFFFF",
+   "thickness": 2.56,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     1,
+     5
+    ],
+    [
+     0,
+     5
+    ]
+   ],
+   "color": "#FFFFFF",
+   "thickness": 2.56,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     3,
+     9
+    ],
+    [
+     3,
+     8
+    ],
+    [
+     4,
+     8
+    ],
+    [
+     4,
+     9
+    ]
+   ],
+   "color": "#FFFFFF",
+   "thickness": 2.56,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     2,
+     9
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     3,
+     7
+    ],
+    [
+     2,
+     7
+    ]
+   ],
+   "color": "#FFFFFF",
+   "thickness": 2.56,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     2,
+     7
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     0,
+     6
+    ]
+   ],
+   "color": "#FFFFFF",
+   "thickness": 2.56,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     5,
+     9
+    ],
+    [
+     5,
+     8
+    ],
+    [
+     4,
+     8
+    ],
+    [
+     4,
+     7
+    ],
+    [
+     3,
+     7
+    ],
+    [
+     3,
+     8
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     0,
+     7
+    ]
+   ],
+   "color": "#FFFFFF",
+   "thickness": 2.56,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     1,
+     9
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     0,
+     8
+    ]
+   ],
+   "color": "#FFFFFF",
+   "thickness": 2.56,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     0,
+     0
+    ],
+    [
+     9,
+     0
+    ],
+    [
+     9,
+     9
+    ],
+    [
+     0,
+     9
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "color": "#FFFFFF",
+   "thickness": 6.4,
+   "target": "overlay"
+  }
+ ]
+}

@@ -1,0 +1,1192 @@
+{
+ "id": "sxsm_MartySears_d7e15725fd7047a319f19032e2ec896c",
+ "metadata": {
+  "source": "Sudoku Maker v2024.04.23-f39d07c",
+  "title": "RAT RUN 1: Primer",
+  "author": "Marty Sears",
+  "rules": "Normal 6x6 sudoku rules apply.\n\nAIM OF EXPERIMENT: \nFinkz the rat must reach the cupcake by finding a path through the maze. The path will be a snaking line that passes through the centres of cells, without visiting any cell more than once, crossing itself or passing through any thick maze walls.\n\nAs well as moving orthogonally, Finkz may move diagonally if there's a 2x2 space in which to do so, but may never pass diagonally through the rounded end / corner of a wall.\n\nTEST CONSTRAINT:\nIn this experiment, any two adjacent cells along the correct path must sum to a prime number. Also, ALL digits within a marked 3x2 sudoku box that lie anywhere on the correct path must sum to a prime number too.",
+  "msgcorrect": "EXPERIMENT COMPLETED SUCCESSFULLY ✅ \n Cells visited: 20 \n  Finkz is already showing tenacity and increased cognitive abilities. Ready to progress to a larger maze.",
+  "solution": "142635635214254163361452413526526341"
+ },
+ "cages": [],
+ "cellSize": 50,
+ "cells": [
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ]
+ ],
+ "regions": [
+  [
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    1
+   ],
+   [
+    1,
+    2
+   ]
+  ],
+  [
+   [
+    0,
+    3
+   ],
+   [
+    0,
+    4
+   ],
+   [
+    0,
+    5
+   ],
+   [
+    1,
+    3
+   ],
+   [
+    1,
+    4
+   ],
+   [
+    1,
+    5
+   ]
+  ],
+  [
+   [
+    2,
+    0
+   ],
+   [
+    2,
+    1
+   ],
+   [
+    2,
+    2
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    3,
+    1
+   ],
+   [
+    3,
+    2
+   ]
+  ],
+  [
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    4
+   ],
+   [
+    2,
+    5
+   ],
+   [
+    3,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    3,
+    5
+   ]
+  ],
+  [
+   [
+    4,
+    0
+   ],
+   [
+    4,
+    1
+   ],
+   [
+    4,
+    2
+   ],
+   [
+    5,
+    0
+   ],
+   [
+    5,
+    1
+   ],
+   [
+    5,
+    2
+   ]
+  ],
+  [
+   [
+    4,
+    3
+   ],
+   [
+    4,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    5,
+    3
+   ],
+   [
+    5,
+    4
+   ],
+   [
+    5,
+    5
+   ]
+  ]
+ ],
+ "lines": [
+  {
+   "wayPoints": [
+    [
+     -0.25,
+     5.25
+    ],
+    [
+     -0.25,
+     6.25
+    ],
+    [
+     6.25,
+     6.25
+    ],
+    [
+     6.25,
+     -0.25
+    ],
+    [
+     -0.25,
+     -0.25
+    ],
+    [
+     -0.25,
+     5.25
+    ]
+   ],
+   "color": "#9643d4ff",
+   "thickness": 23
+  },
+  {
+   "wayPoints": [
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     6
+    ]
+   ],
+   "color": "#FFFFFF",
+   "thickness": 8,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     6,
+     3
+    ],
+    [
+     0,
+     3
+    ]
+   ],
+   "color": "#FFFFFF",
+   "thickness": 8,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     4,
+     6
+    ],
+    [
+     4,
+     0
+    ]
+   ],
+   "color": "#FFFFFF",
+   "thickness": 8,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     6
+    ]
+   ],
+   "color": "#e4e4e4ff",
+   "thickness": 1,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     2,
+     6
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     0,
+     5
+    ]
+   ],
+   "color": "#e4e4e4ff",
+   "thickness": 1,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     3,
+     6
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     0,
+     4
+    ]
+   ],
+   "color": "#e4e4e4ff",
+   "thickness": 1,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     4,
+     6
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     0,
+     3
+    ]
+   ],
+   "color": "#e4e4e4ff",
+   "thickness": 1,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     5,
+     6
+    ],
+    [
+     5,
+     5
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     4,
+     4
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "color": "#e4e4e4ff",
+   "thickness": 1,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     6,
+     5
+    ],
+    [
+     5,
+     5
+    ],
+    [
+     5,
+     4
+    ],
+    [
+     4,
+     4
+    ],
+    [
+     4,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "color": "#e4e4e4ff",
+   "thickness": 1,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     6,
+     4
+    ],
+    [
+     5,
+     4
+    ],
+    [
+     5,
+     3
+    ],
+    [
+     4,
+     3
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "color": "#e4e4e4ff",
+   "thickness": 1,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     6,
+     3
+    ],
+    [
+     5,
+     3
+    ],
+    [
+     5,
+     2
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     3,
+     0
+    ]
+   ],
+   "color": "#e4e4e4ff",
+   "thickness": 1,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     6,
+     2
+    ],
+    [
+     5,
+     2
+    ],
+    [
+     5,
+     1
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     4,
+     0
+    ]
+   ],
+   "color": "#e4e4e4ff",
+   "thickness": 1,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     6,
+     1
+    ],
+    [
+     5,
+     1
+    ],
+    [
+     5,
+     0
+    ]
+   ],
+   "color": "#e4e4e4ff",
+   "thickness": 1,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     6
+    ]
+   ],
+   "color": "#cbcbcbff",
+   "thickness": 5,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     6,
+     3
+    ],
+    [
+     0,
+     3
+    ]
+   ],
+   "color": "#cbcbcbff",
+   "thickness": 5,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     4,
+     6
+    ],
+    [
+     4,
+     0
+    ]
+   ],
+   "color": "#cbcbcbff",
+   "thickness": 5,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     3,
+     1
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     4,
+     3
+    ]
+   ],
+   "color": "#6802acff",
+   "thickness": 12,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     5,
+     4
+    ],
+    [
+     5,
+     5
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     4,
+     4
+    ],
+    [
+     3,
+     4
+    ]
+   ],
+   "color": "#6802acff",
+   "thickness": 12,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     1,
+     2
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     6
+    ],
+    [
+     6,
+     6
+    ],
+    [
+     6,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "color": "#6802acff",
+   "thickness": 12,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "color": "#6802acff",
+   "thickness": 12,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     3,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     5
+    ]
+   ],
+   "color": "#6802acff",
+   "thickness": 12,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "color": "#6802acff",
+   "thickness": 12,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     1,
+     4
+    ],
+    [
+     1,
+     5
+    ]
+   ],
+   "color": "#6802acff",
+   "thickness": 12,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     2,
+     -0.5
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "color": "#5d169761",
+   "thickness": 6,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     4,
+     -0.5
+    ],
+    [
+     4,
+     0
+    ]
+   ],
+   "color": "#5d169761",
+   "thickness": 6,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     6,
+     3
+    ],
+    [
+     6.5,
+     3
+    ]
+   ],
+   "color": "#5d169761",
+   "thickness": 6,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     4,
+     6
+    ],
+    [
+     4,
+     6.5
+    ]
+   ],
+   "color": "#5d169761",
+   "thickness": 6,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     2,
+     6
+    ],
+    [
+     2,
+     6.5
+    ]
+   ],
+   "color": "#5d169761",
+   "thickness": 6,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     -0.5,
+     3
+    ],
+    [
+     0,
+     3
+    ]
+   ],
+   "color": "#5d169761",
+   "thickness": 6,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     1.5,
+     -0.5
+    ],
+    [
+     4.5,
+     -0.5
+    ]
+   ],
+   "color": "#FFFFFF",
+   "thickness": 9,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     -0.5,
+     2.5
+    ],
+    [
+     -0.5,
+     3.5
+    ]
+   ],
+   "color": "#FFFFFF",
+   "thickness": 9,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     1.5,
+     6.5
+    ],
+    [
+     4.5,
+     6.5
+    ]
+   ],
+   "color": "#FFFFFF",
+   "thickness": 9,
+   "target": "overlay"
+  },
+  {
+   "wayPoints": [
+    [
+     6.5,
+     2.5
+    ],
+    [
+     6.5,
+     3.5
+    ]
+   ],
+   "color": "#FFFFFF",
+   "thickness": 9,
+   "target": "overlay"
+  }
+ ],
+ "overlays": [
+  {
+   "center": [
+    4,
+    1
+   ],
+   "width": 0.28,
+   "height": 0.28,
+   "stroke": "none",
+   "angle": 0,
+   "rounded": true,
+   "backgroundColor": "#6802acff"
+  },
+  {
+   "center": [
+    3,
+    1
+   ],
+   "width": 0.28,
+   "height": 0.28,
+   "stroke": "none",
+   "angle": 0,
+   "rounded": true,
+   "backgroundColor": "#6802acff"
+  },
+  {
+   "center": [
+    3,
+    2
+   ],
+   "width": 0.28,
+   "height": 0.28,
+   "stroke": "none",
+   "angle": 0,
+   "rounded": true,
+   "backgroundColor": "#6802acff"
+  },
+  {
+   "center": [
+    4,
+    5
+   ],
+   "width": 0.28,
+   "height": 0.28,
+   "stroke": "none",
+   "angle": 0,
+   "rounded": true,
+   "backgroundColor": "#6802acff"
+  },
+  {
+   "center": [
+    5,
+    5
+   ],
+   "width": 0.28,
+   "height": 0.28,
+   "stroke": "none",
+   "angle": 0,
+   "rounded": true,
+   "backgroundColor": "#6802acff"
+  },
+  {
+   "center": [
+    5,
+    4
+   ],
+   "width": 0.28,
+   "height": 0.28,
+   "stroke": "none",
+   "angle": 0,
+   "rounded": true,
+   "backgroundColor": "#6802acff"
+  },
+  {
+   "center": [
+    3,
+    4
+   ],
+   "width": 0.28,
+   "height": 0.28,
+   "stroke": "none",
+   "angle": 0,
+   "rounded": true,
+   "backgroundColor": "#6802acff"
+  },
+  {
+   "center": [
+    3,
+    5
+   ],
+   "width": 0.28,
+   "height": 0.28,
+   "stroke": "none",
+   "angle": 0,
+   "rounded": true,
+   "backgroundColor": "#6802acff"
+  },
+  {
+   "center": [
+    2,
+    5
+   ],
+   "width": 0.28,
+   "height": 0.28,
+   "stroke": "none",
+   "angle": 0,
+   "rounded": true,
+   "backgroundColor": "#6802acff"
+  },
+  {
+   "center": [
+    1,
+    5
+   ],
+   "width": 0.28,
+   "height": 0.28,
+   "stroke": "none",
+   "angle": 0,
+   "rounded": true,
+   "backgroundColor": "#6802acff"
+  },
+  {
+   "center": [
+    1,
+    4
+   ],
+   "width": 0.28,
+   "height": 0.28,
+   "stroke": "none",
+   "angle": 0,
+   "rounded": true,
+   "backgroundColor": "#6802acff"
+  },
+  {
+   "center": [
+    1,
+    3
+   ],
+   "width": 0.28,
+   "height": 0.28,
+   "stroke": "none",
+   "angle": 0,
+   "rounded": true,
+   "backgroundColor": "#6802acff"
+  },
+  {
+   "center": [
+    1,
+    2
+   ],
+   "width": 0.28,
+   "height": 0.28,
+   "stroke": "none",
+   "angle": 0,
+   "rounded": true,
+   "backgroundColor": "#6802acff"
+  },
+  {
+   "center": [
+    1,
+    1
+   ],
+   "width": 0.28,
+   "height": 0.28,
+   "stroke": "none",
+   "angle": 0,
+   "rounded": true,
+   "backgroundColor": "#6802acff"
+  },
+  {
+   "center": [
+    2,
+    1
+   ],
+   "width": 0.28,
+   "height": 0.28,
+   "stroke": "none",
+   "angle": 0,
+   "rounded": true,
+   "backgroundColor": "#6802acff"
+  },
+  {
+   "center": [
+    4,
+    3
+   ],
+   "width": 0.28,
+   "height": 0.28,
+   "stroke": "none",
+   "angle": 0,
+   "rounded": true,
+   "backgroundColor": "#6802acff"
+  },
+  {
+   "center": [
+    4,
+    4
+   ],
+   "width": 0.28,
+   "height": 0.28,
+   "stroke": "none",
+   "angle": 0,
+   "rounded": true,
+   "backgroundColor": "#6802acff"
+  }
+ ],
+ "underlays": [
+  {
+   "center": [
+    0.7,
+    2.5
+   ],
+   "width": 0,
+   "height": 0.582,
+   "stroke": "#ffffff",
+   "text": "🐀",
+   "fontSize": 18,
+   "color": "#000000",
+   "angle": 0,
+   "rounded": true
+  },
+  {
+   "center": [
+    4.7,
+    4.5
+   ],
+   "width": 0,
+   "height": 0.582,
+   "stroke": "#ffffff",
+   "text": "🧁",
+   "fontSize": 18,
+   "color": "#000000",
+   "angle": 0,
+   "rounded": true
+  }
+ ]
+}

@@ -1,0 +1,374 @@
+{
+ "id": "sxsm_gdc_e6c5058f7cb837d401dc78de30bccb97",
+ "metadata": {
+  "source": "Sudoku Maker v2024.06.10-b1ae38e",
+  "title": "Friendly Void",
+  "author": "gdc",
+  "rules": "Normal 6x6 Sudoku rules apply. Place the digits 1-6 exactly once in every row, column, and 2x3 box.\n\nFog: Some cells are hidden by \"fog\" meaning you cannot see their contents. The fog will be revealed when an adjacent digit is correctly filled. The intent of these puzzles is to make logical moves rather than guessing and using the fog reveal to know whether you are correct.\n\nA digit is circled if and only if it matches it's row number or it's column number. For example: r2c3 is circled if and only if it contains a 2 or a 3.",
+  "solution": "654321321465512643436512265134143256"
+ },
+ "cages": [
+  {
+   "cells": [
+    [
+     1,
+     1
+    ]
+   ],
+   "value": "FOGLIGHT"
+  }
+ ],
+ "cellSize": 50,
+ "cells": [
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {
+    "value": 1
+   },
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ]
+ ],
+ "regions": [
+  [
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    1
+   ],
+   [
+    1,
+    2
+   ]
+  ],
+  [
+   [
+    0,
+    3
+   ],
+   [
+    0,
+    4
+   ],
+   [
+    0,
+    5
+   ],
+   [
+    1,
+    3
+   ],
+   [
+    1,
+    4
+   ],
+   [
+    1,
+    5
+   ]
+  ],
+  [
+   [
+    2,
+    0
+   ],
+   [
+    2,
+    1
+   ],
+   [
+    2,
+    2
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    3,
+    1
+   ],
+   [
+    3,
+    2
+   ]
+  ],
+  [
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    4
+   ],
+   [
+    2,
+    5
+   ],
+   [
+    3,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    3,
+    5
+   ]
+  ],
+  [
+   [
+    4,
+    0
+   ],
+   [
+    4,
+    1
+   ],
+   [
+    4,
+    2
+   ],
+   [
+    5,
+    0
+   ],
+   [
+    5,
+    1
+   ],
+   [
+    5,
+    2
+   ]
+  ],
+  [
+   [
+    4,
+    3
+   ],
+   [
+    4,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    5,
+    3
+   ],
+   [
+    5,
+    4
+   ],
+   [
+    5,
+    5
+   ]
+  ]
+ ],
+ "overlays": [
+  {
+   "center": [
+    1.5,
+    1.5
+   ],
+   "width": 0.82,
+   "height": 0.82,
+   "stroke": "none",
+   "thickness": 1,
+   "angle": 0,
+   "rounded": true,
+   "backgroundColor": "#ffffffa1",
+   "borderColor": "#666f"
+  },
+  {
+   "center": [
+    1.5,
+    3.5
+   ],
+   "width": 0.82,
+   "height": 0.82,
+   "stroke": "none",
+   "thickness": 1,
+   "angle": 0,
+   "rounded": true,
+   "backgroundColor": "#ffffffa1",
+   "borderColor": "#666f"
+  },
+  {
+   "center": [
+    0.5,
+    5.5
+   ],
+   "width": 0.82,
+   "height": 0.82,
+   "stroke": "none",
+   "thickness": 1,
+   "angle": 0,
+   "rounded": true,
+   "backgroundColor": "#ffffffa1",
+   "borderColor": "#666f"
+  },
+  {
+   "center": [
+    2.5,
+    5.5
+   ],
+   "width": 0.82,
+   "height": 0.82,
+   "stroke": "none",
+   "thickness": 1,
+   "angle": 0,
+   "rounded": true,
+   "backgroundColor": "#ffffffa1",
+   "borderColor": "#666f"
+  },
+  {
+   "center": [
+    5.5,
+    5.5
+   ],
+   "width": 0.82,
+   "height": 0.82,
+   "stroke": "none",
+   "thickness": 1,
+   "angle": 0,
+   "rounded": true,
+   "backgroundColor": "#ffffffa1",
+   "borderColor": "#666f"
+  },
+  {
+   "center": [
+    5.5,
+    4.5
+   ],
+   "width": 0.82,
+   "height": 0.82,
+   "stroke": "none",
+   "thickness": 1,
+   "angle": 0,
+   "rounded": true,
+   "backgroundColor": "#ffffffa1",
+   "borderColor": "#666f"
+  },
+  {
+   "center": [
+    5.5,
+    0.5
+   ],
+   "width": 0.82,
+   "height": 0.82,
+   "stroke": "none",
+   "thickness": 1,
+   "angle": 0,
+   "rounded": true,
+   "backgroundColor": "#ffffffa1",
+   "borderColor": "#666f"
+  },
+  {
+   "center": [
+    3.5,
+    0.5
+   ],
+   "width": 0.82,
+   "height": 0.82,
+   "stroke": "none",
+   "thickness": 1,
+   "angle": 0,
+   "rounded": true,
+   "backgroundColor": "#ffffffa1",
+   "borderColor": "#666f"
+  },
+  {
+   "center": [
+    4.5,
+    2.5
+   ],
+   "width": 0.82,
+   "height": 0.82,
+   "stroke": "none",
+   "thickness": 1,
+   "angle": 0,
+   "rounded": true,
+   "backgroundColor": "#ffffffa1",
+   "borderColor": "#666f"
+  },
+  {
+   "center": [
+    5.5,
+    2.5
+   ],
+   "width": 0.82,
+   "height": 0.82,
+   "stroke": "none",
+   "thickness": 1,
+   "angle": 0,
+   "rounded": true,
+   "backgroundColor": "#ffffffa1",
+   "borderColor": "#666f"
+  }
+ ]
+}

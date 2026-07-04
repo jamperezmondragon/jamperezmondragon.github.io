@@ -1,0 +1,332 @@
+{
+ "id": "sxsm_Tinnifer_41e44bece79f1524db3253237191452d",
+ "metadata": {
+  "source": "Sudoku Maker v2024.08.18-67a6588",
+  "title": "Parity Hexagons",
+  "author": "Tinnifer",
+  "rules": "Normal 6x6 sudoku rules apply.\n\nAnti-knight: cells separated by a chess knight's move cannot contain the same digit.\nParity lines: digits along a red line have alternating parity.\nX/V: digits separated by a V sum to 5; not all of these clues are necessarily given.\nKropki pairs: digits separated by a black dot have a ratio of 2:1.",
+  "solution": "146523523146632415415632251364364251",
+  "antiknight": true
+ },
+ "cages": [],
+ "cellSize": 50,
+ "cells": [
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ]
+ ],
+ "regions": [
+  [
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    1
+   ],
+   [
+    1,
+    2
+   ]
+  ],
+  [
+   [
+    0,
+    3
+   ],
+   [
+    0,
+    4
+   ],
+   [
+    0,
+    5
+   ],
+   [
+    1,
+    3
+   ],
+   [
+    1,
+    4
+   ],
+   [
+    1,
+    5
+   ]
+  ],
+  [
+   [
+    2,
+    0
+   ],
+   [
+    2,
+    1
+   ],
+   [
+    2,
+    2
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    3,
+    1
+   ],
+   [
+    3,
+    2
+   ]
+  ],
+  [
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    4
+   ],
+   [
+    2,
+    5
+   ],
+   [
+    3,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    3,
+    5
+   ]
+  ],
+  [
+   [
+    4,
+    0
+   ],
+   [
+    4,
+    1
+   ],
+   [
+    4,
+    2
+   ],
+   [
+    5,
+    0
+   ],
+   [
+    5,
+    1
+   ],
+   [
+    5,
+    2
+   ]
+  ],
+  [
+   [
+    4,
+    3
+   ],
+   [
+    4,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    5,
+    3
+   ],
+   [
+    5,
+    4
+   ],
+   [
+    5,
+    5
+   ]
+  ]
+ ],
+ "lines": [
+  {
+   "wayPoints": [
+    [
+     4.5,
+     2.5
+    ],
+    [
+     5.5,
+     3.5
+    ],
+    [
+     5.5,
+     4.5
+    ],
+    [
+     4.5,
+     5.5
+    ],
+    [
+     3.5,
+     4.5
+    ],
+    [
+     3.5,
+     3.5
+    ],
+    [
+     4.5,
+     2.5
+    ]
+   ],
+   "color": "#ff6868ff",
+   "thickness": 10
+  },
+  {
+   "wayPoints": [
+    [
+     0.5,
+     1.5
+    ],
+    [
+     1.5,
+     0.5
+    ],
+    [
+     2.5,
+     0.5
+    ],
+    [
+     3.5,
+     1.5
+    ],
+    [
+     2.5,
+     2.5
+    ],
+    [
+     1.5,
+     2.5
+    ],
+    [
+     0.5,
+     1.5
+    ]
+   ],
+   "color": "#ff6868ff",
+   "thickness": 10
+  }
+ ],
+ "overlays": [
+  {
+   "center": [
+    2,
+    1.5
+   ],
+   "width": 0.35,
+   "height": 0.35,
+   "stroke": "#000000",
+   "text": "V",
+   "fontSize": 14,
+   "rounded": true,
+   "backgroundColor": "#FFFFFF"
+  },
+  {
+   "center": [
+    1.5,
+    4
+   ],
+   "width": 0.35,
+   "height": 0.35,
+   "stroke": "#000000",
+   "text": "V",
+   "fontSize": 14,
+   "rounded": true,
+   "backgroundColor": "#FFFFFF"
+  },
+  {
+   "center": [
+    5.5,
+    1
+   ],
+   "width": 0.34,
+   "height": 0.34,
+   "stroke": "none",
+   "text": "",
+   "color": "#FFFFFF",
+   "rounded": true,
+   "backgroundColor": "#000000"
+  }
+ ]
+}

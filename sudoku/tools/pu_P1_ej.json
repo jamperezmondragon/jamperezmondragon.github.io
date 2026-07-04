@@ -1,0 +1,67 @@
+{
+ "nx": 6,
+ "ny": 6,
+ "gridtype": "sudoku",
+ "number": {
+  "57": [
+   "4",
+   1,
+   "1"
+  ]
+ },
+ "numberS": {},
+ "symbol": {
+  "222": [
+   3,
+   "circle_SS",
+   1
+  ],
+  "225": [
+   3,
+   "circle_SS",
+   1
+  ],
+  "227": [
+   3,
+   "circle_SS",
+   1
+  ],
+  "242": [
+   3,
+   "circle_SS",
+   1
+  ],
+  "262": [
+   3,
+   "circle_SS",
+   1
+  ],
+  "265": [
+   3,
+   "circle_SS",
+   1
+  ],
+  "334": [
+   3,
+   "circle_SS",
+   1
+  ],
+  "353": [
+   3,
+   "circle_SS",
+   1
+  ],
+  "364": [
+   3,
+   "circle_SS",
+   1
+  ],
+  "372": [
+   3,
+   "circle_SS",
+   1
+  ]
+ },
+ "surface": {},
+ "centerlist_len": 36
+}

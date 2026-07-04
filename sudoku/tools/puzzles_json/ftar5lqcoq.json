@@ -1,0 +1,523 @@
+{
+ "id": "sxsm_gdc_154dd7ca330a7367dfb70354038318dd",
+ "metadata": {
+  "source": "Sudoku Maker v2025.10.19-5042c01",
+  "author": "gdc",
+  "rules": "Normal 6x6 Sudoku rules apply. Place the digits 1-6 exactly once in every row, column, and 2x3 box.\n\nREGION SUM CIRCLES - The outlines of the two largest circles are split into segments by box borders. Within each individual circle, the sum of the digits on each segment is the same. The sum of segments on the two circles may or may not be equal.\n\nARMS - Digits separated by an arm are consecutive.\n\nEYES - One of the snowflakes the snowman is looking at has a 1:2 ratio with the digit in the head, meaning one is double the other.\n\nOther visual details are purely cosmetic.",
+  "solution": "254136163524516342342651625413431265",
+  "title": "Peeking Snowman"
+ },
+ "cells": [
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {
+    "value": 4
+   }
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ]
+ ],
+ "regions": [
+  [
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    1
+   ],
+   [
+    1,
+    2
+   ]
+  ],
+  [
+   [
+    0,
+    3
+   ],
+   [
+    0,
+    4
+   ],
+   [
+    0,
+    5
+   ],
+   [
+    1,
+    3
+   ],
+   [
+    1,
+    4
+   ],
+   [
+    1,
+    5
+   ]
+  ],
+  [
+   [
+    2,
+    0
+   ],
+   [
+    2,
+    1
+   ],
+   [
+    2,
+    2
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    3,
+    1
+   ],
+   [
+    3,
+    2
+   ]
+  ],
+  [
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    4
+   ],
+   [
+    2,
+    5
+   ],
+   [
+    3,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    3,
+    5
+   ]
+  ],
+  [
+   [
+    4,
+    0
+   ],
+   [
+    4,
+    1
+   ],
+   [
+    4,
+    2
+   ],
+   [
+    5,
+    0
+   ],
+   [
+    5,
+    1
+   ],
+   [
+    5,
+    2
+   ]
+  ],
+  [
+   [
+    4,
+    3
+   ],
+   [
+    4,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    5,
+    3
+   ],
+   [
+    5,
+    4
+   ],
+   [
+    5,
+    5
+   ]
+  ]
+ ],
+ "lines": [
+  {
+   "target": "overlay",
+   "wayPoints": [
+    [
+     3.85,
+     3.65
+    ],
+    [
+     3.3,
+     4.2
+    ],
+    [
+     3.3,
+     4.4
+    ]
+   ],
+   "color": "#c4beb2ff",
+   "thickness": 6.4
+  },
+  {
+   "target": "overlay",
+   "wayPoints": [
+    [
+     3.1,
+     4.2
+    ],
+    [
+     3.3,
+     4.2
+    ],
+    [
+     3.15,
+     4.35
+    ]
+   ],
+   "color": "#c4beb2ff",
+   "thickness": 6.4
+  },
+  {
+   "target": "overlay",
+   "wayPoints": [
+    [
+     3.85,
+     1.35
+    ],
+    [
+     3.3,
+     0.8
+    ],
+    [
+     3.1,
+     0.8
+    ]
+   ],
+   "color": "#c4beb2ff",
+   "thickness": 6.4
+  },
+  {
+   "target": "overlay",
+   "wayPoints": [
+    [
+     3.3,
+     0.6
+    ],
+    [
+     3.3,
+     0.8
+    ],
+    [
+     3.15,
+     0.65
+    ]
+   ],
+   "color": "#c4beb2ff",
+   "thickness": 6.4
+  }
+ ],
+ "overlays": [
+  {
+   "angle": 0,
+   "center": [
+    2.3,
+    2.8
+   ],
+   "width": 0.3,
+   "height": 0.3,
+   "rounded": true,
+   "backgroundColor": "#b5b5b5ff"
+  },
+  {
+   "angle": 0,
+   "center": [
+    2.25,
+    2.3
+   ],
+   "width": 0.1,
+   "height": 0.1,
+   "rounded": true,
+   "backgroundColor": "#FFFFFF"
+  },
+  {
+   "angle": 0,
+   "center": [
+    2.25,
+    2.85
+   ],
+   "width": 0.1,
+   "height": 0.1,
+   "rounded": true,
+   "backgroundColor": "#FFFFFF"
+  },
+  {
+   "angle": 0,
+   "center": [
+    3.5,
+    1
+   ],
+   "width": 0.32,
+   "height": 0.32,
+   "thickness": 1.28,
+   "rounded": true,
+   "backgroundColor": "#dad7d1ff",
+   "borderColor": "#898989ff"
+  },
+  {
+   "angle": 0,
+   "center": [
+    3.5,
+    4
+   ],
+   "width": 0.32,
+   "height": 0.32,
+   "thickness": 1.28,
+   "rounded": true,
+   "backgroundColor": "#dad7d1ff",
+   "borderColor": "#898989ff"
+  },
+  {
+   "angle": 0,
+   "center": [
+    2.85,
+    2.5
+   ],
+   "width": 0.14,
+   "height": 0.14,
+   "rounded": true,
+   "backgroundColor": "#c2c2c2ff"
+  },
+  {
+   "angle": 0,
+   "center": [
+    2.8,
+    2.3
+   ],
+   "width": 0.14,
+   "height": 0.14,
+   "rounded": true,
+   "backgroundColor": "#c2c2c2ff"
+  },
+  {
+   "angle": 0,
+   "center": [
+    2.8,
+    2.7
+   ],
+   "width": 0.14,
+   "height": 0.14,
+   "rounded": true,
+   "backgroundColor": "#c2c2c2ff"
+  },
+  {
+   "angle": 0,
+   "center": [
+    2.65,
+    2.85
+   ],
+   "width": 0.14,
+   "height": 0.14,
+   "rounded": true,
+   "backgroundColor": "#c2c2c2ff"
+  },
+  {
+   "angle": 0,
+   "center": [
+    2.65,
+    2.15
+   ],
+   "width": 0.14,
+   "height": 0.14,
+   "rounded": true,
+   "backgroundColor": "#c2c2c2ff"
+  },
+  {
+   "angle": 0,
+   "center": [
+    5.2,
+    2.5
+   ],
+   "width": 0.26,
+   "height": 0.26,
+   "rounded": true,
+   "backgroundColor": "#c2c2c2ff"
+  },
+  {
+   "angle": 0,
+   "center": [
+    3.8,
+    2.5
+   ],
+   "width": 0.26,
+   "height": 0.26,
+   "rounded": true,
+   "backgroundColor": "#c2c2c2ff"
+  }
+ ],
+ "underlays": [
+  {
+   "angle": 0,
+   "center": [
+    4.5,
+    2.5
+   ],
+   "width": 2.59,
+   "height": 2.59,
+   "thickness": 5.76,
+   "rounded": true,
+   "borderColor": "#afc0e0ff"
+  },
+  {
+   "angle": 0,
+   "center": [
+    2.5,
+    2.5
+   ],
+   "width": 1.51,
+   "height": 1.51,
+   "thickness": 5.76,
+   "rounded": true,
+   "borderColor": "#afc0e0ff"
+  },
+  {
+   "angle": 0,
+   "center": [
+    2.3,
+    2.25
+   ],
+   "width": 0.3,
+   "height": 0.3,
+   "rounded": true,
+   "backgroundColor": "#b5b5b5ff"
+  },
+  {
+   "angle": 0,
+   "center": [
+    2.5,
+    2.5
+   ],
+   "width": 0.2,
+   "height": 0.2,
+   "rounded": true,
+   "backgroundColor": "#f0ccaeff"
+  },
+  {
+   "angle": 0,
+   "center": [
+    4.5,
+    2.5
+   ],
+   "width": 0.26,
+   "height": 0.26,
+   "rounded": true,
+   "backgroundColor": "#c2c2c2ff"
+  },
+  {
+   "stroke": "#ffffff",
+   "angle": 0,
+   "center": [
+    1.5,
+    3.5
+   ],
+   "width": 0,
+   "height": 1.518,
+   "text": "❄",
+   "fontSize": 54,
+   "color": "#88c9f9ff",
+   "rounded": true
+  },
+  {
+   "stroke": "#ffffff",
+   "angle": 0,
+   "center": [
+    0.5,
+    4.5
+   ],
+   "width": 0,
+   "height": 1.518,
+   "text": "❄",
+   "fontSize": 54,
+   "color": "#88c9f9ff",
+   "rounded": true
+  }
+ ]
+}

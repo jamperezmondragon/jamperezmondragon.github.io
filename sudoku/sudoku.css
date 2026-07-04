@@ -1,0 +1,262 @@
+/* Estilos del jugador de sudokus. Sigue la estética de acertijos/estilo.css */
+:root {
+  --text: #1a1a1a;
+  --muted: #666;
+  --accent: #0b57d0;
+  --border: #e5e5e5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--text);
+  line-height: 1.6;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+header {
+  margin-bottom: 2rem;
+  border-bottom: 2px solid var(--text);
+  padding-bottom: 1rem;
+}
+
+header .site-link {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.85rem;
+}
+
+h1 { font-size: 1.8rem; font-weight: 600; }
+h2 { font-size: 1.3rem; font-weight: 600; margin: 2.5rem 0 1rem; }
+p { margin-bottom: 1rem; }
+a { color: var(--accent); }
+
+.autor {
+  font-style: italic;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* --- Disposición del jugador --- */
+.jugador {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+#tablero { flex: 1 1 400px; max-width: 620px; }
+
+svg.tablero {
+  width: 100%;
+  height: auto;
+  display: block;
+  touch-action: none;   /* el arrastre selecciona, no hace scroll */
+  user-select: none;
+}
+
+.panel { flex: 1 1 220px; max-width: 300px; }
+
+/* --- Elementos del tablero --- */
+.niebla {
+  fill: #adadad;   /* gris claro, como la niebla de SudokuPad */
+  transition: opacity 0.4s;
+}
+
+.seleccion {
+  fill: rgba(11, 87, 208, 0.18);
+  stroke: var(--accent);
+  stroke-width: 2;
+  pointer-events: none;
+}
+
+.pluma {
+  stroke: #2e7d32;
+  stroke-width: 5;
+  stroke-linecap: round;
+  pointer-events: none;
+}
+
+text.dado, text.valor, text.esquina, text.centro {
+  text-anchor: middle;
+  dominant-baseline: central;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  pointer-events: none;
+}
+
+text.dado { font-size: 38px; fill: #1a1a1a; }
+text.valor { font-size: 38px; fill: var(--accent); }
+text.esquina { font-size: 13px; fill: #444; }
+text.centro { font-size: 15px; fill: #444; }
+
+/* decoración genérica del puzzle (formato SCL) */
+text.deco-texto {
+  text-anchor: middle;
+  dominant-baseline: central;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  pointer-events: none;
+}
+
+text.jaula-texto {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  dominant-baseline: hanging;
+  paint-order: stroke;
+  stroke: #fff;
+  stroke-width: 2.5px;
+  fill: #333;
+  pointer-events: none;
+}
+
+/* --- Botones --- */
+.modos, .acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Teclado numérico: 3 columnas, como un numpad */
+.digitos {
+  display: grid;
+  grid-template-columns: repeat(3, 3.2rem);
+  gap: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.panel button {
+  font: inherit;
+  font-size: 0.95rem;
+  padding: 0.35rem 0.6rem;
+  border: 1px solid #999;
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+  min-width: 2.4rem;
+}
+
+.panel button:hover { border-color: var(--accent); }
+
+.panel button.activo {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+.digitos button {
+  font-size: 1.3rem;
+  min-height: 3.2rem;
+}
+
+.digitos button.ancho { grid-column: span 3; }
+
+/* Los botones 7-9 solo existen como colores */
+.digitos .solo-color { display: none; }
+.digitos.modo-color .solo-color { display: block; }
+
+/* El 0 solo aparece en acertijos con dígito mínimo 0 (Warden) */
+.digitos .solo-cero { display: none; }
+.digitos.con-cero .solo-cero { display: block; }
+.digitos .ancho-cero { grid-column: span 3; }
+.digitos.con-cero .ancho-cero { grid-column: span 2; }
+
+/* Botones de acción con símbolos */
+.acciones button {
+  font-size: 1.25rem;
+  min-width: 3rem;
+  min-height: 2.6rem;
+  line-height: 1;
+}
+
+/* Modo enfocado: solo el tablero y los controles */
+body.enfocado .reglas-seccion,
+body.enfocado footer,
+body.enfocado .atajos {
+  display: none;
+}
+
+.mensaje { color: var(--muted); }
+
+.atajos {
+  font-size: 0.8rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+  padding-top: 0.75rem;
+}
+
+details.atajos summary {
+  font-size: 0.85rem;
+}
+
+details.atajos p {
+  margin-top: 0.5rem;
+}
+
+kbd {
+  font-family: monospace;
+  background: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 0 0.25rem;
+}
+
+/* --- Reglas --- */
+.reglas { white-space: pre-line; }
+
+details { margin-bottom: 1rem; }
+summary { cursor: pointer; color: var(--muted); }
+
+footer {
+  margin-top: 3rem;
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* --- Celebración --- */
+.confeti {
+  position: fixed;
+  top: -3vh;
+  width: 10px;
+  height: 16px;
+  z-index: 10;
+  pointer-events: none;
+  animation: confeti-cae linear forwards;
+}
+
+@keyframes confeti-cae {
+  to {
+    transform: translateY(108vh) rotate(720deg);
+  }
+}
+
+.felicidades {
+  position: fixed;
+  top: 38vh;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #2e7d32;
+  text-shadow: 0 2px 8px rgba(255, 255, 255, 0.9), 0 0 2px #fff;
+  z-index: 11;
+  pointer-events: none;
+  animation: felicidades-pop 0.5s ease-out, felicidades-fade 1s ease-in 3.5s forwards;
+}
+
+@keyframes felicidades-pop {
+  from { transform: scale(0.3); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes felicidades-fade {
+  to { opacity: 0; }
+}

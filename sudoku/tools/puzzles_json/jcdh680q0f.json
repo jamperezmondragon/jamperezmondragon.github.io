@@ -1,0 +1,113 @@
+{
+ "id": "sxsm_Kaktuslav_ca1f06e8da5f7e84838b12f8bed381df",
+ "metadata": {
+  "source": "SudokuMaker v2026.01.03-f5c5249",
+  "title": "Forcing",
+  "author": "Kaktuslav",
+  "rules": "Divide the grid into nine non-overlapping regions, each consisting of nine orthogonally connected cells. Place the digits 1–9 once each in every row, column, and region. In each region, place a circle in the leftmost cell of its topmost row. Every circled digit counts how many cells of its own region (including itself) are visible in its column (region borders block the view). The nine circled cells together form an extra region, i.e. they are orthogonally connected and contain the digits 1–9 once each.",
+  "solution": "918765432187654329876543291765432918654329187543291876432918765329187654291876543"
+ },
+ "cages": [],
+ "cells": [
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ]
+ ],
+ "regions": []
+}

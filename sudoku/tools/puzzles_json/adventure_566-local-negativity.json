@@ -1,0 +1,334 @@
+{
+ "id": "sxsm_gdc_f5648a1148871d4018c91ea6a775c6af",
+ "metadata": {
+  "source": "Sudoku Maker v2024.06.10-b1ae38e",
+  "title": "Local Negativity",
+  "author": "gdc",
+  "rules": "Normal 6x6 Sudoku rules apply. Place the digits 1-6 exactly once in every row, column, and 2x3 box.\n\nFog: Some cells are hidden by \"fog\" meaning you cannot see their contents. The fog will be revealed when an adjacent digit is correctly filled. The intent of these puzzles is to make logical moves rather than guessing and using the fog reveal to know whether you are correct.\n\nKropki Pairs: Digits separated by a black dot are in a 1:2 ratio. Digits separated by a white dot are consecutive. Not all dots are necessarily given.\n\nAnti-Kropki-Cage: Every orthogonally adjacent pair of cells in the dashed cage which could be connected via a kropki dot is connected via a kropki dot. Digits may repeat in a cage.",
+  "solution": "425631613524561342342156236415154263"
+ },
+ "cages": [
+  {
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     4,
+     3
+    ],
+    [
+     4,
+     4
+    ]
+   ],
+   "value": "●○"
+  },
+  {
+   "cells": [
+    [
+     0,
+     1
+    ]
+   ],
+   "value": "FOGLIGHT"
+  }
+ ],
+ "cellSize": 50,
+ "cells": [
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ]
+ ],
+ "regions": [
+  [
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    1
+   ],
+   [
+    1,
+    2
+   ]
+  ],
+  [
+   [
+    0,
+    3
+   ],
+   [
+    0,
+    4
+   ],
+   [
+    0,
+    5
+   ],
+   [
+    1,
+    3
+   ],
+   [
+    1,
+    4
+   ],
+   [
+    1,
+    5
+   ]
+  ],
+  [
+   [
+    2,
+    0
+   ],
+   [
+    2,
+    1
+   ],
+   [
+    2,
+    2
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    3,
+    1
+   ],
+   [
+    3,
+    2
+   ]
+  ],
+  [
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    4
+   ],
+   [
+    2,
+    5
+   ],
+   [
+    3,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    3,
+    5
+   ]
+  ],
+  [
+   [
+    4,
+    0
+   ],
+   [
+    4,
+    1
+   ],
+   [
+    4,
+    2
+   ],
+   [
+    5,
+    0
+   ],
+   [
+    5,
+    1
+   ],
+   [
+    5,
+    2
+   ]
+  ],
+  [
+   [
+    4,
+    3
+   ],
+   [
+    4,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    5,
+    3
+   ],
+   [
+    5,
+    4
+   ],
+   [
+    5,
+    5
+   ]
+  ]
+ ],
+ "overlays": [
+  {
+   "center": [
+    1,
+    1.5
+   ],
+   "width": 0.34,
+   "height": 0.34,
+   "stroke": "none",
+   "text": "",
+   "color": "#FFFFFF",
+   "rounded": true,
+   "backgroundColor": "#000000"
+  },
+  {
+   "center": [
+    0.5,
+    1
+   ],
+   "width": 0.34,
+   "height": 0.34,
+   "stroke": "none",
+   "text": "",
+   "color": "#FFFFFF",
+   "rounded": true,
+   "backgroundColor": "#000000"
+  },
+  {
+   "center": [
+    4,
+    5.5
+   ],
+   "width": 0.34,
+   "height": 0.34,
+   "stroke": "none",
+   "thickness": 1,
+   "text": "",
+   "color": "#000000",
+   "rounded": true,
+   "backgroundColor": "#FFFFFF",
+   "borderColor": "#000000"
+  }
+ ]
+}

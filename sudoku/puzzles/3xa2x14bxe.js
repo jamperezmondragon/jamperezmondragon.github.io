@@ -1,0 +1,4572 @@
+// Generado por tools/convierte.js desde el SCL de SudokuPad.
+// rules y hints se editan a mano (ver ANALISIS.md). NO regenerar encima.
+window.PUZZLE = {
+ "id": "3xa2x14bxe",
+ "title": "RAT RUN 6: Equilibrium",
+ "author": "Marty Sears",
+ "urlOriginal": "https://sudokupad.app/3xa2x14bxe",
+ "size": 9,
+ "boxes": [
+  3,
+  3
+ ],
+ "regions": null,
+ "rules": "Sudoku 9×9 normal: dígitos del 1 al 9 en cada fila, columna y caja de 3×3 (marcadas con líneas punteadas).\n\nOBJETIVO DEL EXPERIMENTO: Finkz la rata 🐀 tiene que llegar al pastelito 🧁. El camino no puede visitar ninguna casilla dos veces, ni cruzarse, ni atravesar los muros gruesos. Puede avanzar en diagonal si hay espacio libre de 2×2, pero nunca rozando la esquina redondeada de un muro.\n\nTELEPORTS: al entrar a un teleport amarillo, Finkz se teletransporta al instante al otro teleport y sigue su viaje desde ahí. Los dos teleports contienen el mismo dígito.\n\nPUERTAS DE UN SOLO SENTIDO: Finkz solo puede cruzar una flecha morada si avanza en la dirección en la que apunta. La flecha siempre apunta hacia el menor de los dos dígitos entre los que está.\n\nGROSELLAS: dos casillas unidas por una grosella (bolita oscura) están en proporción 1:2 — una es el doble de la otra. No se dan todas las grosellas posibles.\n\nCONDICIÓN DEL EXPERIMENTO: la suma de los dígitos del camino ANTES de teletransportarse debe ser igual a la suma de los dígitos DESPUÉS.\n\nMarca el camino con la pluma: el sitio revisa solo los dígitos, así que el camino es tu andamio para deducirlos.",
+ "hints": [
+  "La suma total del camino es 2 veces la primera mitad: un número PAR. Eso controla cuántos dígitos impares puede pisar Finkz en total.",
+  "Los teleports comparten dígito y viven en esquinas opuestas del tablero: ¿qué candidatos pueden repetirse en esas dos cajas de esquina?",
+  "El pastelito está cerquita de Finkz… pero por el lado bloqueado. Estima el largo mínimo de cada tramo: el tramo corto necesita dígitos grandotes para empatar la suma del largo."
+ ],
+ "_rulesOrig": "Normal sudoku rules apply: place the digits 1-9 in each row, column, and 3x3 box (marked with dotted lines.\n\nAIM OF EXPERIMENT: Finkz the rat must reach the cupcake by finding a path through the maze. The path must not visit any cell more than once, cross itself, or pass through any thick maze walls.\n\nAs well as moving orthogonally, Finkz may move diagonally if there's a 2x2 space in which to do so, but may never pass diagonally through a round wall-spot on the corner of a cell.\n\nTELEPORTS: Entering a yellow teleport will cause Finkz to be instantly transported to the other teleport. From there she can continue her journey. The teleports contain the same digit.\n\nONE-WAY DOORS: Finkz may only pass directly through a purple arrow if moving in the direction the arrow is pointing. An arrow always points to the smaller of the two values it sits between.\n\nBLACKCURRANTS: Cells connected by a blackcurrant are in a 1:2 ratio (one is double the other.) Not all possible blackcurrants have been given.\n\nTEST CONSTRAINT: In this experiment, the sum of the digits on the path before teleporting must equal the sum of the digits on the path after teleporting.",
+ "givens": [],
+ "solution": "512468739349257861786931542965783124134526978278149653427895316853612497691374285",
+ "fog": null,
+ "sclCellSize": 50,
+ "visuals": {
+  "underlays": [
+   {
+    "center": [
+     0,
+     0
+    ],
+    "width": 0.26,
+    "height": 0.26,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#7b905aff"
+   },
+   {
+    "center": [
+     0,
+     9
+    ],
+    "width": 0.26,
+    "height": 0.26,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#7b905aff"
+   },
+   {
+    "center": [
+     9,
+     9
+    ],
+    "width": 0.26,
+    "height": 0.26,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#7b905aff"
+   },
+   {
+    "center": [
+     9,
+     0
+    ],
+    "width": 0.26,
+    "height": 0.26,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#7b905aff"
+   },
+   {
+    "center": [
+     8.5,
+     8.5
+    ],
+    "width": 0.87,
+    "height": 0.87,
+    "stroke": "none",
+    "thickness": 4,
+    "angle": 0,
+    "rounded": true,
+    "borderColor": "#f7e600ff"
+   },
+   {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "width": 0.87,
+    "height": 0.87,
+    "stroke": "none",
+    "thickness": 4,
+    "angle": 0,
+    "rounded": true,
+    "borderColor": "#f7e600ff"
+   },
+   {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "width": 1,
+    "height": 1,
+    "stroke": "none",
+    "angle": 0,
+    "backgroundColor": "#fff72171"
+   },
+   {
+    "center": [
+     8.5,
+     8.5
+    ],
+    "width": 1,
+    "height": 1,
+    "stroke": "none",
+    "angle": 0,
+    "backgroundColor": "#fff72171"
+   }
+  ],
+  "overlays": [
+   {
+    "center": [
+     1,
+     1
+    ],
+    "width": 0.32,
+    "height": 0.32,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#6a7246ff"
+   },
+   {
+    "center": [
+     1,
+     2
+    ],
+    "width": 0.32,
+    "height": 0.32,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#6a7246ff"
+   },
+   {
+    "center": [
+     1,
+     3
+    ],
+    "width": 0.32,
+    "height": 0.32,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#6a7246ff"
+   },
+   {
+    "center": [
+     2,
+     2
+    ],
+    "width": 0.32,
+    "height": 0.32,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#6a7246ff"
+   },
+   {
+    "center": [
+     3,
+     1
+    ],
+    "width": 0.32,
+    "height": 0.32,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#6a7246ff"
+   },
+   {
+    "center": [
+     3,
+     2
+    ],
+    "width": 0.32,
+    "height": 0.32,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#6a7246ff"
+   },
+   {
+    "center": [
+     4,
+     1
+    ],
+    "width": 0.32,
+    "height": 0.32,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#6a7246ff"
+   },
+   {
+    "center": [
+     4,
+     2
+    ],
+    "width": 0.32,
+    "height": 0.32,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#6a7246ff"
+   },
+   {
+    "center": [
+     5,
+     1
+    ],
+    "width": 0.32,
+    "height": 0.32,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#6a7246ff"
+   },
+   {
+    "center": [
+     5,
+     2
+    ],
+    "width": 0.32,
+    "height": 0.32,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#6a7246ff"
+   },
+   {
+    "center": [
+     6,
+     1
+    ],
+    "width": 0.32,
+    "height": 0.32,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#6a7246ff"
+   },
+   {
+    "center": [
+     8,
+     2
+    ],
+    "width": 0.32,
+    "height": 0.32,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#6a7246ff"
+   },
+   {
+    "center": [
+     5,
+     3
+    ],
+    "width": 0.32,
+    "height": 0.32,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#6a7246ff"
+   },
+   {
+    "center": [
+     5,
+     4
+    ],
+    "width": 0.32,
+    "height": 0.32,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#6a7246ff"
+   },
+   {
+    "center": [
+     3,
+     5
+    ],
+    "width": 0.32,
+    "height": 0.32,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#6a7246ff"
+   },
+   {
+    "center": [
+     1,
+     5
+    ],
+    "width": 0.32,
+    "height": 0.32,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#6a7246ff"
+   },
+   {
+    "center": [
+     1,
+     6
+    ],
+    "width": 0.32,
+    "height": 0.32,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#6a7246ff"
+   },
+   {
+    "center": [
+     2,
+     6
+    ],
+    "width": 0.32,
+    "height": 0.32,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#6a7246ff"
+   },
+   {
+    "center": [
+     2,
+     7
+    ],
+    "width": 0.32,
+    "height": 0.32,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#6a7246ff"
+   },
+   {
+    "center": [
+     2,
+     8
+    ],
+    "width": 0.32,
+    "height": 0.32,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#6a7246ff"
+   },
+   {
+    "center": [
+     1,
+     7
+    ],
+    "width": 0.32,
+    "height": 0.32,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#6a7246ff"
+   },
+   {
+    "center": [
+     1,
+     8
+    ],
+    "width": 0.32,
+    "height": 0.32,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#6a7246ff"
+   },
+   {
+    "center": [
+     4,
+     7
+    ],
+    "width": 0.32,
+    "height": 0.32,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#6a7246ff"
+   },
+   {
+    "center": [
+     4,
+     8
+    ],
+    "width": 0.32,
+    "height": 0.32,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#6a7246ff"
+   },
+   {
+    "center": [
+     3,
+     6
+    ],
+    "width": 0.32,
+    "height": 0.32,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#6a7246ff"
+   },
+   {
+    "center": [
+     5,
+     6
+    ],
+    "width": 0.32,
+    "height": 0.32,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#6a7246ff"
+   },
+   {
+    "center": [
+     5,
+     5
+    ],
+    "width": 0.32,
+    "height": 0.32,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#6a7246ff"
+   },
+   {
+    "center": [
+     8,
+     3
+    ],
+    "width": 0.32,
+    "height": 0.32,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#6a7246ff"
+   },
+   {
+    "center": [
+     7,
+     4
+    ],
+    "width": 0.32,
+    "height": 0.32,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#6a7246ff"
+   },
+   {
+    "center": [
+     7,
+     5
+    ],
+    "width": 0.32,
+    "height": 0.32,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#6a7246ff"
+   },
+   {
+    "center": [
+     8,
+     5
+    ],
+    "width": 0.32,
+    "height": 0.32,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#6a7246ff"
+   },
+   {
+    "center": [
+     8,
+     6
+    ],
+    "width": 0.32,
+    "height": 0.32,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#6a7246ff"
+   },
+   {
+    "center": [
+     7,
+     7
+    ],
+    "width": 0.32,
+    "height": 0.32,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#6a7246ff"
+   },
+   {
+    "center": [
+     7,
+     8
+    ],
+    "width": 0.32,
+    "height": 0.32,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#6a7246ff"
+   },
+   {
+    "center": [
+     6,
+     8
+    ],
+    "width": 0.32,
+    "height": 0.32,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#6a7246ff"
+   },
+   {
+    "center": [
+     5,
+     7
+    ],
+    "width": 0.32,
+    "height": 0.32,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#6a7246ff"
+   },
+   {
+    "center": [
+     5,
+     8
+    ],
+    "width": 0.32,
+    "height": 0.32,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#6a7246ff"
+   },
+   {
+    "center": [
+     1,
+     4
+    ],
+    "width": 0.32,
+    "height": 0.32,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#6a7246ff"
+   },
+   {
+    "center": [
+     3,
+     3
+    ],
+    "width": 0.32,
+    "height": 0.32,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#6a7246ff"
+   },
+   {
+    "center": [
+     3,
+     4
+    ],
+    "width": 0.32,
+    "height": 0.32,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#6a7246ff"
+   },
+   {
+    "center": [
+     6,
+     8.5
+    ],
+    "width": 0.26,
+    "height": 0.26,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#000000"
+   },
+   {
+    "center": [
+     6.5,
+     1
+    ],
+    "width": 0.26,
+    "height": 0.26,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#000000"
+   },
+   {
+    "center": [
+     5,
+     2.5
+    ],
+    "width": 0.26,
+    "height": 0.26,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#000000"
+   },
+   {
+    "center": [
+     7.5,
+     5
+    ],
+    "width": 0.26,
+    "height": 0.26,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#000000"
+   },
+   {
+    "center": [
+     5,
+     4.5
+    ],
+    "width": 0.26,
+    "height": 0.26,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#000000"
+   },
+   {
+    "center": [
+     4,
+     8.5
+    ],
+    "width": 0.26,
+    "height": 0.26,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#000000"
+   },
+   {
+    "center": [
+     8,
+     3.5
+    ],
+    "width": 0.26,
+    "height": 0.26,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#000000"
+   },
+   {
+    "center": [
+     4.65,
+     7.5
+    ],
+    "width": 0,
+    "height": 0.504,
+    "stroke": "#ffffff",
+    "text": "🧁",
+    "fontSize": 22,
+    "color": "#000000",
+    "angle": 0,
+    "rounded": true
+   },
+   {
+    "center": [
+     6.65,
+     7.5
+    ],
+    "width": 0,
+    "height": 0.504,
+    "stroke": "#ffffff",
+    "text": "🐀",
+    "fontSize": 22,
+    "color": "#000000",
+    "angle": 0,
+    "rounded": true
+   },
+   {
+    "center": [
+     8.5,
+     8.5
+    ],
+    "width": 0.57,
+    "height": 0.57,
+    "stroke": "none",
+    "thickness": 4,
+    "angle": 0,
+    "rounded": true,
+    "borderColor": "#f7e600ff"
+   },
+   {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "width": 0.57,
+    "height": 0.57,
+    "stroke": "none",
+    "thickness": 4,
+    "angle": 0,
+    "rounded": true,
+    "borderColor": "#f7e600ff"
+   },
+   {
+    "center": [
+     8.5,
+     8.5
+    ],
+    "width": 0.27,
+    "height": 0.27,
+    "stroke": "none",
+    "thickness": 4,
+    "angle": 0,
+    "rounded": true,
+    "borderColor": "#f7e600ff"
+   },
+   {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "width": 0.27,
+    "height": 0.27,
+    "stroke": "none",
+    "thickness": 4,
+    "angle": 0,
+    "rounded": true,
+    "borderColor": "#f7e600ff"
+   },
+   {
+    "center": [
+     3,
+     1.2
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     3,
+     1.8
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     0.8,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     0.6,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     0.4,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     0.2,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     0.2,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     0.4,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     0.6,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     0.8,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     3,
+     5.2
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     3,
+     5.4
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     3,
+     5.6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     3,
+     5.8
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     5.2,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     5.6,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     5.4,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     5.8,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     8.2,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     8.4,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     8.6,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     8.8,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     8.2,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     8.4,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     8.6,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     8.8,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     6,
+     0.2
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     6,
+     0.4
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     6,
+     0.6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     6,
+     0.8
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     3.2,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     3.4,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     3.6,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     3.8,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     4,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     4.2,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     4.4,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     4.6,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     4.8,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     2.2,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     2.4,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     2.6,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     2.8,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     6,
+     8.2
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     6,
+     8.8
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     6,
+     8.4
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     6,
+     8.6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     8,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     7.8,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6,
+     1
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6,
+     1.2
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6,
+     1.4
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6,
+     1.6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6,
+     1.8
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6,
+     2
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6,
+     2.2
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6,
+     2.4
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6,
+     2.6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6,
+     2.8
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     5,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     5.2,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     5.4,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     5.6,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     5.8,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6.2,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6.4,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6.6,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6.8,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     7,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     7.2,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     7.4,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     7.6,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6,
+     3.2
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6,
+     3.4
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6,
+     3.6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6,
+     4
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6,
+     3.8
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6,
+     4.2
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6,
+     4.6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6,
+     4.4
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6,
+     4.8
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6,
+     5
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6,
+     5.2
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6,
+     5.4
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6,
+     5.6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6,
+     5.8
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6,
+     6.2
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6.2,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6.4,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6.6,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6.8,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     7,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     7.2,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     7.4,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     7.6,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     8,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     7.8,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6,
+     6.4
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6,
+     6.6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6,
+     6.8
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6,
+     7
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6,
+     7.4
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6,
+     7.2
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6,
+     7.8
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6,
+     8
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6,
+     7.6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6,
+     9
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     5,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     4.8,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     4.6,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     4.4,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     4.2,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     4,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     3.6,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     3.8,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     3.4,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     3.2,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     3,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     3,
+     6.2
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     3,
+     6.4
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     3,
+     6.6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     3,
+     6.8
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     3,
+     7
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     3,
+     7.2
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     3,
+     7.4
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     3,
+     7.6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     3,
+     7.8
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     3,
+     8
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     3,
+     8.2
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     3,
+     8.4
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     3,
+     8.6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     3,
+     8.8
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     3,
+     9
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     2,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     1,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     0,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     0,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     1,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     1.2,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     1.6,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     1.4,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     1.8,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     2,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     2.2,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     2.4,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     2.6,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     2.8,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     3,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     3,
+     4
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     3,
+     4.2
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     3,
+     4.4
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     3,
+     4.6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     3,
+     4.8
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     3,
+     5
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     3,
+     2.2
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     3,
+     2
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     3,
+     2.4
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     3,
+     2.6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     3,
+     2.8
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     3,
+     0
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     3,
+     0.2
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     3,
+     0.4
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     3,
+     0.8
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     6,
+     0
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     3,
+     0.6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     9,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     9,
+     3
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     3,
+     1
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#42462dff"
+   },
+   {
+    "center": [
+     3,
+     3.2
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     3,
+     3.8
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     1.8,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     1.6,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     1.4,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   },
+   {
+    "center": [
+     1.2,
+     6
+    ],
+    "width": 0.1,
+    "height": 0.1,
+    "stroke": "none",
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#00000030"
+   }
+  ],
+  "lines": [
+   {
+    "wayPoints": [
+     [
+      9.25,
+      8.75
+     ],
+     [
+      9.25,
+      9.25
+     ],
+     [
+      -0.25,
+      9.25
+     ],
+     [
+      -0.25,
+      -0.25
+     ],
+     [
+      9.25,
+      -0.25
+     ],
+     [
+      9.25,
+      8.75
+     ]
+    ],
+    "color": "#7b905aff",
+    "thickness": 20
+   },
+   {
+    "wayPoints": [
+     [
+      0,
+      8
+     ],
+     [
+      9,
+      8
+     ]
+    ],
+    "color": "#e4e4e4ff",
+    "thickness": 1,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      1,
+      9
+     ],
+     [
+      1,
+      7
+     ],
+     [
+      2,
+      7
+     ],
+     [
+      2,
+      9
+     ]
+    ],
+    "color": "#e4e4e4ff",
+    "thickness": 1,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      3,
+      9
+     ],
+     [
+      3,
+      7
+     ],
+     [
+      2,
+      7
+     ],
+     [
+      2,
+      6
+     ],
+     [
+      3,
+      6
+     ],
+     [
+      3,
+      7
+     ]
+    ],
+    "color": "#e4e4e4ff",
+    "thickness": 1,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      4,
+      9
+     ],
+     [
+      4,
+      7
+     ],
+     [
+      3,
+      7
+     ]
+    ],
+    "color": "#e4e4e4ff",
+    "thickness": 1,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      5,
+      9
+     ],
+     [
+      5,
+      7
+     ],
+     [
+      4,
+      7
+     ],
+     [
+      4,
+      6
+     ],
+     [
+      3,
+      6
+     ],
+     [
+      3,
+      5
+     ],
+     [
+      4,
+      5
+     ],
+     [
+      4,
+      6
+     ]
+    ],
+    "color": "#e4e4e4ff",
+    "thickness": 1,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      6,
+      9
+     ],
+     [
+      6,
+      7
+     ],
+     [
+      5,
+      7
+     ],
+     [
+      5,
+      6
+     ],
+     [
+      4,
+      6
+     ]
+    ],
+    "color": "#e4e4e4ff",
+    "thickness": 1,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      7,
+      9
+     ],
+     [
+      7,
+      7
+     ],
+     [
+      6,
+      7
+     ],
+     [
+      6,
+      6
+     ],
+     [
+      5,
+      6
+     ],
+     [
+      5,
+      5
+     ],
+     [
+      4,
+      5
+     ],
+     [
+      4,
+      4
+     ],
+     [
+      5,
+      4
+     ],
+     [
+      5,
+      5
+     ]
+    ],
+    "color": "#e4e4e4ff",
+    "thickness": 1,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      8,
+      9
+     ],
+     [
+      8,
+      7
+     ],
+     [
+      7,
+      7
+     ],
+     [
+      7,
+      6
+     ],
+     [
+      6,
+      6
+     ],
+     [
+      6,
+      5
+     ],
+     [
+      5,
+      5
+     ]
+    ],
+    "color": "#e4e4e4ff",
+    "thickness": 1,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      7
+     ],
+     [
+      1,
+      6
+     ],
+     [
+      2,
+      6
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      3,
+      5
+     ],
+     [
+      3,
+      4
+     ],
+     [
+      4,
+      4
+     ],
+     [
+      4,
+      3
+     ],
+     [
+      6,
+      3
+     ],
+     [
+      6,
+      4
+     ],
+     [
+      5,
+      4
+     ],
+     [
+      5,
+      3
+     ]
+    ],
+    "color": "#e4e4e4ff",
+    "thickness": 1,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      9,
+      7
+     ],
+     [
+      8,
+      7
+     ],
+     [
+      8,
+      6
+     ],
+     [
+      7,
+      6
+     ],
+     [
+      7,
+      5
+     ],
+     [
+      6,
+      5
+     ],
+     [
+      6,
+      4
+     ],
+     [
+      7,
+      4
+     ],
+     [
+      7,
+      5
+     ]
+    ],
+    "color": "#e4e4e4ff",
+    "thickness": 1,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      7,
+      5
+     ],
+     [
+      8,
+      5
+     ],
+     [
+      8,
+      6
+     ],
+     [
+      9,
+      6
+     ]
+    ],
+    "color": "#e4e4e4ff",
+    "thickness": 1,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      9,
+      5
+     ],
+     [
+      8,
+      5
+     ],
+     [
+      8,
+      4
+     ],
+     [
+      7,
+      4
+     ],
+     [
+      7,
+      3
+     ],
+     [
+      6,
+      3
+     ],
+     [
+      6,
+      2
+     ],
+     [
+      7,
+      2
+     ],
+     [
+      7,
+      3
+     ]
+    ],
+    "color": "#e4e4e4ff",
+    "thickness": 1,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      9,
+      4
+     ],
+     [
+      8,
+      4
+     ],
+     [
+      8,
+      3
+     ],
+     [
+      7,
+      3
+     ]
+    ],
+    "color": "#e4e4e4ff",
+    "thickness": 1,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      9,
+      3
+     ],
+     [
+      8,
+      3
+     ],
+     [
+      8,
+      2
+     ],
+     [
+      7,
+      2
+     ],
+     [
+      7,
+      1
+     ],
+     [
+      8,
+      1
+     ],
+     [
+      8,
+      2
+     ]
+    ],
+    "color": "#e4e4e4ff",
+    "thickness": 1,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      8,
+      2
+     ],
+     [
+      9,
+      2
+     ]
+    ],
+    "color": "#e4e4e4ff",
+    "thickness": 1,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      9,
+      1
+     ],
+     [
+      8,
+      1
+     ],
+     [
+      8,
+      0
+     ]
+    ],
+    "color": "#e4e4e4ff",
+    "thickness": 1,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      5,
+      3
+     ],
+     [
+      5,
+      2
+     ],
+     [
+      6,
+      2
+     ],
+     [
+      6,
+      1
+     ],
+     [
+      7,
+      1
+     ],
+     [
+      7,
+      0
+     ]
+    ],
+    "color": "#e4e4e4ff",
+    "thickness": 1,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      6
+     ],
+     [
+      1,
+      5
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      3,
+      4
+     ],
+     [
+      3,
+      3
+     ],
+     [
+      4,
+      3
+     ],
+     [
+      4,
+      2
+     ],
+     [
+      5,
+      2
+     ],
+     [
+      5,
+      1
+     ],
+     [
+      6,
+      1
+     ],
+     [
+      6,
+      0
+     ]
+    ],
+    "color": "#e4e4e4ff",
+    "thickness": 1,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      0,
+      5
+     ],
+     [
+      1,
+      5
+     ],
+     [
+      1,
+      4
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      3
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      2
+     ],
+     [
+      4,
+      1
+     ],
+     [
+      5,
+      1
+     ],
+     [
+      5,
+      0
+     ]
+    ],
+    "color": "#e4e4e4ff",
+    "thickness": 1,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      0,
+      4
+     ],
+     [
+      1,
+      4
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      4,
+      1
+     ],
+     [
+      4,
+      0
+     ]
+    ],
+    "color": "#e4e4e4ff",
+    "thickness": 1,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      3,
+      0
+     ]
+    ],
+    "color": "#e4e4e4ff",
+    "thickness": 1,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    "color": "#e4e4e4ff",
+    "thickness": 1,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "color": "#e4e4e4ff",
+    "thickness": 1,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      9
+     ]
+    ],
+    "color": "#FFFFFF",
+    "thickness": 8,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      0,
+      6
+     ],
+     [
+      6,
+      6
+     ],
+     [
+      6,
+      9
+     ]
+    ],
+    "color": "#FFFFFF",
+    "thickness": 8,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      9,
+      6
+     ],
+     [
+      6,
+      6
+     ],
+     [
+      6,
+      3
+     ],
+     [
+      9,
+      3
+     ]
+    ],
+    "color": "#FFFFFF",
+    "thickness": 8,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      6,
+      0
+     ],
+     [
+      6,
+      3
+     ],
+     [
+      0,
+      3
+     ]
+    ],
+    "color": "#FFFFFF",
+    "thickness": 8,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      9
+     ]
+    ],
+    "color": "#dcdcdcff",
+    "thickness": 6,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      0,
+      6
+     ],
+     [
+      6,
+      6
+     ],
+     [
+      6,
+      9
+     ]
+    ],
+    "color": "#dcdcdcff",
+    "thickness": 6,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      9,
+      6
+     ],
+     [
+      6,
+      6
+     ],
+     [
+      6,
+      3
+     ],
+     [
+      9,
+      3
+     ]
+    ],
+    "color": "#dcdcdcff",
+    "thickness": 6,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      6,
+      0
+     ],
+     [
+      6,
+      3
+     ],
+     [
+      0,
+      3
+     ]
+    ],
+    "color": "#dcdcdcff",
+    "thickness": 6,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      -0.5
+     ]
+    ],
+    "color": "#12210e41",
+    "thickness": 9,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      6,
+      0
+     ],
+     [
+      6,
+      -0.5
+     ]
+    ],
+    "color": "#12210e41",
+    "thickness": 9,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      9,
+      3
+     ],
+     [
+      9.5,
+      3
+     ]
+    ],
+    "color": "#12210e41",
+    "thickness": 9,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      9,
+      6
+     ],
+     [
+      9.5,
+      6
+     ]
+    ],
+    "color": "#12210e41",
+    "thickness": 9,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      6,
+      9
+     ],
+     [
+      6,
+      9.5
+     ]
+    ],
+    "color": "#12210e41",
+    "thickness": 9,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      3,
+      9
+     ],
+     [
+      3,
+      9.5
+     ]
+    ],
+    "color": "#12210e41",
+    "thickness": 9,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      0,
+      6
+     ],
+     [
+      -0.5,
+      6
+     ]
+    ],
+    "color": "#12210e41",
+    "thickness": 9,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      0,
+      3
+     ],
+     [
+      -0.5,
+      3
+     ]
+    ],
+    "color": "#12210e41",
+    "thickness": 9,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      8,
+      6
+     ],
+     [
+      6,
+      6
+     ],
+     [
+      6,
+      8
+     ],
+     [
+      7,
+      8
+     ],
+     [
+      7,
+      7
+     ],
+     [
+      9,
+      7
+     ],
+     [
+      9,
+      9
+     ],
+     [
+      0,
+      9
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      1
+     ]
+    ],
+    "color": "#6a7246ff",
+    "thickness": 12,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      6,
+      6
+     ],
+     [
+      6,
+      3
+     ],
+     [
+      8,
+      3
+     ]
+    ],
+    "color": "#6a7246ff",
+    "thickness": 12,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      9,
+      7
+     ],
+     [
+      9,
+      0
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      1
+     ]
+    ],
+    "color": "#6a7246ff",
+    "thickness": 12,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      3,
+      9
+     ],
+     [
+      3,
+      6
+     ],
+     [
+      5,
+      6
+     ]
+    ],
+    "color": "#6a7246ff",
+    "thickness": 12,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      3,
+      0
+     ]
+    ],
+    "color": "#6a7246ff",
+    "thickness": 12,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      6,
+      5
+     ],
+     [
+      5,
+      5
+     ]
+    ],
+    "color": "#6a7246ff",
+    "thickness": 12,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      9,
+      5
+     ],
+     [
+      8,
+      5
+     ]
+    ],
+    "color": "#6a7246ff",
+    "thickness": 12,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      3,
+      2
+     ],
+     [
+      3,
+      3
+     ],
+     [
+      1,
+      3
+     ]
+    ],
+    "color": "#6a7246ff",
+    "thickness": 12,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      3,
+      5
+     ],
+     [
+      3,
+      4
+     ],
+     [
+      5,
+      4
+     ]
+    ],
+    "color": "#6a7246ff",
+    "thickness": 12,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      6,
+      1
+     ],
+     [
+      6,
+      3
+     ],
+     [
+      5,
+      3
+     ]
+    ],
+    "color": "#6a7246ff",
+    "thickness": 12,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      5,
+      7
+     ],
+     [
+      5,
+      8
+     ]
+    ],
+    "color": "#6a7246ff",
+    "thickness": 12,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      1,
+      8
+     ],
+     [
+      2,
+      8
+     ]
+    ],
+    "color": "#6a7246ff",
+    "thickness": 12,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "color": "#6a7246ff",
+    "thickness": 12,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      4,
+      1
+     ],
+     [
+      4,
+      2
+     ]
+    ],
+    "color": "#6a7246ff",
+    "thickness": 12,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      1,
+      4
+     ],
+     [
+      1,
+      5
+     ]
+    ],
+    "color": "#6a7246ff",
+    "thickness": 12,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      7,
+      4
+     ],
+     [
+      7,
+      5
+     ]
+    ],
+    "color": "#6a7246ff",
+    "thickness": 12,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      1,
+      6
+     ],
+     [
+      1,
+      7
+     ]
+    ],
+    "color": "#6a7246ff",
+    "thickness": 12,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      2,
+      6
+     ],
+     [
+      2,
+      7
+     ]
+    ],
+    "color": "#6a7246ff",
+    "thickness": 12,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      2.5,
+      -0.5
+     ],
+     [
+      6.5,
+      -0.5
+     ]
+    ],
+    "color": "#FFFFFF",
+    "thickness": 10,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      -0.5,
+      2.5
+     ],
+     [
+      -0.5,
+      6.5
+     ]
+    ],
+    "color": "#FFFFFF",
+    "thickness": 10,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      2.5,
+      9.5
+     ],
+     [
+      6.5,
+      9.5
+     ]
+    ],
+    "color": "#FFFFFF",
+    "thickness": 10,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      9.5,
+      2.5
+     ],
+     [
+      9.5,
+      6.5
+     ]
+    ],
+    "color": "#FFFFFF",
+    "thickness": 10,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      2.944,
+      1.389
+     ],
+     [
+      3.056,
+      1.5
+     ],
+     [
+      2.944,
+      1.611
+     ]
+    ],
+    "color": "#FFFFFF",
+    "thickness": 10,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      5.056,
+      5.611
+     ],
+     [
+      4.944,
+      5.5
+     ],
+     [
+      5.056,
+      5.389
+     ]
+    ],
+    "color": "#FFFFFF",
+    "thickness": 10,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      0.611,
+      8.056
+     ],
+     [
+      0.5,
+      7.944
+     ],
+     [
+      0.389,
+      8.056
+     ]
+    ],
+    "color": "#FFFFFF",
+    "thickness": 10,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      6.611,
+      4.056
+     ],
+     [
+      6.5,
+      3.944
+     ],
+     [
+      6.389,
+      4.056
+     ]
+    ],
+    "color": "#FFFFFF",
+    "thickness": 10,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      0.611,
+      5.944
+     ],
+     [
+      0.5,
+      6.056
+     ],
+     [
+      0.389,
+      5.944
+     ]
+    ],
+    "color": "#FFFFFF",
+    "thickness": 10,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      2.944,
+      3.389
+     ],
+     [
+      3.056,
+      3.5
+     ],
+     [
+      2.944,
+      3.611
+     ]
+    ],
+    "color": "#FFFFFF",
+    "thickness": 10,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      2.944,
+      1.389
+     ],
+     [
+      3.056,
+      1.5
+     ],
+     [
+      2.944,
+      1.611
+     ]
+    ],
+    "color": "#730dc5ff",
+    "thickness": 5,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      5.056,
+      5.611
+     ],
+     [
+      4.944,
+      5.5
+     ],
+     [
+      5.056,
+      5.389
+     ]
+    ],
+    "color": "#730dc5ff",
+    "thickness": 5,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      0.611,
+      8.056
+     ],
+     [
+      0.5,
+      7.944
+     ],
+     [
+      0.389,
+      8.056
+     ]
+    ],
+    "color": "#730dc5ff",
+    "thickness": 5,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      6.611,
+      4.056
+     ],
+     [
+      6.5,
+      3.944
+     ],
+     [
+      6.389,
+      4.056
+     ]
+    ],
+    "color": "#730dc5ff",
+    "thickness": 5,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      0.611,
+      5.944
+     ],
+     [
+      0.5,
+      6.056
+     ],
+     [
+      0.389,
+      5.944
+     ]
+    ],
+    "color": "#730dc5ff",
+    "thickness": 5,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      2.944,
+      3.389
+     ],
+     [
+      3.056,
+      3.5
+     ],
+     [
+      2.944,
+      3.611
+     ]
+    ],
+    "color": "#730dc5ff",
+    "thickness": 5,
+    "target": "overlay"
+   }
+  ],
+  "arrows": [],
+  "cages": []
+ }
+};

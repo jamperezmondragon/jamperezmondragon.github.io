@@ -1,0 +1,620 @@
+{
+ "id": "sxsm_MartySears_b2a8b3a25c9eda5adb9efe2168f843f9",
+ "metadata": {
+  "source": "Sudoku Maker v2025.02.24-ccf5a86",
+  "title": "4 / 13",
+  "author": "Marty Sears",
+  "rules": "Normal 6x6 sudoku rules apply. Each line is formed of one or more segments, which each sum to either 4 or 13. A party cell on a line indicates how many segments that line has.",
+  "msgcorrect": "Happy Birthday Kathy! 🎉🎉🎉",
+  "solution": "241365635241512634364512123456456123"
+ },
+ "cages": [],
+ "cells": [
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ]
+ ],
+ "regions": [
+  [
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    1
+   ],
+   [
+    1,
+    2
+   ]
+  ],
+  [
+   [
+    0,
+    3
+   ],
+   [
+    0,
+    4
+   ],
+   [
+    0,
+    5
+   ],
+   [
+    1,
+    3
+   ],
+   [
+    1,
+    4
+   ],
+   [
+    1,
+    5
+   ]
+  ],
+  [
+   [
+    2,
+    0
+   ],
+   [
+    2,
+    1
+   ],
+   [
+    2,
+    2
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    3,
+    1
+   ],
+   [
+    3,
+    2
+   ]
+  ],
+  [
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    4
+   ],
+   [
+    2,
+    5
+   ],
+   [
+    3,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    3,
+    5
+   ]
+  ],
+  [
+   [
+    4,
+    0
+   ],
+   [
+    4,
+    1
+   ],
+   [
+    4,
+    2
+   ],
+   [
+    5,
+    0
+   ],
+   [
+    5,
+    1
+   ],
+   [
+    5,
+    2
+   ]
+  ],
+  [
+   [
+    4,
+    3
+   ],
+   [
+    4,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    5,
+    3
+   ],
+   [
+    5,
+    4
+   ],
+   [
+    5,
+    5
+   ]
+  ]
+ ],
+ "lines": [
+  {
+   "wayPoints": [
+    [
+     5.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "color": "#FFFFFF",
+   "thickness": 13.44
+  },
+  {
+   "wayPoints": [
+    [
+     0.5,
+     1.5
+    ],
+    [
+     1.5,
+     1.5
+    ],
+    [
+     1.5,
+     2.5
+    ],
+    [
+     0.5,
+     2.5
+    ]
+   ],
+   "color": "#FFFFFF",
+   "thickness": 13.44
+  },
+  {
+   "wayPoints": [
+    [
+     2.5,
+     2.5
+    ],
+    [
+     3.5,
+     2.5
+    ],
+    [
+     3.5,
+     1.5
+    ],
+    [
+     2.5,
+     1.5
+    ]
+   ],
+   "color": "#FFFFFF",
+   "thickness": 13.44
+  },
+  {
+   "wayPoints": [
+    [
+     4.5,
+     1.5
+    ],
+    [
+     5.5,
+     1.5
+    ],
+    [
+     5.5,
+     2.5
+    ],
+    [
+     4.5,
+     2.5
+    ],
+    [
+     4.5,
+     3.5
+    ],
+    [
+     5.5,
+     3.5
+    ],
+    [
+     5.5,
+     5.5
+    ]
+   ],
+   "color": "#FFFFFF",
+   "thickness": 13.44
+  },
+  {
+   "wayPoints": [
+    [
+     4.5,
+     4.5
+    ],
+    [
+     4.5,
+     5.5
+    ],
+    [
+     3.5,
+     5.5
+    ],
+    [
+     3.5,
+     4.5
+    ],
+    [
+     2.5,
+     4.5
+    ],
+    [
+     2.5,
+     5.5
+    ],
+    [
+     0.5,
+     5.5
+    ],
+    [
+     1.5,
+     4.5
+    ],
+    [
+     0.5,
+     3.5
+    ],
+    [
+     3.5,
+     3.5
+    ]
+   ],
+   "color": "#FFFFFF",
+   "thickness": 13.44
+  },
+  {
+   "wayPoints": [
+    [
+     5.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "color": "#83e5fcff",
+   "thickness": 9.6
+  },
+  {
+   "wayPoints": [
+    [
+     0.5,
+     1.5
+    ],
+    [
+     1.5,
+     1.5
+    ],
+    [
+     1.5,
+     2.5
+    ],
+    [
+     0.5,
+     2.5
+    ]
+   ],
+   "color": "#83e5fcff",
+   "thickness": 9.6
+  },
+  {
+   "wayPoints": [
+    [
+     2.5,
+     2.5
+    ],
+    [
+     3.5,
+     2.5
+    ],
+    [
+     3.5,
+     1.5
+    ],
+    [
+     2.5,
+     1.5
+    ]
+   ],
+   "color": "#83e5fcff",
+   "thickness": 9.6
+  },
+  {
+   "wayPoints": [
+    [
+     4.5,
+     1.5
+    ],
+    [
+     5.5,
+     1.5
+    ],
+    [
+     5.5,
+     2.5
+    ],
+    [
+     4.5,
+     2.5
+    ],
+    [
+     4.5,
+     3.5
+    ],
+    [
+     5.5,
+     3.5
+    ],
+    [
+     5.5,
+     5.5
+    ]
+   ],
+   "color": "#83e5fcff",
+   "thickness": 9.6
+  },
+  {
+   "wayPoints": [
+    [
+     4.5,
+     4.5
+    ],
+    [
+     4.5,
+     5.5
+    ],
+    [
+     3.5,
+     5.5
+    ],
+    [
+     3.5,
+     4.5
+    ],
+    [
+     2.5,
+     4.5
+    ],
+    [
+     2.5,
+     5.5
+    ],
+    [
+     0.5,
+     5.5
+    ],
+    [
+     1.5,
+     4.5
+    ],
+    [
+     0.5,
+     3.5
+    ],
+    [
+     3.5,
+     3.5
+    ]
+   ],
+   "color": "#83e5fcff",
+   "thickness": 9.6
+  }
+ ],
+ "underlays": [
+  {
+   "center": [
+    3.5,
+    0.5
+   ],
+   "width": 0,
+   "height": 1.237,
+   "stroke": "#ffffff",
+   "text": "🎉",
+   "fontSize": 43.2,
+   "color": "#000000",
+   "angle": 0,
+   "rounded": true
+  },
+  {
+   "center": [
+    2.5,
+    1.5
+   ],
+   "width": 0,
+   "height": 1.237,
+   "stroke": "#ffffff",
+   "text": "🎉",
+   "fontSize": 43.2,
+   "color": "#000000",
+   "angle": 0,
+   "rounded": true
+  },
+  {
+   "center": [
+    0.5,
+    2.5
+   ],
+   "width": 0,
+   "height": 1.237,
+   "stroke": "#ffffff",
+   "text": "🎉",
+   "fontSize": 43.2,
+   "color": "#000000",
+   "angle": 0,
+   "rounded": true
+  },
+  {
+   "center": [
+    3.5,
+    3.5
+   ],
+   "width": 0,
+   "height": 1.237,
+   "stroke": "#ffffff",
+   "text": "🎉",
+   "fontSize": 43.2,
+   "color": "#000000",
+   "angle": 0,
+   "rounded": true
+  },
+  {
+   "center": [
+    4.5,
+    1.5
+   ],
+   "width": 0,
+   "height": 1.237,
+   "stroke": "#ffffff",
+   "text": "🎉",
+   "fontSize": 43.2,
+   "color": "#000000",
+   "angle": 0,
+   "rounded": true
+  },
+  {
+   "center": [
+    3.5,
+    0.5
+   ],
+   "width": 1,
+   "height": 1,
+   "angle": 0,
+   "backgroundColor": "#fffa"
+  },
+  {
+   "center": [
+    2.5,
+    1.5
+   ],
+   "width": 1,
+   "height": 1,
+   "angle": 0,
+   "backgroundColor": "#fffa"
+  },
+  {
+   "center": [
+    0.5,
+    2.5
+   ],
+   "width": 1,
+   "height": 1,
+   "angle": 0,
+   "backgroundColor": "#fffa"
+  },
+  {
+   "center": [
+    3.5,
+    3.5
+   ],
+   "width": 1,
+   "height": 1,
+   "angle": 0,
+   "backgroundColor": "#fffa"
+  },
+  {
+   "center": [
+    4.5,
+    1.5
+   ],
+   "width": 1,
+   "height": 1,
+   "angle": 0,
+   "backgroundColor": "#fffa"
+  }
+ ]
+}

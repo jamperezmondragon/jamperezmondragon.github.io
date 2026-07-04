@@ -1,0 +1,867 @@
+// Generado por tools/convierte.js desde el SCL de SudokuPad.
+// rules y hints se editan a mano (ver ANALISIS.md). NO regenerar encima.
+window.PUZZLE = {
+ "id": "bpxci0jt2o",
+ "title": "24 / 4",
+ "author": "Marty Sears",
+ "urlOriginal": "https://sudokupad.app/bpxci0jt2o",
+ "size": 6,
+ "boxes": null,
+ "regions": [
+  [
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    1
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    2,
+    0
+   ],
+   [
+    2,
+    1
+   ],
+   [
+    2,
+    2
+   ]
+  ],
+  [
+   [
+    0,
+    3
+   ],
+   [
+    0,
+    4
+   ],
+   [
+    0,
+    5
+   ],
+   [
+    1,
+    3
+   ],
+   [
+    1,
+    4
+   ],
+   [
+    1,
+    5
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    4
+   ],
+   [
+    2,
+    5
+   ]
+  ],
+  [
+   [
+    3,
+    0
+   ],
+   [
+    3,
+    1
+   ],
+   [
+    3,
+    2
+   ],
+   [
+    4,
+    0
+   ],
+   [
+    4,
+    1
+   ],
+   [
+    4,
+    2
+   ],
+   [
+    5,
+    0
+   ],
+   [
+    5,
+    1
+   ],
+   [
+    5,
+    2
+   ]
+  ],
+  [
+   [
+    3,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    3,
+    5
+   ],
+   [
+    4,
+    3
+   ],
+   [
+    4,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    5,
+    3
+   ],
+   [
+    5,
+    4
+   ],
+   [
+    5,
+    5
+   ]
+  ]
+ ],
+ "rules": "QUATTROQUADRI: llena el tablero de 6×6 con dígitos del 1 al 9 sin repetir en ninguna fila, columna ni caja de 3×3 (¡hay cuatro cajas!). Como cada fila solo tiene 6 casillas, en cada una aparecen 6 de los 9 dígitos.\n\nFULL RANK: cada fila forma un número de 6 cifras leído hacia adelante y OTRO leído al revés; cada columna, uno hacia abajo y otro hacia arriba. Esos 24 números se ordenan del rango 1 (el más chico) al 24 (el más grande), y no hay empates: los 24 son distintos. Un círculo morado contiene el rango del número de 6 cifras al que apunta su flecha (leído en la dirección de la flecha).\n\nPUNTOS NEGROS: un dígito es el doble del otro.\nPUNTOS ROJOS: uno es par y el otro impar.\nPUNTOS AMARILLOS: NO son consecutivos.",
+ "hints": [
+  "El rango 24 es el número MÁS GRANDE de los 24. Su primera cifra compite contra las primeras cifras de todos los demás… y cada dígito del borde inicia algún número.",
+  "¿Puede otro número empezar igual que el máximo y decidirse hasta la segunda cifra? Piensa en la fila 1 leída al revés.",
+  "El círculo morado es una casilla normal del tablero: su dígito es el rango de la fila 5 leída de derecha a izquierda. Rango chiquito = número chiquito = primera cifra chiquita."
+ ],
+ "_rulesOrig": "QUATTROQUADRI:\nFill the grid with the digits 1-9 so that digits don't repeat in any row, column or box.\n\nFULL RANK:\nEach row contains a 6-digit number reading forwards and another reading backwards. Each column contains a 6-digit number reading downwards, and another reading upwards.\n\nThese 24 numbers are ranked from 1-24, from lowest to highest. There are no tied ranks, so none of the numbers are the same. A purple circle contains the rank of the 6-digit number it points at (reading in the direction the arrow is pointing.)\n\nBLACK DOTS: If two digits are joined by a black dot, one is double the other.\n\nRED DOTS: If two digits are joined by a red dot, one is odd and the other is even.\n\nYELLOW DOTS: If two digits are joined by a yellow dot, they are NOT consecutive.",
+ "givens": [],
+ "solution": "632154187963594782378495269871415326",
+ "fog": null,
+ "sclCellSize": 50,
+ "visuals": {
+  "underlays": [
+   {
+    "center": [
+     2.5,
+     5.5
+    ],
+    "width": 0.82,
+    "height": 0.82,
+    "thickness": 5.12,
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#FFFFFF",
+    "borderColor": "#b096d8ff"
+   }
+  ],
+  "overlays": [
+   {
+    "center": [
+     0.5,
+     1
+    ],
+    "width": 0.3,
+    "height": 0.3,
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#000000"
+   },
+   {
+    "center": [
+     1,
+     0.5
+    ],
+    "width": 0.3,
+    "height": 0.3,
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#e60000ff"
+   },
+   {
+    "center": [
+     1.5,
+     1
+    ],
+    "width": 0.3,
+    "height": 0.3,
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#e60000ff"
+   },
+   {
+    "center": [
+     1,
+     1.5
+    ],
+    "width": 0.3,
+    "height": 0.3,
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#e60000ff"
+   },
+   {
+    "center": [
+     2,
+     1.5
+    ],
+    "width": 0.3,
+    "height": 0.3,
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#e60000ff"
+   },
+   {
+    "center": [
+     1.5,
+     2
+    ],
+    "width": 0.3,
+    "height": 0.3,
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#e60000ff"
+   },
+   {
+    "center": [
+     2.5,
+     2
+    ],
+    "width": 0.3,
+    "height": 0.3,
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#fae636ff"
+   },
+   {
+    "center": [
+     2,
+     2.5
+    ],
+    "width": 0.3,
+    "height": 0.3,
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#e60000ff"
+   },
+   {
+    "center": [
+     3.5,
+     3
+    ],
+    "width": 0.3,
+    "height": 0.3,
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#000000"
+   },
+   {
+    "center": [
+     3,
+     3.5
+    ],
+    "width": 0.3,
+    "height": 0.3,
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#e60000ff"
+   },
+   {
+    "center": [
+     2.5,
+     3
+    ],
+    "width": 0.3,
+    "height": 0.3,
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#fae636ff"
+   },
+   {
+    "center": [
+     3,
+     2.5
+    ],
+    "width": 0.3,
+    "height": 0.3,
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#000000"
+   },
+   {
+    "center": [
+     0.5,
+     -0.75
+    ],
+    "width": 0.82,
+    "height": 0.82,
+    "thickness": 5.12,
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#FFFFFF",
+    "borderColor": "#b096d8ff"
+   },
+   {
+    "center": [
+     -0.75,
+     3.5
+    ],
+    "width": 0.82,
+    "height": 0.82,
+    "thickness": 5.12,
+    "angle": 0,
+    "rounded": true,
+    "backgroundColor": "#FFFFFF",
+    "borderColor": "#b096d8ff"
+   },
+   {
+    "center": [
+     0.5,
+     -0.75
+    ],
+    "width": 0,
+    "height": 0.863,
+    "stroke": "#ffffff",
+    "stroke-width": 1.28,
+    "stroke-linejoin": "round",
+    "text": "24",
+    "fontSize": 28.8,
+    "color": "#000000",
+    "angle": 0,
+    "rounded": true
+   },
+   {
+    "center": [
+     -0.75,
+     3.5
+    ],
+    "width": 0,
+    "height": 0.863,
+    "stroke": "#ffffff",
+    "stroke-width": 1.28,
+    "stroke-linejoin": "round",
+    "text": "4",
+    "fontSize": 28.8,
+    "color": "#000000",
+    "angle": 0,
+    "rounded": true
+   }
+  ],
+  "lines": [
+   {
+    "wayPoints": [
+     [
+      6.125,
+      5.625
+     ],
+     [
+      6.125,
+      6.125
+     ],
+     [
+      -0.125,
+      6.125
+     ],
+     [
+      -0.125,
+      -0.125
+     ],
+     [
+      6.125,
+      -0.125
+     ],
+     [
+      6.125,
+      5.625
+     ]
+    ],
+    "color": "#85e1f2ff",
+    "thickness": 16.64
+   },
+   {
+    "wayPoints": [
+     [
+      6,
+      6.25
+     ],
+     [
+      6.25,
+      6.25
+     ],
+     [
+      6.25,
+      -0.25
+     ],
+     [
+      -0.25,
+      -0.25
+     ],
+     [
+      -0.25,
+      6.25
+     ],
+     [
+      6,
+      6.25
+     ]
+    ],
+    "color": "#b9f5fbff",
+    "thickness": 16.64
+   },
+   {
+    "wayPoints": [
+     [
+      3,
+      4
+     ],
+     [
+      3,
+      6
+     ],
+     [
+      0,
+      6
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      3,
+      3
+     ],
+     [
+      3,
+      4
+     ]
+    ],
+    "color": "#d3f2faff",
+    "thickness": 5.76,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      3,
+      6
+     ],
+     [
+      6,
+      6
+     ],
+     [
+      6,
+      3
+     ],
+     [
+      3,
+      3
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      6,
+      0
+     ],
+     [
+      6,
+      3
+     ]
+    ],
+    "color": "#d3f2faff",
+    "thickness": 5.76,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      3,
+      0
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      3
+     ]
+    ],
+    "color": "#d3f2faff",
+    "thickness": 5.76,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      6,
+      1
+     ],
+     [
+      5,
+      1
+     ],
+     [
+      5,
+      2
+     ],
+     [
+      6,
+      2
+     ]
+    ],
+    "color": "#dff6fbff",
+    "thickness": 1.92,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      0,
+      2
+     ],
+     [
+      5,
+      2
+     ],
+     [
+      5,
+      4
+     ],
+     [
+      6,
+      4
+     ]
+    ],
+    "color": "#dff6fbff",
+    "thickness": 1.92,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      6,
+      5
+     ],
+     [
+      5,
+      5
+     ],
+     [
+      5,
+      4
+     ],
+     [
+      4,
+      4
+     ],
+     [
+      4,
+      1
+     ],
+     [
+      5,
+      1
+     ],
+     [
+      5,
+      0
+     ]
+    ],
+    "color": "#dff6fbff",
+    "thickness": 1.92,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      5,
+      6
+     ],
+     [
+      5,
+      5
+     ],
+     [
+      4,
+      5
+     ],
+     [
+      4,
+      4
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      4,
+      1
+     ],
+     [
+      4,
+      0
+     ]
+    ],
+    "color": "#dff6fbff",
+    "thickness": 1.92,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      4,
+      6
+     ],
+     [
+      4,
+      5
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      2,
+      4
+     ],
+     [
+      1,
+      4
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    "color": "#dff6fbff",
+    "thickness": 1.92,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      2,
+      6
+     ],
+     [
+      2,
+      5
+     ],
+     [
+      1,
+      5
+     ],
+     [
+      1,
+      4
+     ],
+     [
+      0,
+      4
+     ]
+    ],
+    "color": "#dff6fbff",
+    "thickness": 1.92,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      1,
+      6
+     ],
+     [
+      1,
+      5
+     ],
+     [
+      0,
+      5
+     ]
+    ],
+    "color": "#dff6fbff",
+    "thickness": 1.92,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "color": "#dff6fbff",
+    "thickness": 1.92,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      4.7,
+      6.3
+     ],
+     [
+      4.5,
+      6.1
+     ],
+     [
+      4.5,
+      6.5
+     ],
+     [
+      2.5,
+      6.5
+     ],
+     [
+      2.5,
+      5.9
+     ]
+    ],
+    "color": "#b096d8ff",
+    "thickness": 5.12,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      4.5,
+      6.1
+     ],
+     [
+      4.3,
+      6.3
+     ]
+    ],
+    "color": "#b096d8ff",
+    "thickness": 5.12,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      0.7,
+      -0.3
+     ],
+     [
+      0.5,
+      -0.1
+     ],
+     [
+      0.5,
+      -0.5
+     ]
+    ],
+    "color": "#b096d8ff",
+    "thickness": 5.12,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      0.5,
+      -0.1
+     ],
+     [
+      0.3,
+      -0.3
+     ]
+    ],
+    "color": "#b096d8ff",
+    "thickness": 5.12,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      -0.5,
+      3.5
+     ],
+     [
+      -0.1,
+      3.5
+     ],
+     [
+      -0.3,
+      3.3
+     ]
+    ],
+    "color": "#b096d8ff",
+    "thickness": 5.12,
+    "target": "overlay"
+   },
+   {
+    "wayPoints": [
+     [
+      -0.1,
+      3.5
+     ],
+     [
+      -0.3,
+      3.7
+     ]
+    ],
+    "color": "#b096d8ff",
+    "thickness": 5.12,
+    "target": "overlay"
+   }
+  ],
+  "arrows": [],
+  "cages": []
+ }
+};

@@ -1,0 +1,217 @@
+{
+ "id": "sxsm_MichaelLefkowitz_75932a37c3fed3ccb47c5d53cee7154e",
+ "metadata": {
+  "source": "Sudoku Maker v2025.02.24-ccf5a86",
+  "author": "Michael Lefkowitz",
+  "rules": "Draw seven 6-cell regions in the grid (some region boundaries are given), and place the digits 1-6 in every row, column, and region. (Regions consist of 6 orthogonally connected cells). Cells not in regions should be left empty. Each clue outside the grid gives the sum of the cells in the row or column from the direction of the clue until reaching an empty cell.",
+  "solution": "432156.6.54123.21643521453.61632.54356.24154.3612",
+  "title": "Sliding Doors"
+ },
+ "cells": [
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ]
+ ],
+ "lines": [
+  {
+   "target": "overlay",
+   "wayPoints": [
+    [
+     6,
+     1
+    ],
+    [
+     6,
+     2
+    ]
+   ],
+   "color": "#000000",
+   "thickness": 4.48
+  },
+  {
+   "target": "overlay",
+   "wayPoints": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "color": "#000000",
+   "thickness": 4.48
+  },
+  {
+   "target": "overlay",
+   "wayPoints": [
+    [
+     2,
+     6
+    ],
+    [
+     2,
+     7
+    ]
+   ],
+   "color": "#000000",
+   "thickness": 4.48
+  },
+  {
+   "target": "overlay",
+   "wayPoints": [
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     5
+    ]
+   ],
+   "color": "#000000",
+   "thickness": 4.48
+  }
+ ],
+ "underlays": [
+  {
+   "angle": 0,
+   "center": [
+    4.5,
+    7.5
+   ],
+   "width": 0,
+   "height": 1.128,
+   "text": 9,
+   "fontSize": 39,
+   "color": "#000000",
+   "rounded": true
+  },
+  {
+   "angle": 0,
+   "center": [
+    1.5,
+    -0.5
+   ],
+   "width": 0,
+   "height": 1.128,
+   "text": 6,
+   "fontSize": 39,
+   "color": "#000000",
+   "rounded": true
+  },
+  {
+   "angle": 0,
+   "center": [
+    3.5,
+    -0.5
+   ],
+   "width": 0,
+   "height": 1.128,
+   "text": 15,
+   "fontSize": 39,
+   "color": "#000000",
+   "rounded": true
+  },
+  {
+   "angle": 0,
+   "center": [
+    5.5,
+    -0.5
+   ],
+   "width": 0,
+   "height": 1.128,
+   "text": 14,
+   "fontSize": 39,
+   "color": "#000000",
+   "rounded": true
+  },
+  {
+   "angle": 0,
+   "center": [
+    6.5,
+    7.5
+   ],
+   "width": 0,
+   "height": 1.128,
+   "text": 12,
+   "fontSize": 39,
+   "color": "#000000",
+   "rounded": true
+  },
+  {
+   "angle": 0,
+   "center": [
+    -0.5,
+    4.5
+   ],
+   "width": 0,
+   "height": 1.128,
+   "text": 13,
+   "fontSize": 39,
+   "color": "#000000",
+   "rounded": true
+  }
+ ]
+}

@@ -1,0 +1,217 @@
+{
+ "id": "sxsm_gdc_b7f7a5f8feeecf5a6f577710a6d425b4",
+ "metadata": {
+  "source": "Sudoku Maker v2024.06.10-b1ae38e",
+  "title": "What About That Shadowy Place?",
+  "author": "gdc",
+  "rules": "6x6 Chaos Construction rules apply: Divide the grid into 6 orthogonally connected regions with 6 cells each. Place the digits 1-6 exactly once into every row, column, and region. It is up to the solver to determine where these regions are.\n\nFog: Some cells are hidden by \"fog\" meaning you cannot see their contents. The fog will be revealed when an adjacent digit is correctly filled. The intent of these puzzles is to make logical moves rather than guessing and using the fog reveal to know whether you are correct.\n\nDigits separated by a white dot are consecutive. Digits separated by a black dot have a 1:2 ratio, meaning one is exactly double the other. Not all dots are necessarily given.\n\nCells separated by a black dot are in different regions. Cells separated by a white dot are in the same region.",
+  "solution": "421563532146143625316452265314654231"
+ },
+ "cages": [
+  {
+   "cells": [
+    [
+     0,
+     1
+    ]
+   ],
+   "value": "FOGLIGHT"
+  }
+ ],
+ "cellSize": 50,
+ "cells": [
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {
+    "value": 6
+   },
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ]
+ ],
+ "regions": [],
+ "overlays": [
+  {
+   "center": [
+    0.5,
+    1
+   ],
+   "width": 0.34,
+   "height": 0.34,
+   "stroke": "none",
+   "text": "",
+   "color": "#FFFFFF",
+   "rounded": true,
+   "backgroundColor": "#000000"
+  },
+  {
+   "center": [
+    0.5,
+    2
+   ],
+   "width": 0.34,
+   "height": 0.34,
+   "stroke": "none",
+   "text": "",
+   "color": "#FFFFFF",
+   "rounded": true,
+   "backgroundColor": "#000000"
+  },
+  {
+   "center": [
+    3,
+    2.5
+   ],
+   "width": 0.34,
+   "height": 0.34,
+   "stroke": "none",
+   "text": "",
+   "color": "#FFFFFF",
+   "rounded": true,
+   "backgroundColor": "#000000"
+  },
+  {
+   "center": [
+    1,
+    5.5
+   ],
+   "width": 0.34,
+   "height": 0.34,
+   "stroke": "none",
+   "text": "",
+   "color": "#FFFFFF",
+   "rounded": true,
+   "backgroundColor": "#000000"
+  },
+  {
+   "center": [
+    1,
+    2.5
+   ],
+   "width": 0.34,
+   "height": 0.34,
+   "stroke": "none",
+   "text": "",
+   "color": "#FFFFFF",
+   "rounded": true,
+   "backgroundColor": "#000000"
+  },
+  {
+   "center": [
+    0.5,
+    4
+   ],
+   "width": 0.34,
+   "height": 0.34,
+   "stroke": "none",
+   "thickness": 1,
+   "text": "",
+   "color": "#000000",
+   "rounded": true,
+   "backgroundColor": "#FFFFFF",
+   "borderColor": "#000000"
+  },
+  {
+   "center": [
+    2,
+    2.5
+   ],
+   "width": 0.34,
+   "height": 0.34,
+   "stroke": "none",
+   "thickness": 1,
+   "text": "",
+   "color": "#000000",
+   "rounded": true,
+   "backgroundColor": "#FFFFFF",
+   "borderColor": "#000000"
+  },
+  {
+   "center": [
+    5.5,
+    1
+   ],
+   "width": 0.34,
+   "height": 0.34,
+   "stroke": "none",
+   "thickness": 1,
+   "text": "",
+   "color": "#000000",
+   "rounded": true,
+   "backgroundColor": "#FFFFFF",
+   "borderColor": "#000000"
+  },
+  {
+   "center": [
+    1.5,
+    3
+   ],
+   "width": 0.34,
+   "height": 0.34,
+   "stroke": "none",
+   "thickness": 1,
+   "text": "",
+   "color": "#000000",
+   "rounded": true,
+   "backgroundColor": "#FFFFFF",
+   "borderColor": "#000000"
+  },
+  {
+   "center": [
+    5,
+    3.5
+   ],
+   "width": 0.34,
+   "height": 0.34,
+   "stroke": "none",
+   "thickness": 1,
+   "text": "",
+   "color": "#000000",
+   "rounded": true,
+   "backgroundColor": "#FFFFFF",
+   "borderColor": "#000000"
+  }
+ ]
+}

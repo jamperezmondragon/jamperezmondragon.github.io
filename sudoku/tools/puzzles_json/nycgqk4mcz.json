@@ -1,0 +1,275 @@
+{
+ "id": "sxsm_Tinnifer_0a78c6a1f808c891bcfa7e6a3d086e7e",
+ "metadata": {
+  "source": "Sudoku Maker v2024.08.18-67a6588",
+  "title": "Party Snack",
+  "author": "Tinnifer",
+  "rules": "Write the digits 1 through 6 once each in every row, column and region.\n\nAnti-knight: cells separated by a chess knight's move cannot contain the same digit.\nRegion sum line: region borders divide the blue line into segments, each of which sums to the same total.\nKropki dots: digits separated by a black dot have a ratio of 2:1; digits separated by a white dot are consecutive.",
+  "solution": "362145156432415326623514234651541263",
+  "antiknight": true
+ },
+ "cages": [],
+ "cellSize": 50,
+ "cells": [
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ]
+ ],
+ "regions": [
+  [
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    1
+   ],
+   [
+    2,
+    0
+   ]
+  ],
+  [
+   [
+    0,
+    3
+   ],
+   [
+    0,
+    4
+   ],
+   [
+    0,
+    5
+   ],
+   [
+    1,
+    4
+   ],
+   [
+    1,
+    5
+   ],
+   [
+    2,
+    5
+   ]
+  ],
+  [
+   [
+    2,
+    1
+   ],
+   [
+    2,
+    2
+   ],
+   [
+    3,
+    1
+   ],
+   [
+    3,
+    2
+   ],
+   [
+    4,
+    2
+   ],
+   [
+    4,
+    3
+   ]
+  ],
+  [
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    3
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    4
+   ],
+   [
+    3,
+    3
+   ],
+   [
+    3,
+    4
+   ]
+  ],
+  [
+   [
+    3,
+    0
+   ],
+   [
+    4,
+    0
+   ],
+   [
+    4,
+    1
+   ],
+   [
+    5,
+    0
+   ],
+   [
+    5,
+    1
+   ],
+   [
+    5,
+    2
+   ]
+  ],
+  [
+   [
+    3,
+    5
+   ],
+   [
+    4,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    5,
+    3
+   ],
+   [
+    5,
+    4
+   ],
+   [
+    5,
+    5
+   ]
+  ]
+ ],
+ "lines": [
+  {
+   "wayPoints": [
+    [
+     4.5,
+     5.5
+    ],
+    [
+     3.5,
+     5.5
+    ],
+    [
+     2.5,
+     4.5
+    ],
+    [
+     2.5,
+     2.5
+    ]
+   ],
+   "color": "#2ecbffff",
+   "thickness": 10
+  }
+ ],
+ "overlays": [
+  {
+   "center": [
+    0.5,
+    1
+   ],
+   "width": 0.34,
+   "height": 0.34,
+   "stroke": "none",
+   "text": "",
+   "color": "#FFFFFF",
+   "rounded": true,
+   "backgroundColor": "#000000"
+  },
+  {
+   "center": [
+    5,
+    1.5
+   ],
+   "width": 0.34,
+   "height": 0.34,
+   "stroke": "none",
+   "thickness": 1,
+   "text": "",
+   "color": "#000000",
+   "rounded": true,
+   "backgroundColor": "#FFFFFF",
+   "borderColor": "#000000"
+  }
+ ]
+}
