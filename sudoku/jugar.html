@@ -18,25 +18,27 @@
     <div id="tablero"></div>
 
     <div class="panel">
-      <div class="modos">
-        <button data-modo="digit" title="Dígitos (Z)">123</button>
-        <button data-modo="corner" title="Esquinas (X)">Esquina</button>
-        <button data-modo="center" title="Centro (C)">Centro</button>
-        <button data-modo="color" title="Colores (V)">Color</button>
-        <button data-modo="pen" title="Pluma (P)">Pluma ✏</button>
-      </div>
-      <div class="digitos">
-        <button data-digito="1">1</button>
-        <button data-digito="2">2</button>
-        <button data-digito="3">3</button>
-        <button data-digito="4">4</button>
-        <button data-digito="5">5</button>
-        <button data-digito="6">6</button>
-        <button data-digito="7">7</button>
-        <button data-digito="8">8</button>
-        <button data-digito="9">9</button>
-        <button data-digito="0" class="solo-cero">0</button>
-        <button id="borrar" class="ancho-cero" title="Borrar (Supr)" aria-label="Borrar">⌫</button>
+      <div class="pad-y-modos">
+        <div class="digitos">
+          <button data-digito="1">1</button>
+          <button data-digito="2">2</button>
+          <button data-digito="3">3</button>
+          <button data-digito="4">4</button>
+          <button data-digito="5">5</button>
+          <button data-digito="6">6</button>
+          <button data-digito="7">7</button>
+          <button data-digito="8">8</button>
+          <button data-digito="9">9</button>
+          <button data-digito="0" class="solo-cero">0</button>
+          <button id="borrar" class="ancho-cero" title="Borrar (Supr)" aria-label="Borrar">⌫</button>
+        </div>
+        <div class="modos">
+          <button data-modo="digit" title="Dígitos (Z)">123</button>
+          <button data-modo="corner" title="Esquinas (X)">Esquina</button>
+          <button data-modo="center" title="Centro (C)">Centro</button>
+          <button data-modo="color" title="Colores (V)">Color</button>
+          <button data-modo="pen" title="Pluma (P)">Pluma ✏</button>
+        </div>
       </div>
       <div class="acciones">
         <button id="deshacer" title="Deshacer (Ctrl+Z)" aria-label="Deshacer">↶</button>

@@ -114,19 +114,34 @@ text.jaula-texto {
 }
 
 /* --- Botones --- */
-.modos, .acciones {
+.acciones {
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
   margin-bottom: 0.75rem;
 }
 
+/* Numpad con los modos en columna a su lado (como SudokuPad) */
+.pad-y-modos {
+  display: flex;
+  gap: 0.5rem;
+  align-items: stretch;
+  margin-bottom: 0.75rem;
+}
+
+.modos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.modos button { flex: 1; }
+
 /* Teclado numérico: 3 columnas, como un numpad */
 .digitos {
   display: grid;
   grid-template-columns: repeat(3, 3.2rem);
   gap: 0.4rem;
-  margin-bottom: 0.75rem;
 }
 
 .panel button {
