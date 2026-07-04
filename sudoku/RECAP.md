@@ -12,6 +12,12 @@
   touch-action: manipulation en botones. Verificado en Firefox+touch, Chromium móvil y
   escritorio (WebKit no arranca en esta máquina: pendiente confirmación de Juan en su
   teléfono).
+- **Causa raíz REAL del bug de iPhone, encontrada después** (todos los navegadores de
+  iPhone fallaban): el SVG del tablero solo declaraba viewBox y WebKit le daba caja de
+  layout con ANCHO CERO — se pintaba por overflow (se veía bien) pero ningún tap caía
+  dentro. Fix: atributos width/height explícitos (dimensiones intrínsecas). Reproducido y
+  verificado en WebKit real (se instalaron sus librerías faltantes localmente, sin sudo,
+  inyectándolas en el sys/lib del MiniBrowser de Playwright).
 - Layout móvil estilo SudokuPad (media query ≤640px) y modos en columna junto al numpad.
 - Deploy de Pages atorado diagnosticado y destrabado (build legacy colgado; rebuild forzado
   vía API).
