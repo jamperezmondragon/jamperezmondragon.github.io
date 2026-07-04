@@ -105,3 +105,13 @@ footer {
   color: var(--muted);
   font-size: 0.9rem;
 }
+
+
+/* --- Tema oscuro (botón manual, clase en <html>) --- */
+html.tema-oscuro {
+  color-scheme: dark;
+}
+
+html.tema-oscuro body { background: #151312; }
+html.tema-oscuro { --text: #e8e6e3; --muted: #a5a19b; --accent: #82b4ff; --border: #3a3a3a; }
+html.tema-oscuro .lang-switch img { opacity: 0.9; }

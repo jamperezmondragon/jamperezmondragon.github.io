@@ -157,8 +157,8 @@
       var hayVoids = (P.voids || []).length > 0;
       if (!noGrid && !hayVoids) {
         for (var g = 0; g <= N; g++) {
-          el('line', { x1: 0, y1: g * CS, x2: N * CS, y2: g * CS, stroke: '#bbb', 'stroke-width': 1 }, layerGrid);
-          el('line', { x1: g * CS, y1: 0, x2: g * CS, y2: N * CS, stroke: '#bbb', 'stroke-width': 1 }, layerGrid);
+          el('line', { x1: 0, y1: g * CS, x2: N * CS, y2: g * CS, stroke: '#bbb', 'stroke-width': 1, 'class': 'linea-fina' }, layerGrid);
+          el('line', { x1: g * CS, y1: 0, x2: g * CS, y2: N * CS, stroke: '#bbb', 'stroke-width': 1, 'class': 'linea-fina' }, layerGrid);
         }
       } else if (!noGrid && hayVoids) {
         // rejilla por casilla, saltando las nulas (el borde de cada
@@ -169,14 +169,14 @@
             var xx = cv * CS, yy = rv * CS;
             [[xx, yy, xx + CS, yy], [xx, yy + CS, xx + CS, yy + CS],
              [xx, yy, xx, yy + CS], [xx + CS, yy, xx + CS, yy + CS]].forEach(function (s) {
-              el('line', { x1: s[0], y1: s[1], x2: s[2], y2: s[3], stroke: '#bbb', 'stroke-width': 1 }, layerGrid);
+              el('line', { x1: s[0], y1: s[1], x2: s[2], y2: s[3], stroke: '#bbb', 'stroke-width': 1, 'class': 'linea-fina' }, layerGrid);
             });
           }
         }
       }
       // bordes gruesos: cajas regulares o regiones irregulares
       function thick(x1, y1, x2, y2) {
-        el('line', { x1: x1, y1: y1, x2: x2, y2: y2, stroke: '#1a1a1a', 'stroke-width': 2.5 }, layerGrid);
+        el('line', { x1: x1, y1: y1, x2: x2, y2: y2, stroke: '#1a1a1a', 'stroke-width': 2.5, 'class': 'linea-gruesa' }, layerGrid);
       }
       if (P.boxes && !noGrid) {
         for (var r = P.boxes[0]; r < N; r += P.boxes[0]) thick(0, r * CS, N * CS, r * CS);
@@ -195,7 +195,7 @@
         }
       }
       if (!(P.voids || []).length) {
-        el('rect', { x: 0, y: 0, width: N * CS, height: N * CS, fill: 'none', stroke: '#1a1a1a', 'stroke-width': 3 }, layerGrid);
+        el('rect', { x: 0, y: 0, width: N * CS, height: N * CS, fill: 'none', stroke: '#1a1a1a', 'stroke-width': 3, 'class': 'borde-tablero' }, layerGrid);
       }
     }
     drawGrid();
@@ -298,10 +298,11 @@
       (cage.cells || []).forEach(function (rc) { cells[rc[0] * N + rc[1]] = true; });
       var inset = 4, dash = '4,3';
       var stroke = cage.borderColor || '#555';
+      var claseJaula = cage.borderColor ? '' : 'jaula-borde';
       (cage.cells || []).forEach(function (rc) {
         var r = rc[0], c = rc[1], x = c * CS, y = r * CS;
         function seg(x1, y1, x2, y2) {
-          el('line', { x1: x1, y1: y1, x2: x2, y2: y2, stroke: stroke, 'stroke-width': 1.3, 'stroke-dasharray': dash }, parent);
+          el('line', { x1: x1, y1: y1, x2: x2, y2: y2, stroke: stroke, 'stroke-width': 1.3, 'stroke-dasharray': dash, 'class': claseJaula }, parent);
         }
         if (!cells[(r - 1) * N + c]) seg(x + inset, y + inset, x + CS - inset, y + inset);
         if (!cells[(r + 1) * N + c]) seg(x + inset, y + CS - inset, x + CS - inset, y + CS - inset);
@@ -760,10 +761,28 @@
     });
 
     var enfocarBtn = document.getElementById('enfocar');
+    function setEnfocado(on) {
+      document.body.classList.toggle('enfocado', on);
+      if (enfocarBtn) enfocarBtn.classList.toggle('activo', on);
+    }
     if (enfocarBtn) {
       enfocarBtn.addEventListener('click', function () {
-        document.body.classList.toggle('enfocado');
-        enfocarBtn.classList.toggle('activo', document.body.classList.contains('enfocado'));
+        var on = !document.body.classList.contains('enfocado');
+        setEnfocado(on);
+        // el modo enfoque pide pantalla completa (y la suelta al salir)
+        try {
+          if (on && document.documentElement.requestFullscreen) {
+            document.documentElement.requestFullscreen().catch(function () {});
+          } else if (!on && document.fullscreenElement) {
+            document.exitFullscreen().catch(function () {});
+          }
+        } catch (e) {}
+      });
+      // si el usuario sale de pantalla completa con Esc, salimos del modo
+      document.addEventListener('fullscreenchange', function () {
+        if (!document.fullscreenElement && document.body.classList.contains('enfocado')) {
+          setEnfocado(false);
+        }
       });
     }
 

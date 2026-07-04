@@ -192,8 +192,14 @@ text.jaula-texto {
 /* Modo enfocado: solo el tablero y los controles */
 body.enfocado .reglas-seccion,
 body.enfocado footer,
-body.enfocado .atajos {
+body.enfocado .atajos,
+body.enfocado header,
+body.enfocado #btn-tema {
   display: none;
+}
+
+body.enfocado {
+  padding-top: 1rem;
 }
 
 .mensaje { color: var(--muted); }
@@ -321,3 +327,53 @@ footer {
 @keyframes felicidades-fade {
   to { opacity: 0; }
 }
+
+
+/* --- Tema oscuro (botón manual, clase en <html>) --- */
+html.tema-oscuro {
+  color-scheme: dark;
+  --text: #e8e6e3;
+  --muted: #a5a19b;
+  --accent: #82b4ff;
+  --border: #3a3a3a;
+}
+
+html.tema-oscuro body { background: #151312; }
+
+/* Tablero oscuro: fondo de pizarra, rejilla y dígitos claros. La
+   decoración de cada acertijo conserva sus colores originales. */
+html.tema-oscuro svg.tablero { background: #24211f; border-radius: 4px; }
+html.tema-oscuro .linea-fina { stroke: #57534e; }
+html.tema-oscuro .linea-gruesa,
+html.tema-oscuro .borde-tablero { stroke: #d8d5d1; }
+html.tema-oscuro text.dado { fill: #f0eeec; stroke: rgba(21, 19, 18, 0.85); }
+html.tema-oscuro text.valor { fill: #8ec1ff; stroke: rgba(21, 19, 18, 0.85); }
+html.tema-oscuro text.esquina,
+html.tema-oscuro text.centro { fill: #cfcbc6; }
+html.tema-oscuro .niebla { fill: #6b6763; }
+html.tema-oscuro .jaula-borde { stroke: #b5b1ac; }
+html.tema-oscuro text.jaula-texto { stroke: #24211f; fill: #e8e6e3; }
+/* texto de decoración que era negro por default, y puntos kropki negros */
+html.tema-oscuro text.deco-texto[fill="#1a1a1a"] { fill: #e8e6e3; }
+html.tema-oscuro svg.tablero ellipse[fill="#000000"],
+html.tema-oscuro svg.tablero ellipse[fill="#1a1a1a"] {
+  stroke: #cfcbc6;
+  stroke-width: 1.5;
+}
+
+html.tema-oscuro .panel button {
+  background: #262320;
+  color: var(--text);
+  border-color: #5a5650;
+}
+html.tema-oscuro .panel button.activo {
+  background: var(--accent);
+  color: #151312;
+  border-color: var(--accent);
+}
+html.tema-oscuro kbd {
+  background: #262320;
+  border-color: #5a5650;
+  color: var(--text);
+}
+html.tema-oscuro .felicidades { text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8); }
