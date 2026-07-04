@@ -115,6 +115,11 @@
 
     var svg = el('svg', {
       viewBox: '0 0 ' + (N * CS + mL + mR) + ' ' + (N * CS + mT + mB),
+      // width/height explícitos = dimensiones intrínsecas. Sin ellas,
+      // WebKit (iPhone) da al SVG una caja de ancho CERO: el tablero se ve
+      // pero ningún tap cae dentro y el juego "no jala".
+      width: N * CS + mL + mR,
+      height: N * CS + mT + mB,
       'class': 'tablero',
       // además del CSS: algunos móviles necesitan el estilo directo para
       // no convertir el arrastre en scroll
