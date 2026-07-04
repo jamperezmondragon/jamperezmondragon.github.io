@@ -23,6 +23,7 @@ Dificultad en escala de esquí: ● verde · ■ azul · ◆ diamante · ◆◆ 
 ### 1 · Introductorios
 | # | Puzzle | Autor | Tablero | Dif. | Verificación |
 |---|---|---|---|---|---|
+| 1.0a-h | Curso relámpago «Beginner's Guide to Variant Sudokus»: killer, kropki, XV, flechas, anticaballo, termómetros, renban, círculos contadores | Michael Lefkowitz («juggler», LMD 000GOJ) | 7× 4×4 + 1× 6×6 | ● | solución del setter (jaula `solution:`); unicidad no verificada por decisión de Juan |
 | 1.1 | Friendly Void | gdc | 6×6 niebla | ● | única ✓ |
 | 1.2 | Partially Permanent Fog | gdc | 6×6 niebla | ■ | derivada ✓ |
 | 1.3 | «Termómetros y equilibrio» (Ovary Action, flavor nuevo) | Marty Sears | 6×6 | ■ | metadata ✓ / asumida |
