@@ -9,11 +9,14 @@
     .puzzle-lista p { margin-bottom: 0.4rem; }
     .dif { display: inline-block; font-size: 1.8rem; line-height: 1; vertical-align: -0.2rem; }
     .puzzle-lista .dif { width: 3.8rem; }   /* columna alineada solo en las listas */
-    .dif .verde { color: #2e7d32; }
-    .dif .azul { color: #1565c0; }
+    .dif .verde { color: #009e73; }
+    .dif .azul { color: #1f56b0; }
     .dif .negro { color: #111; }
     .autor-mini { color: var(--muted); font-size: 0.9rem; }
     .intro-seccion { color: var(--muted); font-style: italic; margin-top: -0.5rem; }
+    @media (prefers-color-scheme: dark) {
+      .dif .negro { color: #e8e6e3; }
+    }
   </style>
 </head>
 <body>

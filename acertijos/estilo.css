@@ -54,8 +54,8 @@ a {
   font-size: 1.1em;
 }
 
-.icon.verde { color: #2e7d32; }
-.icon.azul { color: #1565c0; }
+.icon.verde { color: #009e73; }
+.icon.azul { color: #1f56b0; }
 .icon.negro { color: #111; }
 
 ul.reglas {
@@ -143,4 +143,32 @@ select.mal {
 
 .mensaje {
   color: var(--muted);
+}
+
+
+/* --- Modo oscuro (automático, según el sistema) --- */
+:root { color-scheme: light dark; }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #e8e6e3;
+    --muted: #a5a19b;
+    --accent: #82b4ff;
+    --border: #3a3a3a;
+  }
+  body { background: #151312; }
+  .icon.negro { color: #e8e6e3; }
+  input[type="text"], select {
+    background: #262320;
+    color: var(--text);
+    border-color: #5a5650;
+  }
+  input.bien { background: #113c30; border-color: #22c493; }
+  input.mal { background: #46280f; border-color: #ff8b3d; }
+  .controles button {
+    background: #262320;
+    color: var(--text);
+    border: 1px solid #5a5650;
+  }
+  .foto { opacity: 0.9; }
 }

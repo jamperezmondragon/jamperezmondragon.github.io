@@ -77,7 +77,7 @@ svg.tablero {
 }
 
 .pluma {
-  stroke: #2e7d32;
+  stroke: #007a5e;
   stroke-width: 5;
   stroke-linecap: round;
   pointer-events: none;
@@ -90,8 +90,8 @@ text.dado, text.valor, text.esquina, text.centro {
   pointer-events: none;
 }
 
-text.dado { font-size: 38px; fill: #1a1a1a; }
-text.valor { font-size: 38px; fill: var(--accent); }
+text.dado { font-size: 38px; fill: #1a1a1a; paint-order: stroke; stroke: rgba(255,255,255,0.85); stroke-width: 3px; }
+text.valor { font-size: 38px; fill: #0b57d0; paint-order: stroke; stroke: rgba(255,255,255,0.85); stroke-width: 3px; }
 text.esquina { font-size: 13px; fill: #444; }
 text.centro { font-size: 15px; fill: #444; }
 
@@ -306,7 +306,7 @@ footer {
   text-align: center;
   font-size: 3rem;
   font-weight: bold;
-  color: #2e7d32;
+  color: #007a5e;
   text-shadow: 0 2px 8px rgba(255, 255, 255, 0.9), 0 0 2px #fff;
   z-index: 11;
   pointer-events: none;
@@ -320,4 +320,51 @@ footer {
 
 @keyframes felicidades-fade {
   to { opacity: 0; }
+}
+
+
+/* --- Modo oscuro (automático, según el sistema) --- */
+:root { color-scheme: light dark; }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #e8e6e3;
+    --muted: #a5a19b;
+    --accent: #82b4ff;
+    --border: #3a3a3a;
+  }
+  body { background: #151312; }
+
+  /* El tablero vive en una tarjeta blanca: la decoración de los acertijos
+     (laberintos, cercas, niebla, jaulas) está diseñada sobre fondo claro
+     y no se puede invertir sin mentir. */
+  svg.tablero {
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 0 0 1px #000, 0 4px 18px rgba(0, 0, 0, 0.5);
+  }
+
+  .panel button, .controles button {
+    background: #262320;
+    color: var(--text);
+    border-color: #5a5650;
+  }
+  .panel button.activo {
+    background: var(--accent);
+    color: #151312;
+    border-color: var(--accent);
+  }
+  input[type="text"], select {
+    background: #262320;
+    color: var(--text);
+    border-color: #5a5650;
+  }
+  input.bien, select.bien { background: #113c30; border-color: #22c493; }
+  input.mal, select.mal { background: #46280f; border-color: #ff8b3d; }
+  kbd {
+    background: #262320;
+    border-color: #5a5650;
+    color: var(--text);
+  }
+  .felicidades { text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8); }
 }

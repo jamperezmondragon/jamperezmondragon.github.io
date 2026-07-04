@@ -334,8 +334,10 @@
       }
     }
 
-    var PALETTE = ['', '#e6e6e6', '#b0b0b0', '#656565', '#d1efa5', '#f1b0f6',
-                   '#eebf83', '#f88886', '#fdf28b', '#8ac1f8'];
+    // Paleta apta para daltonismo (optimizada: ΔE mínimo 15 entre cualquier
+    // par bajo protanopia/deuteranopia; ver RECAP). Sin rojo a propósito.
+    var PALETTE = ['', '#e6e6e6', '#9e9e9e', '#4d4d4d', '#1f8d70', '#df8cc6',
+                   '#e39220', '#1f56b0', '#f7ea5e', '#aedcf9'];
 
     function slicePath(cx, cy, R, a0, a1) {
       var large = (a1 - a0) > Math.PI ? 1 : 0;
@@ -636,7 +638,7 @@
     var celebrated = false;
 
     function celebrate() {
-      var FESTIVOS = ['#f88886', '#8ac1f8', '#d1efa5', '#fdf28b', '#f1b0f6', '#eebf83'];
+      var FESTIVOS = ['#e39220', '#aedcf9', '#1f8d70', '#f7ea5e', '#df8cc6', '#1f56b0'];
       for (var i = 0; i < 60; i++) {
         var p = document.createElement('span');
         p.className = 'confeti';
