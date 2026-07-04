@@ -200,6 +200,16 @@ body.enfocado #btn-tema {
 
 body.enfocado {
   padding-top: 1rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body.enfocado .jugador {
+  justify-content: center;
+  align-items: center;
 }
 
 .mensaje { color: var(--muted); }
@@ -377,3 +387,14 @@ html.tema-oscuro kbd {
   color: var(--text);
 }
 html.tema-oscuro .felicidades { text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8); }
+
+/* pistas exteriores: lo negro se aclara; los parches blancos (camuflaje
+   sobre fondo claro) se funden con el fondo oscuro */
+html.tema-oscuro text.deco-oscura { fill: #e8e6e3; }
+html.tema-oscuro polyline.deco-oscura,
+html.tema-oscuro line.deco-oscura { stroke: #e8e6e3; }
+html.tema-oscuro rect.deco-clara,
+html.tema-oscuro ellipse.deco-clara {
+  fill: #151312;
+  stroke: #151312;
+}

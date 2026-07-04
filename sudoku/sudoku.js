@@ -201,6 +201,25 @@
     drawGrid();
 
     // ---------- Decoración SCL (dibujo genérico) ----------
+    // La decoración FUERA del tablero (pistas exteriores) se marca con
+    // clases para que el tema oscuro pueda aclarar lo negro y fundir los
+    // parches blancos con el fondo, sin tocar la decoración interior.
+    function esColorOscuro(c) {
+      if (!c || typeof c !== 'string' || c[0] !== '#') return false;
+      var h = c.slice(1);
+      if (h.length === 3) h = h[0]+h[0]+h[1]+h[1]+h[2]+h[2];
+      var r = parseInt(h.slice(0,2),16), g = parseInt(h.slice(2,4),16), b = parseInt(h.slice(4,6),16);
+      return (0.2126*r + 0.7152*g + 0.0722*b) < 128;
+    }
+    function claseExterior(color) {
+      return ' deco-exterior ' + (esColorOscuro(color) ? 'deco-oscura' : 'deco-clara');
+    }
+    function centroFuera(c) {
+      return c && (c[0] < 0 || c[1] < 0 || c[0] > N || c[1] > N);
+    }
+    function puntosFuera(wp) {
+      return (wp || []).some(function (p) { return p[0] < 0 || p[1] < 0 || p[0] > N || p[1] > N; });
+    }
     // Convenciones SCL: center = [fila, columna] en unidades de casilla;
     // wayPoints igual; thickness y fontSize en px a la escala de sclCellSize.
     function drawShape(o, parent) {
@@ -209,6 +228,7 @@
       var fill = o.backgroundColor || 'none';
       var stroke = o.borderColor || (o.stroke && o.stroke !== 'none' ? o.stroke : 'none');
       var sw = (o.thickness || 0) * ESC;
+      var fuera = centroFuera(o.center);
       if (w > 0 && h > 0) {
         var shape;
         if (o.rounded && Math.abs(w - h) < 0.01) {
@@ -228,11 +248,12 @@
           shape.setAttribute('stroke-width', sw);
         }
         if (o.angle) shape.setAttribute('transform', 'rotate(' + o.angle + ' ' + cx + ' ' + cy + ')');
+        if (fuera) shape.setAttribute('class', claseExterior(fill !== 'none' ? fill : stroke).trim());
       }
       if (o.text !== undefined && o.text !== '') {
         var t = el('text', {
           x: cx, y: cy,
-          'class': 'deco-texto',
+          'class': 'deco-texto' + (fuera ? claseExterior(o.color || '#1a1a1a') : ''),
           'font-size': (o.fontSize || 16) * ESC,
           fill: o.color || '#1a1a1a'
         }, parent);
@@ -266,12 +287,14 @@
         if (out.length < 2) return;
         pts = out.map(function (p) { return (p[0] * U) + ',' + (p[1] * U); }).join(' ');
       } else return;
-      el('polyline', {
+      var attrs = {
         points: pts, fill: 'none',
         stroke: l.color || '#888',
         'stroke-width': (l.thickness || 2) * esc,
         'stroke-linecap': 'round', 'stroke-linejoin': 'round'
-      }, parent);
+      };
+      if (puntosFuera(l.wayPoints)) attrs['class'] = claseExterior(l.color || '#888').trim();
+      el('polyline', attrs, parent);
     }
 
     function drawArrow(a, parent) {
@@ -283,13 +306,16 @@
       var y1 = wp[wp.length - 2][0] * CS, x1 = wp[wp.length - 2][1] * CS;
       var ang = Math.atan2(y2 - y1, x2 - x1);
       var L = (a.headLength || 0.3) * CS;
+      var fueraA = puntosFuera(a.wayPoints);
       [ang + 2.6, ang - 2.6].forEach(function (t) {
-        el('line', {
+        var attrs = {
           x1: x2, y1: y2,
           x2: x2 + L * Math.cos(t), y2: y2 + L * Math.sin(t),
           stroke: a.color || '#888', 'stroke-width': (a.thickness || 2) * ESC,
           'stroke-linecap': 'round'
-        }, parent);
+        };
+        if (fueraA) attrs['class'] = claseExterior(a.color || '#888').trim();
+        el('line', attrs, parent);
       });
     }
 
