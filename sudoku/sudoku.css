@@ -348,6 +348,7 @@ html.tema-oscuro {
   --border: #3a3a3a;
 }
 
+html.tema-oscuro { background: #151312; }
 html.tema-oscuro body { background: #151312; }
 
 /* Tablero oscuro: fondo de pizarra, rejilla y dígitos claros. La
@@ -363,8 +364,7 @@ html.tema-oscuro text.centro { fill: #cfcbc6; }
 html.tema-oscuro .niebla { fill: #6b6763; }
 html.tema-oscuro .jaula-borde { stroke: #b5b1ac; }
 html.tema-oscuro text.jaula-texto { stroke: #24211f; fill: #e8e6e3; }
-/* texto de decoración que era negro por default, y puntos kropki negros */
-html.tema-oscuro text.deco-texto[fill="#1a1a1a"] { fill: #e8e6e3; }
+/* puntos kropki negros: contorno claro para no perderse en la pizarra */
 html.tema-oscuro svg.tablero ellipse[fill="#000000"],
 html.tema-oscuro svg.tablero ellipse[fill="#1a1a1a"] {
   stroke: #cfcbc6;

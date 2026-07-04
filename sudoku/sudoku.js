@@ -211,14 +211,37 @@
       var r = parseInt(h.slice(0,2),16), g = parseInt(h.slice(2,4),16), b = parseInt(h.slice(4,6),16);
       return (0.2126*r + 0.7152*g + 0.0722*b) < 128;
     }
-    function claseExterior(color) {
-      return ' deco-exterior ' + (esColorOscuro(color) ? 'deco-oscura' : 'deco-clara');
-    }
     function centroFuera(c) {
       return c && (c[0] < 0 || c[1] < 0 || c[0] > N || c[1] > N);
     }
     function puntosFuera(wp) {
       return (wp || []).some(function (p) { return p[0] < 0 || p[1] < 0 || p[0] > N || p[1] > N; });
+    }
+    function esClaro(c) { return c && !esColorOscuro(c); }
+    // ¿esta forma clara SIGUE clara en tema oscuro?
+    // - interiores: siempre (son parte del acertijo: círculos V/X, quads…)
+    // - exteriores: solo si son "globo" con borde propio distinto; los
+    //   parches de camuflaje (borde igual al fondo o sin borde) se funden.
+    function formaPermaneceClara(o) {
+      if (!esClaro(o.backgroundColor)) return false;
+      if (!centroFuera(o.center)) return true;
+      var b = (o.borderColor || '').toLowerCase().slice(0, 7);
+      var f = (o.backgroundColor || '').toLowerCase().slice(0, 7);
+      return !!b && b !== f;
+    }
+    // respaldos claros: centros de formas que permanecen claras
+    var respaldos = [];
+    (function () {
+      var v = P.visuals || {};
+      (v.underlays || []).concat(v.overlays || []).forEach(function (o) {
+        if (o.center && formaPermaneceClara(o)) respaldos.push(o.center);
+      });
+    })();
+    function textoConRespaldo(o) {
+      if (formaPermaneceClara(o)) return true;   // su propio fondo
+      return respaldos.some(function (c) {
+        return Math.abs(c[0] - o.center[0]) < 0.5 && Math.abs(c[1] - o.center[1]) < 0.5;
+      });
     }
     // Convenciones SCL: center = [fila, columna] en unidades de casilla;
     // wayPoints igual; thickness y fontSize en px a la escala de sclCellSize.
@@ -248,12 +271,15 @@
           shape.setAttribute('stroke-width', sw);
         }
         if (o.angle) shape.setAttribute('transform', 'rotate(' + o.angle + ' ' + cx + ' ' + cy + ')');
-        if (fuera) shape.setAttribute('class', claseExterior(fill !== 'none' ? fill : stroke).trim());
+        if (fuera && esClaro(o.backgroundColor) && !formaPermaneceClara(o)) {
+          shape.setAttribute('class', 'deco-clara');   // camuflaje: se funde
+        }
       }
       if (o.text !== undefined && o.text !== '') {
+        var oscuroSinRespaldo = esColorOscuro(o.color || '#1a1a1a') && !textoConRespaldo(o);
         var t = el('text', {
           x: cx, y: cy,
-          'class': 'deco-texto' + (fuera ? claseExterior(o.color || '#1a1a1a') : ''),
+          'class': 'deco-texto' + (oscuroSinRespaldo ? ' deco-oscura' : ''),
           'font-size': (o.fontSize || 16) * ESC,
           fill: o.color || '#1a1a1a'
         }, parent);
@@ -293,7 +319,7 @@
         'stroke-width': (l.thickness || 2) * esc,
         'stroke-linecap': 'round', 'stroke-linejoin': 'round'
       };
-      if (puntosFuera(l.wayPoints)) attrs['class'] = claseExterior(l.color || '#888').trim();
+      if (puntosFuera(l.wayPoints) && esColorOscuro(l.color || '#888')) attrs['class'] = 'deco-oscura';
       el('polyline', attrs, parent);
     }
 
@@ -314,7 +340,7 @@
           stroke: a.color || '#888', 'stroke-width': (a.thickness || 2) * ESC,
           'stroke-linecap': 'round'
         };
-        if (fueraA) attrs['class'] = claseExterior(a.color || '#888').trim();
+        if (fueraA && esColorOscuro(a.color || '#888')) attrs['class'] = 'deco-oscura';
         el('line', attrs, parent);
       });
     }
