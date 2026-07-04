@@ -153,6 +153,7 @@ text.jaula-texto {
   background: #fff;
   cursor: pointer;
   min-width: 2.4rem;
+  touch-action: manipulation;   /* sin retraso ni zoom por doble tap en móvil */
 }
 
 .panel button:hover { border-color: var(--accent); }

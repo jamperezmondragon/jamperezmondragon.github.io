@@ -115,7 +115,10 @@
 
     var svg = el('svg', {
       viewBox: '0 0 ' + (N * CS + mL + mR) + ' ' + (N * CS + mT + mB),
-      'class': 'tablero'
+      'class': 'tablero',
+      // además del CSS: algunos móviles necesitan el estilo directo para
+      // no convertir el arrastre en scroll
+      style: 'touch-action: none; -webkit-user-select: none;'
     });
     document.getElementById('tablero').appendChild(svg);
     var root = el('g', { transform: 'translate(' + mL + ',' + mT + ')' }, svg);
@@ -464,9 +467,13 @@
     var dragging = false;
     var penState = null;
 
-    svg.addEventListener('pointerdown', function (ev) {
+    function alBajar(ev) {
       ev.preventDefault();
-      svg.setPointerCapture(ev.pointerId);
+      // WebKit (iOS y todo navegador de iPhone) puede lanzar excepción al
+      // capturar el puntero sobre SVG; sin el try, un tap no haría NADA.
+      if (ev.pointerId !== undefined) {
+        try { svg.setPointerCapture(ev.pointerId); } catch (e) {}
+      }
       dragging = true;
       var q = svgCoords(ev);
       if (mode === 'pen') {
@@ -483,9 +490,9 @@
       else selection[idx] = true;
       lastSel = idx;
       repaint();
-    });
+    }
 
-    svg.addEventListener('pointermove', function (ev) {
+    function alMover(ev) {
       if (!dragging) return;
       var q = svgCoords(ev);
       if (mode === 'pen') {
@@ -503,9 +510,9 @@
       }
       var idx = cellAt(q);
       if (idx >= 0 && !selection[idx]) { selection[idx] = true; lastSel = idx; repaint(); }
-    });
+    }
 
-    svg.addEventListener('pointerup', function () {
+    function alSoltar() {
       if (mode === 'pen' && penState) {
         if (!penState.moved && penState.downCell >= 0) {
           applyPen('O,' + Math.floor(penState.downCell / N) + ',' + (penState.downCell % N));
@@ -513,8 +520,33 @@
         penState = null;
       }
       dragging = false;
-    });
+    }
+
+    svg.addEventListener('pointerdown', alBajar);
+    svg.addEventListener('pointermove', alMover);
+    svg.addEventListener('pointerup', alSoltar);
+    svg.addEventListener('pointercancel', function () { dragging = false; penState = null; });
     svg.addEventListener('contextmenu', function (ev) { ev.preventDefault(); });
+
+    // Plan B para navegadores sin Pointer Events (WebViews viejos):
+    // los eventos touch se traducen a los mismos manejadores.
+    if (!window.PointerEvent) {
+      function adaptaToque(handler) {
+        return function (ev) {
+          ev.preventDefault();
+          var t = ev.touches[0] || ev.changedTouches[0];
+          if (!t) return;
+          handler({
+            preventDefault: function () {},
+            clientX: t.clientX, clientY: t.clientY,
+            shiftKey: false, ctrlKey: false, metaKey: false
+          });
+        };
+      }
+      svg.addEventListener('touchstart', adaptaToque(alBajar), { passive: false });
+      svg.addEventListener('touchmove', adaptaToque(alMover), { passive: false });
+      svg.addEventListener('touchend', function (ev) { ev.preventDefault(); alSoltar(); }, { passive: false });
+    }
 
     function applyPen(key) {
       if (penState.paint === null) penState.paint = !state.pen[key];
