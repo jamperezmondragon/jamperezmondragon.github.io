@@ -235,6 +235,51 @@ footer {
   text-align: center;
 }
 
+/* --- Móvil: botones al estilo SudokuPad --- */
+@media (max-width: 640px) {
+  body { padding: 1rem 0.8rem; }
+
+  .jugador { flex-direction: column; gap: 0.75rem; }
+
+  /* el tablero se escala para dejar aire a los controles */
+  #tablero {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  svg.tablero {
+    width: auto;
+    max-width: 100%;
+    max-height: 50vh;
+  }
+
+  /* pad y modos llenan el ancho, con dedos en mente */
+  .pad-y-modos { width: 100%; }
+  .digitos {
+    flex: 1;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.45rem;
+  }
+  .digitos button {
+    min-height: 3.4rem;
+    font-size: 1.5rem;
+  }
+  .modos { width: 34%; }
+  .modos button {
+    font-size: 1.05rem;
+    padding: 0.3rem 0.4rem;
+  }
+
+  .acciones { width: 100%; }
+  .acciones button {
+    flex: 1;
+    min-height: 3rem;
+    font-size: 1.4rem;
+  }
+
+  .panel { max-width: none; width: 100%; }
+}
+
 /* --- Celebración --- */
 .confeti {
   position: fixed;
