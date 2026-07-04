@@ -224,6 +224,9 @@
     //   parches de camuflaje (borde igual al fondo o sin borde) se funden.
     function formaPermaneceClara(o) {
       if (!esClaro(o.backgroundColor)) return false;
+      // chip claro CON texto propio = resalte/camuflaje (se funde en tema
+      // oscuro para no parecer punto kropki); sin texto = elemento real
+      if (o.text !== undefined && o.text !== '') return false;
       if (!centroFuera(o.center)) return true;
       var b = (o.borderColor || '').toLowerCase().slice(0, 7);
       var f = (o.backgroundColor || '').toLowerCase().slice(0, 7);
@@ -271,8 +274,10 @@
           shape.setAttribute('stroke-width', sw);
         }
         if (o.angle) shape.setAttribute('transform', 'rotate(' + o.angle + ' ' + cx + ' ' + cy + ')');
-        if (fuera && esClaro(o.backgroundColor) && !formaPermaneceClara(o)) {
-          shape.setAttribute('class', 'deco-clara');   // camuflaje: se funde
+        if (esClaro(o.backgroundColor) && !formaPermaneceClara(o)) {
+          // camuflaje/resalte: en oscuro se funde con su fondo (pizarra si
+          // es interior, página si es exterior)
+          shape.setAttribute('class', fuera ? 'deco-clara' : 'deco-camuflaje-int');
         }
       }
       if (o.text !== undefined && o.text !== '') {

@@ -398,3 +398,8 @@ html.tema-oscuro ellipse.deco-clara {
   fill: #151312;
   stroke: #151312;
 }
+html.tema-oscuro rect.deco-camuflaje-int,
+html.tema-oscuro ellipse.deco-camuflaje-int {
+  fill: #24211f;
+  stroke: #24211f;
+}
