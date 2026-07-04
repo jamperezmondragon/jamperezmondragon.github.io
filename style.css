@@ -105,3 +105,18 @@ footer {
   color: var(--muted);
   font-size: 0.9rem;
 }
+
+
+/* --- Modo oscuro (automático, según el sistema) --- */
+:root { color-scheme: light dark; }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #e8e6e3;
+    --muted: #a5a19b;
+    --accent: #82b4ff;
+    --border: #3a3a3a;
+  }
+  body { background: #151312; }
+  .lang-switch img { opacity: 0.9; }
+}
