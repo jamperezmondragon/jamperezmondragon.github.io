@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tocario — Acertijos Lingüísticos</title>
+  <link rel="stylesheet" href="estilo.css">
+  <script src="reto.js" defer></script>
+</head>
+<body>
+  <header>
+    <p class="site-link"><a href="index.html">← Acertijos Lingüísticos</a></p>
+    <h1>Tocario</h1>
+    <p class="autor">Acertijo original de S. A. Burlak. Adaptación al inglés de Mirjam Fried.</p>
+  </header>
+
+  <p>El tocario es una lengua antigua que se habló en la provincia china de Xinjiang entre los
+    siglos VI y VIII d. C. Abajo hay algunas palabras escritas en la escritura del «tocario A».
+    Como los alfabetos modernos, este sistema de escritura se basa en los sonidos (la fonética).
+    Tu tarea será descubrir cómo representa los sonidos. Ten cuidado: es engañoso, pero
+    perfectamente consistente. Junto a cada palabra encontrarás su transcripción fonética y su
+    significado en español.</p>
+
+  <p>(Nota: el sonido que se escribe «ä» es una vocal especial del tocario A. Es muy distinta de
+    la vocal que se escribe «a».)</p>
+
+  <table class="datos">
+    <tr><th>Palabra tocaria</th><th>Transcripción</th><th>Significado</th></tr>
+    <tr><td><img src="img/Tochar19.gif" alt="Palabra tocaria: lap"></td><td><strong>lap</strong></td><td>«cabeza»</td></tr>
+    <tr><td><img src="img/Tochar20.gif" alt="Palabra tocaria: spaltäk"></td><td><strong>spaltäk</strong></td><td>«intención»</td></tr>
+    <tr><td><img src="img/Tochar21.gif" alt="Palabra tocaria: maskäs"></td><td><strong>maskäs</strong></td><td>«vive»</td></tr>
+    <tr><td><img src="img/Tochar22.gif" alt="Palabra tocaria: pal"></td><td><strong>pal</strong></td><td>«ley»</td></tr>
+    <tr><td><img src="img/Tochar23.gif" alt="Palabra tocaria: tmäk"></td><td><strong>tmäk</strong></td><td>«por lo tanto»</td></tr>
+    <tr><td>(falta)</td><td><strong>pkäl</strong></td><td>«¡trae!»</td></tr>
+    <tr><td>(falta)</td><td><strong>täm</strong></td><td>«ese, eso»</td></tr>
+    <tr><td>(falta)</td><td><strong>sasak</strong></td><td>«solo, solitario»</td></tr>
+    <tr><td><img src="img/Tochar24.gif" alt="Palabra tocaria: slamas"></td><td><strong>slamas</strong></td><td>«fuegos»</td></tr>
+    <tr><td><img src="img/Tochar25.gif" alt="Palabra tocaria: pkal"></td><td><strong>pkal</strong></td><td>«debe hornearse»</td></tr>
+    <tr><td><img src="img/Tochar26.gif" alt="Palabra tocaria: tamät"></td><td><strong>tamät</strong></td><td>«él nació»</td></tr>
+    <tr><td><img src="img/Tochar27.gif" alt="Palabra tocaria por transcribir"></td><td>(falta)</td><td>«saltando»</td></tr>
+    <tr><td>(falta)</td><td><strong>säksäk</strong></td><td>«sesenta»</td></tr>
+    <tr><td><img src="img/Tochar28.gif" alt="Palabra tocaria por transcribir"></td><td>(falta)</td><td>«¡siéntate!»</td></tr>
+    <tr><td>(falta)</td><td><strong>pat</strong></td><td>«o (conjunción)»</td></tr>
+  </table>
+
+  <p>Tu tarea: completa los huecos de la tabla, ya sea la palabra tocaria o la transcripción. En
+    el acertijo original había que dibujar los caracteres tocarios; aquí, en su lugar, elegirás la
+    descripción correcta de cada palabra. Para eso les pondremos apodos a los signos según su
+    forma:</p>
+
+  <ul class="reglas">
+    <li><strong>la herradura</strong>: el primer signo de <em>pal</em>;</li>
+    <li><strong>la rayita atravesada</strong>: el trazo que distingue el primer signo de
+      <em>pkal</em> del primer signo de <em>pal</em>;</li>
+    <li><strong>la puerta</strong>: el signo pequeño al final de <em>lap</em>;</li>
+    <li><strong>la culebrita</strong>: el primer signo de <em>spaltäk</em> (sin contar lo que
+      lleva colgado abajo);</li>
+    <li><strong>el trazo largo</strong>: la línea larga que distingue el signo de en medio de
+      <em>slamas</em> del signo de en medio de <em>tamät</em>;</li>
+    <li><strong>la ventana</strong>: el signo de en medio de <em>tamät</em>;</li>
+    <li><strong>la cruz</strong>: el primer signo de <em>tamät</em> (fíjate: lleva su propio trazo
+      largo);</li>
+    <li><strong>el ocho</strong>: el signo pequeño al final de <em>tmäk</em>;</li>
+    <li><strong>el ocho inclinado</strong>: el signo pequeño al final de <em>slamas</em> y
+      <em>maskäs</em>;</li>
+    <li><strong>la ola</strong>: el signo grande al final de <em>pal</em>;</li>
+    <li><strong>la cajita inclinada</strong>: el signo pequeño al final de <em>tamät</em>.</li>
+  </ul>
+
+  <form data-reto>
+    <p><strong>Las transcripciones que faltan</strong> (¡cuidado con la diferencia entre a y
+      ä!):</p>
+
+    <p>La palabra que significa «saltando»:<br>
+      <input type="text" size="14" maxlength="16" data-r="salat"></p>
+    <p>La palabra que significa «¡siéntate!»:<br>
+      <input type="text" size="14" maxlength="16" data-r="plmäs"></p>
+
+    <p><strong>Las palabras tocarias que faltan</strong> (elige la descripción correcta):</p>
+
+    <p><strong>pkäl</strong> «¡trae!»:<br>
+      <select data-r="b">
+        <option value=""></option>
+        <option value="a">la herradura con la rayita atravesada + la ola</option>
+        <option value="b">la puerta + el ocho + la ola</option>
+        <option value="c">la puerta + el ocho inclinado + la ola</option>
+      </select></p>
+
+    <p><strong>täm</strong> «ese, eso»:<br>
+      <select data-r="c">
+        <option value=""></option>
+        <option value="a">la cruz + la ventana en pequeño al final</option>
+        <option value="b">la ventana + la cruz en pequeño al final</option>
+        <option value="c">la cruz sin su trazo largo + la ventana en pequeño al final</option>
+      </select></p>
+
+    <p><strong>sasak</strong> «solo, solitario»:<br>
+      <select data-r="a">
+        <option value=""></option>
+        <option value="a">dos culebritas, cada una con su trazo largo + el ocho en pequeño al final</option>
+        <option value="b">dos culebritas sin trazo largo + el ocho en pequeño al final</option>
+        <option value="c">la culebrita + el ocho + la culebrita + el ocho</option>
+      </select></p>
+
+    <p><strong>säksäk</strong> «sesenta»:<br>
+      <select data-r="c">
+        <option value=""></option>
+        <option value="a">dos veces: la culebrita con su trazo largo y un ocho pequeño colgado debajo</option>
+        <option value="b">la culebrita + dos ochos seguidos + otra culebrita</option>
+        <option value="c">dos veces: la culebrita sin trazo largo y un ocho pequeño colgado debajo</option>
+      </select></p>
+
+    <p><strong>pat</strong> «o (conjunción)»:<br>
+      <select data-r="a">
+        <option value=""></option>
+        <option value="a">la herradura + la cajita inclinada en pequeño al final</option>
+        <option value="b">la puerta + la cajita inclinada en pequeño al final</option>
+        <option value="c">la herradura + el ocho en pequeño al final</option>
+      </select></p>
+
+    <p class="controles">
+      <button type="reset">Borrar todo</button>
+      <span class="puntos"></span>
+    </p>
+    <p class="mensaje">Escribe tus respuestas en las casillas.</p>
+  </form>
+
+  <footer>
+    <p><a href="index.html">← Todos los acertijos</a></p>
+    <p>copyright © 2005 Linguistic Society of America</p>
+  </footer>
+</body>
+</html>

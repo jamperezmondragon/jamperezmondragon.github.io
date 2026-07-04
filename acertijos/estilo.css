@@ -101,21 +101,30 @@ table.datos th {
   text-align: left;
 }
 
-input[type="text"] {
+input[type="text"],
+select {
   font: inherit;
   padding: 0.2rem 0.4rem;
   border: 1px solid #999;
   border-radius: 3px;
 }
 
-input.bien {
+input.bien,
+select.bien {
   border-color: #2e7d32;
   background: #e8f5e9;
 }
 
-input.mal {
+input.mal,
+select.mal {
   border-color: #c62828;
   background: #ffebee;
+}
+
+/* Transcripción de las cuñas cuneiformes (acertijo babilonio) */
+.cuneiforme {
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 0.08em;
 }
 
 .controles {

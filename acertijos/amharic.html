@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amárico — Acertijos Lingüísticos</title>
+  <link rel="stylesheet" href="estilo.css">
+  <script src="reto.js" defer></script>
+</head>
+<body>
+  <header>
+    <p class="site-link"><a href="index.html">← Acertijos Lingüísticos</a></p>
+    <h1>Amárico</h1>
+    <p class="autor">por Yekaterina Iassinskaya</p>
+  </header>
+
+  <p>En este acertijo vas a conocer la lengua y la escritura amáricas. El amárico es una lengua
+    semítica, emparentada con el hebreo y el árabe. Como esas lenguas, el amárico tiene su propio
+    sistema de escritura, muy antiguo, basado en el de una lengua ancestral llamada «ge'ez». El
+    amárico moderno es hablado por más de 23,000,000 de personas y es la lengua oficial de la
+    República de Etiopía.</p>
+
+  <p>Abajo hay algunas palabras en amárico escritas en una transcripción con letras latinas que
+    refleja su pronunciación. Las letras <strong>G</strong>, <strong>T</strong>, <strong>K</strong>
+    y <strong>C</strong> (mayúsculas) representan sonidos especiales del amárico, muy distintos de
+    <strong>g</strong>, <strong>t</strong>, <strong>k</strong> y <strong>c</strong>. En la mayoría
+    de los casos, los sonidos especiales se pronuncian más atrás en la boca que los comunes. Por
+    eso, al escribir tus respuestas, ¡fíjate muy bien en las mayúsculas y minúsculas!</p>
+
+  <p>Estas son las transcripciones (en desorden) de las palabras amáricas de la primera tabla:</p>
+
+  <table class="datos">
+    <tr>
+      <td><strong>GaTe</strong></td>
+      <td><strong>koke</strong></td>
+      <td><strong>betu</strong></td>
+      <td><strong>laba</strong></td>
+      <td><strong>KoKe</strong></td>
+    </tr>
+    <tr>
+      <td><strong>KoKoCu</strong></td>
+      <td><strong>Tatu</strong></td>
+      <td><strong>zipe</strong></td>
+      <td><strong>piyano</strong></td>
+      <td><strong>Geta</strong></td>
+    </tr>
+  </table>
+
+  <p>Tu primera tarea es colocar estas transcripciones en la columna central de la tabla,
+    emparejando cada transcripción con su palabra amárica y su traducción al español:</p>
+
+  <form data-reto>
+    <table class="datos">
+      <tr><th></th><th>Palabra amárica</th><th>Transcripción</th><th>Significado</th></tr>
+      <tr><td>a.</td><td lang="am">ኮኬ</td><td><input type="text" size="10" maxlength="12" data-exacto data-r="koke"></td><td>«mi durazno»</td></tr>
+      <tr><td>b.</td><td lang="am">ጌታ</td><td><input type="text" size="10" maxlength="12" data-exacto data-r="Geta"></td><td>«amo, señor»</td></tr>
+      <tr><td>c.</td><td lang="am">ቤቱ</td><td><input type="text" size="10" maxlength="12" data-exacto data-r="betu"></td><td>«su casa (de él)»</td></tr>
+      <tr><td>d.</td><td lang="am">ላባ</td><td><input type="text" size="10" maxlength="12" data-exacto data-r="laba"></td><td>«pelusa»</td></tr>
+      <tr><td>e.</td><td lang="am">ቆቄ</td><td><input type="text" size="10" maxlength="12" data-exacto data-r="KoKe"></td><td>«mi perdiz»</td></tr>
+      <tr><td>f.</td><td lang="am">ፒያኖ</td><td><input type="text" size="10" maxlength="12" data-exacto data-r="piyano"></td><td>«piano»</td></tr>
+      <tr><td>g.</td><td lang="am">ጋጤ</td><td><input type="text" size="10" maxlength="12" data-exacto data-r="GaTe"></td><td>«mi establo»</td></tr>
+      <tr><td>h.</td><td lang="am">ቆቆቹ</td><td><input type="text" size="10" maxlength="12" data-exacto data-r="KoKoCu"></td><td>«sus perdices (de él)»</td></tr>
+      <tr><td>i.</td><td lang="am">ጣቱ</td><td><input type="text" size="10" maxlength="12" data-exacto data-r="Tatu"></td><td>«su dedo (de él)»</td></tr>
+      <tr><td>j.</td><td lang="am">ዚፔ</td><td><input type="text" size="10" maxlength="12" data-exacto data-r="zipe"></td><td>«mi cierre»</td></tr>
+    </table>
+
+    <p>Tu segunda tarea es llenar todos los huecos de la siguiente tabla. Las transcripciones que
+      faltan tendrás que deducirlas tú. Como aquí no es fácil dibujar caracteres amáricos, en la
+      columna de la palabra amárica elige la opción correcta de la lista:</p>
+
+    <table class="datos">
+      <tr><th></th><th>Palabra amárica</th><th>Transcripción</th><th>Significado</th></tr>
+      <tr>
+        <td>k.</td>
+        <td><select lang="am" data-r="ፓፓያ"><option value=""></option><option>ፓፓያ</option><option>ፒፒዬ</option><option>ፑፓዩ</option><option>ፓፒያ</option></select></td>
+        <td><strong>papaya</strong></td>
+        <td>«papaya»</td>
+      </tr>
+      <tr>
+        <td>l.</td>
+        <td><select lang="am" data-r="ጣቶቼ"><option value=""></option><option>ታቶቸ</option><option>ጣቶቼ</option><option>ጣቱቺ</option><option>ጦቴቻ</option></select></td>
+        <td><input type="text" size="10" maxlength="12" data-exacto data-r="TaToCe"></td>
+        <td>«mis dedos»</td>
+      </tr>
+      <tr>
+        <td>m.</td>
+        <td><select lang="am" data-r="ኮኩ"><option value=""></option><option>ኮኬ</option><option>ቆቁ</option><option>ኮኩ</option><option>ኩኮ</option></select></td>
+        <td><input type="text" size="10" maxlength="12" data-exacto data-r="koku"></td>
+        <td>«su durazno (de él)»</td>
+      </tr>
+      <tr>
+        <td>n.</td>
+        <td><select lang="am" data-r="ዛቦቹ"><option value=""></option><option>ዛቡ</option><option>ዘበቹ</option><option>ዚቦቺ</option><option>ዛቦቹ</option></select></td>
+        <td><strong>zaboCu</strong></td>
+        <td>«sus riendas (de él)»</td>
+      </tr>
+      <tr>
+        <td>o.</td>
+        <td lang="am">ዛቡ</td>
+        <td><input type="text" size="10" maxlength="12" data-exacto data-r="zabu"></td>
+        <td><input type="text" size="18" maxlength="30" data-r="su rienda|su rienda (de él)|su brida|su brida (de él)"></td>
+      </tr>
+      <tr>
+        <td>p.</td>
+        <td lang="am">ጋጦቹ</td>
+        <td><input type="text" size="10" maxlength="12" data-exacto data-r="GaToCu"></td>
+        <td><input type="text" size="18" maxlength="30" data-r="sus establos|sus establos (de él)"></td>
+      </tr>
+      <tr>
+        <td>q.</td>
+        <td lang="am">ኩዞቹ</td>
+        <td><input type="text" size="10" maxlength="12" data-exacto data-r="kuzoCu"></td>
+        <td>«sus tarros (de él)»</td>
+      </tr>
+      <tr>
+        <td>r.</td>
+        <td lang="am">ጋዜጣ</td>
+        <td><input type="text" size="10" maxlength="12" data-exacto data-r="GazeTa"></td>
+        <td>«periódico»</td>
+      </tr>
+    </table>
+
+    <p class="controles">
+      <button type="reset">Borrar todo</button>
+      <span class="puntos"></span>
+    </p>
+    <p class="mensaje">Escribe tus respuestas en las casillas.</p>
+  </form>
+
+  <footer>
+    <p><a href="index.html">← Todos los acertijos</a> · <a href="inscrip.html">Siguiente acertijo →</a></p>
+    <p>copyright © 2005 Linguistic Society of America</p>
+  </footer>
+</body>
+</html>

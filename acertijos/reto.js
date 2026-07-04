@@ -10,12 +10,18 @@ document.addEventListener('DOMContentLoaded', function () {
   // Algunos acertijos (como el yaqui) piden completar todo antes de calificar.
   var calificarAlFinal = form.hasAttribute('data-todo');
 
-  function normaliza(texto) {
-    return texto
-      .toLowerCase()
+  function normaliza(texto, exacto) {
+    texto = texto
       .trim()
       .replace(/\s+/g, ' ')
-      .replace(/[.!¡¿?]+$/, '')
+      // Cualquier tipo de apóstrofo cuenta como apóstrofo simple.
+      .replace(/[‘’ʻʼ`]/g, "'")
+      .replace(/[.!¡¿?]+$/, '');
+    // En los campos data-exacto (transcripciones fonéticas) las mayúsculas
+    // y los acentos distinguen sonidos, así que se comparan tal cual.
+    if (exacto) return texto;
+    return texto
+      .toLowerCase()
       // Solo se ignoran los acentos del español; letras como ã, ç o î
       // forman parte de las respuestas y sí se toman en cuenta.
       .replace(/[áà]/g, 'a')
@@ -26,9 +32,10 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function esCorrecta(campo) {
-    var valor = normaliza(campo.value);
+    var exacto = campo.hasAttribute('data-exacto');
+    var valor = normaliza(campo.value, exacto);
     return campo.getAttribute('data-r').split('|').some(function (r) {
-      return normaliza(r) === valor;
+      return normaliza(r, exacto) === valor;
     });
   }
 

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Babilonio — Acertijos Lingüísticos</title>
+  <link rel="stylesheet" href="estilo.css">
+  <script src="reto.js" defer></script>
+</head>
+<body>
+  <header>
+    <p class="site-link"><a href="index.html">← Acertijos Lingüísticos</a></p>
+    <h1>Babilonio</h1>
+    <p class="autor">Acertijo original (en ruso) de A. N. Zhurinsky. Adaptación al inglés de Thomas E. Payne.</p>
+  </header>
+
+  <img class="foto" src="img/Babylonianphoto.gif" alt="Fotografía de tablillas babilonias auténticas">
+
+  <p>El sistema de escritura más antiguo que se conoce se originó hace más de 5,000 años en lo que
+    hoy son Irán, Irak y otras partes de Asia Occidental. Este sistema de escritura, llamado
+    «cuneiforme», fue usado por los antiguos reyes persas para dar a conocer sus decretos y para
+    revisar los impuestos de sus muchos súbditos. Los caracteres se grababan sobre tablillas de
+    arcilla o de piedra con instrumentos en forma de cuña. Aunque se conservan muchísimas
+    inscripciones, los estudiosos modernos no lograron descifrar este sistema de escritura hasta
+    1846.</p>
+
+  <p>En este acertijo harás el mismo tipo de trabajo que tuvieron que hacer aquellos estudiosos
+    para descifrar la escritura cuneiforme. Lo que sigue es un fragmento de un documento educativo
+    babilonio descubierto en 1811. Fue este documento el que permitió a los estudiosos descifrar el
+    sistema numérico que usaban los antiguos babilonios. A partir de ahí pudieron extender lo
+    aprendido al sistema de escritura completo. Muchos de los caracteres son ilegibles por los
+    estragos del tiempo. Aun así, es posible deducir cuáles deberían ser los caracteres que faltan.
+    Tu tarea es completarlos.</p>
+
+  <p><img src="img/Babylon.gif" alt="Dibujo de la tablilla babilonia, con signos de interrogación donde los caracteres son ilegibles" style="float: right; margin: 0 0 1rem 1.5rem;"></p>
+
+  <p>A la derecha puedes ver el dibujo de la tablilla. Para que puedas escribir tus respuestas con
+    el teclado, abajo reproducimos la tablilla usando dos símbolos: <span class="cuneiforme">Y</span>
+    para la cuña vertical y <span class="cuneiforme">&lt;</span> para la cuña angular (el
+    «gancho»). En la tablilla real las cuñas de un mismo grupo se amontonan en filas compactas;
+    aquí las escribimos una tras otra, sin espacios. Cuando un renglón tiene grupos separados
+    (fíjate bien en la tablilla), los separamos con un espacio. Escribe tus respuestas de la misma
+    manera: las cuñas de un grupo van juntas y los grupos distintos se separan con un espacio.
+    Donde la tablilla es ilegible verás una casilla.</p>
+
+  <form data-reto>
+    <table class="datos cuneiforme">
+      <tr><th>Columna izquierda</th><th>Columna derecha</th></tr>
+      <tr><td><input type="text" size="14" maxlength="20" class="cuneiforme" data-r="yyyyyy"></td><td>&lt;&lt;&lt;YYYYYY</td></tr>
+      <tr><td><input type="text" size="14" maxlength="20" class="cuneiforme" data-r="yyyyyyy"></td><td>&lt;&lt;&lt;&lt;YYYYYYYYY</td></tr>
+      <tr><td>YYYYYYYY</td><td>Y YYYY</td></tr>
+      <tr><td><input type="text" size="14" maxlength="20" class="cuneiforme" data-r="yyyyyyyyy"></td><td>Y &lt;&lt;Y</td></tr>
+      <tr><td>&lt;</td><td>Y &lt;&lt;&lt;&lt;</td></tr>
+      <tr><td>&lt;Y</td><td><input type="text" size="14" maxlength="20" class="cuneiforme" data-r="yy y"></td></tr>
+      <tr><td>&lt;YY</td><td>YY &lt;&lt;YYYY</td></tr>
+      <tr><td><input type="text" size="14" maxlength="20" class="cuneiforme" data-r="<yyy"></td><td>YY &lt;&lt;&lt;&lt;YYYYYYYYY</td></tr>
+      <tr><td><input type="text" size="14" maxlength="20" class="cuneiforme" data-r="<yyyy"></td><td>YYY &lt;YYYYYY</td></tr>
+      <tr><td>&lt;YYYYY</td><td><input type="text" size="16" maxlength="24" class="cuneiforme" data-r="yyy <<<<yyyyy"></td></tr>
+      <tr><td>&lt;YYYYYY</td><td><input type="text" size="16" maxlength="24" class="cuneiforme" data-r="yyyy <yyyyyy"></td></tr>
+    </table>
+
+    <p class="controles">
+      <button type="reset">Borrar todo</button>
+      <span class="puntos"></span>
+    </p>
+    <p class="mensaje">Escribe tus respuestas en las casillas.</p>
+  </form>
+
+  <footer>
+    <p><a href="index.html">← Todos los acertijos</a> · <a href="georgian.html">Siguiente acertijo →</a></p>
+    <p>copyright © 2005 Linguistic Society of America</p>
+  </footer>
+</body>
+</html>
