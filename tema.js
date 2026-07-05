@@ -18,9 +18,30 @@
     }
   }
 
-  var oscuro = false;
-  try { oscuro = localStorage.getItem(KEY) === 'oscuro'; } catch (e) {}
-  aplica(oscuro);
+  function lee() {
+    try {
+      var v = localStorage.getItem(KEY);
+      if (v) return v;
+    } catch (e) {}
+    // respaldo: window.name sobrevive la navegación dentro de la pestaña
+    // incluso sin localStorage (p. ej. navegación privada en iPhone)
+    var m = /(?:^|;)tema=(oscuro|claro)/.exec(window.name || '');
+    return m ? m[1] : null;
+  }
+  function guarda(v) {
+    try { localStorage.setItem(KEY, v); } catch (e) {}
+    var otros = (window.name || '').replace(/(?:^|;)tema=(?:oscuro|claro)/, '');
+    window.name = otros + ';tema=' + v;
+  }
+  aplica(lee() === 'oscuro');
+  // si el tema cambia en otra pestaña, o al volver con atrás/adelante,
+  // resincronizar
+  window.addEventListener('storage', function (ev) {
+    if (ev.key === KEY) aplica(ev.newValue === 'oscuro');
+  });
+  window.addEventListener('pageshow', function (ev) {
+    if (ev.persisted) aplica(lee() === 'oscuro');
+  });
 
   function init() {
     var st = document.createElement('style');
@@ -46,7 +67,7 @@
     }
     b.addEventListener('click', function () {
       var nuevo = !raiz.classList.contains('tema-oscuro');
-      try { localStorage.setItem(KEY, nuevo ? 'oscuro' : 'claro'); } catch (e) {}
+      guarda(nuevo ? 'oscuro' : 'claro');
       aplica(nuevo);
     });
     aplica(raiz.classList.contains('tema-oscuro'));
