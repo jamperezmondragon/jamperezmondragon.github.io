@@ -1,3 +1,7 @@
 
 # documentación de trabajo local (no publicar: contiene todas las soluciones)
 sudoku/*.md
+
+# olimpiada: docs de trabajo locales y dependencias de la herramienta de build
+olimpiada/*.md
+olimpiada/tools/node_modules/
