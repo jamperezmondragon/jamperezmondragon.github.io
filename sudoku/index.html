@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sudokus</title>
-  <link rel="stylesheet" href="sudoku.css?v=3">
+  <link rel="stylesheet" href="sudoku.css?v=4">
   <style>
     .puzzle-lista p { margin-bottom: 0.4rem; }
     .dif { display: inline-block; font-size: 1.8rem; line-height: 1; vertical-align: -0.2rem; }
@@ -17,9 +17,10 @@
     html.tema-oscuro .dif .negro { color: #e8e6e3; }
     .link-seccion { color: inherit; text-decoration: none; border-bottom: 1px dotted var(--muted); }
     .link-seccion:hover { border-bottom-color: var(--accent); }
-    .foto { float: right; width: 165px; margin: 0 0 1rem 1.5rem; }
+    /* Como en acertijos: la imagen siempre flota y el texto wrapea a su
+       alrededor; en pantallas chicas la imagen cede espacio al texto. */
+    .foto { float: right; width: min(220px, 32vw); height: auto; margin: 0.3rem 0 1rem 1.5rem; }
     .credito-foto { font-size: 0.72rem; color: var(--muted); margin-top: 0.3rem; line-height: 1.35; }
-    @media (max-width: 640px) { .foto { float: none; display: block; margin: 0 auto 1rem; width: 200px; } }
   </style>
   <script src="../tema.js?v=2"></script>
 </head>

@@ -56,6 +56,11 @@ blockquote.cita footer {
   font-style: normal;
   color: var(--muted);
   font-size: 0.95rem;
+  /* anula los estilos del footer de página */
+  margin-top: 0;
+  border-top: none;
+  padding-top: 0;
+  text-align: left;
 }
 
 /* --- Disposición del jugador --- */
