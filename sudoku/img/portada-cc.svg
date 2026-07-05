@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 328 328">
+<!-- Construcción caótica real (solución verificada del ejemplo de
+     Phistomefel): 6 colores en vez de dígitos, cada fila, columna
+     y región tiene los seis. Paleta del sitio. -->
+<rect x="8" y="8" width="52" height="52" fill="#1f8d70"/>
+<rect x="60" y="8" width="52" height="52" fill="#df8cc6"/>
+<rect x="112" y="8" width="52" height="52" fill="#e39220"/>
+<rect x="164" y="8" width="52" height="52" fill="#aedcf9"/>
+<rect x="216" y="8" width="52" height="52" fill="#f7ea5e"/>
+<rect x="268" y="8" width="52" height="52" fill="#1f56b0"/>
+<rect x="8" y="60" width="52" height="52" fill="#1f56b0"/>
+<rect x="60" y="60" width="52" height="52" fill="#1f8d70"/>
+<rect x="112" y="60" width="52" height="52" fill="#df8cc6"/>
+<rect x="164" y="60" width="52" height="52" fill="#e39220"/>
+<rect x="216" y="60" width="52" height="52" fill="#aedcf9"/>
+<rect x="268" y="60" width="52" height="52" fill="#f7ea5e"/>
+<rect x="8" y="112" width="52" height="52" fill="#f7ea5e"/>
+<rect x="60" y="112" width="52" height="52" fill="#aedcf9"/>
+<rect x="112" y="112" width="52" height="52" fill="#1f8d70"/>
+<rect x="164" y="112" width="52" height="52" fill="#1f56b0"/>
+<rect x="216" y="112" width="52" height="52" fill="#e39220"/>
+<rect x="268" y="112" width="52" height="52" fill="#df8cc6"/>
+<rect x="8" y="164" width="52" height="52" fill="#e39220"/>
+<rect x="60" y="164" width="52" height="52" fill="#f7ea5e"/>
+<rect x="112" y="164" width="52" height="52" fill="#1f56b0"/>
+<rect x="164" y="164" width="52" height="52" fill="#df8cc6"/>
+<rect x="216" y="164" width="52" height="52" fill="#1f8d70"/>
+<rect x="268" y="164" width="52" height="52" fill="#aedcf9"/>
+<rect x="8" y="216" width="52" height="52" fill="#df8cc6"/>
+<rect x="60" y="216" width="52" height="52" fill="#e39220"/>
+<rect x="112" y="216" width="52" height="52" fill="#aedcf9"/>
+<rect x="164" y="216" width="52" height="52" fill="#f7ea5e"/>
+<rect x="216" y="216" width="52" height="52" fill="#1f56b0"/>
+<rect x="268" y="216" width="52" height="52" fill="#1f8d70"/>
+<rect x="8" y="268" width="52" height="52" fill="#aedcf9"/>
+<rect x="60" y="268" width="52" height="52" fill="#1f56b0"/>
+<rect x="112" y="268" width="52" height="52" fill="#f7ea5e"/>
+<rect x="164" y="268" width="52" height="52" fill="#1f8d70"/>
+<rect x="216" y="268" width="52" height="52" fill="#df8cc6"/>
+<rect x="268" y="268" width="52" height="52" fill="#e39220"/>
+<path d="M60 8 V320 M8 60 H320 M112 8 V320 M8 112 H320 M164 8 V320 M8 164 H320 M216 8 V320 M8 216 H320 M268 8 V320 M8 268 H320" stroke="rgba(255,255,255,0.55)" stroke-width="1.6" fill="none"/>
+<path d="M60 60 H112 M112 60 H164 M164 60 H216 M268 8 V60 M216 60 H268 M60 60 V112 M8 112 H60 M112 112 H164 M216 60 V112 M8 164 H60 M112 112 V164 M60 164 H112 M164 112 V164 M216 112 V164 M164 164 H216 M268 164 H320 M60 216 H112 M164 164 V216 M112 216 H164 M216 164 V216 M268 164 V216 M216 216 H268 M60 216 V268 M164 216 V268 M164 268 H216 M216 268 H268 M60 268 V320 M268 268 V320" stroke="#1a1a1a" stroke-width="5" stroke-linecap="round" fill="none"/>
+<rect x="8" y="8" width="312" height="312" rx="6" fill="none" stroke="#1a1a1a" stroke-width="6"/>
+</svg>

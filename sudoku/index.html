@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sudokus</title>
-  <link rel="stylesheet" href="sudoku.css">
+  <link rel="stylesheet" href="sudoku.css?v=2">
   <style>
     .puzzle-lista p { margin-bottom: 0.4rem; }
     .dif { display: inline-block; font-size: 1.8rem; line-height: 1; vertical-align: -0.2rem; }
@@ -15,8 +15,13 @@
     .autor-mini { color: var(--muted); font-size: 0.9rem; }
     .intro-seccion { color: var(--muted); font-style: italic; margin-top: -0.5rem; }
     html.tema-oscuro .dif .negro { color: #e8e6e3; }
+    .link-seccion { color: inherit; text-decoration: none; border-bottom: 1px dotted var(--muted); }
+    .link-seccion:hover { border-bottom-color: var(--accent); }
+    .foto { float: right; width: 165px; margin: 0 0 1rem 1.5rem; }
+    .credito-foto { font-size: 0.72rem; color: var(--muted); margin-top: 0.3rem; line-height: 1.35; }
+    @media (max-width: 640px) { .foto { float: none; display: block; margin: 0 auto 1rem; width: 200px; } }
   </style>
-  <script src="../tema.js"></script>
+  <script src="../tema.js?v=2"></script>
 </head>
 <body>
   <header>
@@ -24,6 +29,8 @@
     <h1>Sudokus Modificados</h1>
   </header>
 
+
+  <img class="foto" src="img/portada-cc.svg" alt="Construcción caótica 6×6 resuelta con colores en vez de números: seis regiones irregulares marcadas con bordes gruesos, cada una con los seis colores">
 
   <p>Una colección de sudokus modificados para aprender a razonar: cada sección entrena una
     idea de las matemáticas discretas, disfrazada de acertijo. Los acertijos están ordenados del
@@ -35,7 +42,7 @@
 
     Cada acertijo trae pistas escondidas por si te atoras (en versión beta, cualquier retroalimentación es bienvenida).</p>
 
-  <h2>1 · Para empezar</h2>
+  <h2><a class="link-seccion" href="secciones/para-empezar.html">1 · Para empezar</a></h2>
   <p class="intro-seccion">Curso relámpago: ocho tableros chiquitos, cada uno te enseña una variante clásica en cinco minutos. Luego, los primeros retos de verdad.</p>
   <div class="puzzle-lista">
     <p><span class="dif"><span class="verde">●</span></span><a href="jugar.html?p=u1gswfvw2x">Intro: Sudoku killer</a> <span class="autor-mini">— Michael Lefkowitz</span></p>
@@ -52,7 +59,7 @@
     <p><span class="dif"><span class="azul">■</span></span><a href="jugar.html?p=9mthkftlh5">10X+Y</a> <span class="autor-mini">— Kaktuslav</span></p>
   </div>
 
-  <h2>2 · Coloreo y abstracción</h2>
+  <h2><a class="link-seccion" href="secciones/coloreo.html">2 · Coloreo y abstracción</a></h2>
   <p class="intro-seccion">Pintar casillas y ver patrones vale más que perseguir números.</p>
   <div class="puzzle-lista">
     <p><span class="dif"><span class="azul">■</span></span><a href="jugar.html?p=adventure_566-local-negativity">Local Negativity</a> <span class="autor-mini">— gdc</span></p>
@@ -62,7 +69,7 @@
     <p><span class="dif"><span class="negro">◆</span></span><a href="jugar.html?p=z44mcyjr8y">Miracle Of Eleven</a> <span class="autor-mini">— Aad van de Wetering</span></p>
   </div>
 
-  <h2>3 · El principio extremo</h2>
+  <h2><a class="link-seccion" href="secciones/extremo.html">3 · El principio extremo</a></h2>
   <p class="intro-seccion">Mira el objeto extremo: el más grande, el más chico, la esquina.</p>
   <div class="puzzle-lista">
     <p><span class="dif"><span class="azul">■</span></span><a href="jugar.html?p=ftar5lqcoq">Peeking Snowman</a> <span class="autor-mini">— gdc</span></p>
@@ -72,7 +79,7 @@
     <p><span class="dif"><span class="negro">◆</span></span><a href="jugar.html?p=bpxci0jt2o">24 / 4</a> <span class="autor-mini">— Marty Sears</span></p>
   </div>
 
-  <h2>4 · Conectividad</h2>
+  <h2><a class="link-seccion" href="secciones/conectividad.html">4 · Conectividad</a></h2>
   <p class="intro-seccion">Regiones conexas: qué las mantiene unidas y dónde se cortan.</p>
   <div class="puzzle-lista">
     <p><span class="dif"><span class="azul">■</span></span><a href="jugar.html?p=watsp">What About That Shadowy Place?</a> <span class="autor-mini">— gdc</span></p>
@@ -82,7 +89,7 @@
     <p><span class="dif"><span class="negro">◆◆</span></span><a href="jugar.html?p=jcdh680q0f">Forcing</a> <span class="autor-mini">— Kaktuslav</span></p>
   </div>
 
-  <h2>5 · Caminos</h2>
+  <h2><a class="link-seccion" href="secciones/caminos.html">5 · Caminos</a></h2>
   <p class="intro-seccion">Seguir, construir y acorralar caminos.</p>
   <div class="puzzle-lista">
     <p><span class="dif"><span class="azul">■</span></span><a href="jugar.html?p=iu50qghplg">RAT RUN 1: Primer</a> <span class="autor-mini">— Marty Sears</span></p>
@@ -96,7 +103,7 @@
     <p><span class="dif"><span class="negro">◆◆</span></span><a href="jugar.html?p=loopsum">Construcción caótica: Loop Sum</a> <span class="autor-mini">— Phistomefel</span></p>
   </div>
 
-  <h2>6 · Conjuntos</h2>
+  <h2><a class="link-seccion" href="secciones/conjuntos.html">6 · Conjuntos</a></h2>
   <p class="intro-seccion">Conjuntos de casillas, sumas totales, intersecciones y dobles conteos.</p>
   <div class="puzzle-lista">
     <p><span class="dif"><span class="azul">■</span></span><a href="jugar.html?p=575wand8lt">Area 51</a> <span class="autor-mini">— Michael Lefkowitz</span></p>
@@ -111,7 +118,7 @@
     <p><span class="dif"><span class="negro">◆</span></span><a href="jugar.html?p=b37xfe4xjf">Dancing in a ring</a> <span class="autor-mini">— Fool on Hill</span></p>
   </div>
 
-  <h2>7 · Miscelánea</h2>
+  <h2><a class="link-seccion" href="secciones/miscelanea.html">7 · Miscelánea</a></h2>
   <p class="intro-seccion">Sin etiquetas: aquí nadie te dice qué idea esperar. Como en la vida.</p>
   <div class="puzzle-lista">
     <p><span class="dif"><span class="azul">■</span></span><a href="jugar.html?p=nycgqk4mcz">Party Snack</a> <span class="autor-mini">— Tinnifer</span></p>

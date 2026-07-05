@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340">
+  <!-- Draft de portada: mini 6×6 con guiños a la colección
+       (niebla, coloreo, pluma/caminos, kropki). Estilo minimalista. -->
+
+  <!-- tarjeta -->
+  <rect x="8" y="8" width="324" height="324" rx="10" fill="#fdfcfb" stroke="#1a1a1a" stroke-width="3"/>
+
+  <!-- celdas de color (paleta del sitio) -->
+  <rect x="62" y="116" width="54" height="54" fill="#aedcf9"/>
+  <rect x="170" y="62" width="54" height="54" fill="#f7ea5e"/>
+  <rect x="224" y="224" width="54" height="54" fill="#df8cc6"/>
+  <rect x="116" y="224" width="54" height="54" fill="#1f8d70"/>
+
+  <!-- niebla en la esquina superior izquierda, con su faro -->
+  <rect x="8.5" y="8.5" width="107.5" height="53.5" rx="9" fill="#adadad"/>
+  <rect x="62" y="8.5" width="54" height="53.5" fill="#adadad"/>
+  <circle cx="89" cy="35" r="11" fill="#fdfcfb"/>
+
+  <!-- rejilla fina -->
+  <g stroke="#c9c5c0" stroke-width="1.2">
+    <path d="M62 8 V332 M116 8 V332 M224 8 V332 M278 8 V332"/>
+    <path d="M8 62 H332 M8 116 H332 M8 224 H332 M8 278 H332"/>
+  </g>
+  <!-- cajas 2×3 -->
+  <g stroke="#1a1a1a" stroke-width="2.6">
+    <path d="M170 8 V332"/>
+    <path d="M8 116 H332 M8 224 H332"/>
+  </g>
+
+  <!-- dígitos: un dado y uno del solver -->
+  <text x="197" y="89" font-family="Georgia, serif" font-size="38" fill="#1a1a1a"
+        text-anchor="middle" dominant-baseline="central">6</text>
+  <text x="89" y="143" font-family="Georgia, serif" font-size="38" fill="#0b57d0"
+        text-anchor="middle" dominant-baseline="central">1</text>
+
+  <!-- kropki: negro y blanco -->
+  <circle cx="224" cy="143" r="7.5" fill="#1a1a1a"/>
+  <circle cx="143" cy="278" r="7.5" fill="#fdfcfb" stroke="#1a1a1a" stroke-width="1.6"/>
+
+  <!-- trazo de pluma: un caminito que termina en círculo -->
+  <path d="M35 251 L35 197 L89 197 L89 251 L143 251 L143 197"
+        fill="none" stroke="#007a5e" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="143" cy="170" r="14" fill="none" stroke="#007a5e" stroke-width="6"/>
+</svg>
