@@ -43,6 +43,21 @@ a { color: var(--accent); }
   font-size: 0.95rem;
 }
 
+blockquote.cita {
+  margin: 1.5rem 0;
+  padding: 0.25rem 0 0.25rem 1.25rem;
+  border-left: 3px solid var(--accent);
+  font-style: italic;
+}
+
+blockquote.cita p { margin-bottom: 0.25rem; }
+
+blockquote.cita footer {
+  font-style: normal;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
 /* --- Disposición del jugador --- */
 .jugador {
   display: flex;
